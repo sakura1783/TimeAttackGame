@@ -1,0 +1,5493 @@
+fileFormatVersion: 2
+guid: 1feb02d4e1d31497295d329434e09603
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_0"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f56defe4c7de44a5ac30a36f659423a
+      internalID: 327713582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_1"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9565fbd868c354064a447167a4682be7
+      internalID: -1218569107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_2"
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da74f7e6c920d434f934fe41acb4ffa3
+      internalID: -1286845252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_3"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984cdca230dbd481cb48d50ae6feda40
+      internalID: 1515569716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_4"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca1300457b43486e9e3ef2f696d24ab
+      internalID: 726937543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_5"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be3a4f15d99a94236ba9498c2ab6fbf5
+      internalID: 82368110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_6"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e24be9a2f40403da340dea93edea13
+      internalID: -1930661880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_7"
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a020a72bf0624e42bc84ef60ef1ccb2
+      internalID: 1790715539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_8"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d281d2b125e4361a0fb88c5ba9c213
+      internalID: -388912074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_9"
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b73bb3fd8ad114e7095e2a43de8b1041
+      internalID: -1624962670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_10"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a907ba4bcabe24f34b924b9c5b3801d9
+      internalID: 228048159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_11"
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c58736c9e39d4461af164c6602b5b55
+      internalID: -1226011080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_12"
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd065f322f6754fb6b4e99c7e76f6953
+      internalID: -889197535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_13"
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 932bf8cad5d574694b323e4508767848
+      internalID: -463884548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_14"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9388d4aa4c39411e8e731a692b1f838
+      internalID: -280922877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_15"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd53c763740a4dba8ad09b1e2c23aca
+      internalID: -1635011586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_16"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb6fcc4e9f354054a7041124ed28bed
+      internalID: 1967460949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_17"
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 051277f16cb3c4f52a2c3f743dd274f5
+      internalID: 146302623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_18"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 778953003725c49038a5bc28c454a35b
+      internalID: 2079804563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_19"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf44c7a5753541ed9bef30274b7d506
+      internalID: 2043881807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_20"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b7561b28bfbf44e59a56484b977834b
+      internalID: 646616165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_21"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 927cce55adccd41228b34a1368ce239c
+      internalID: 1853694987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_22"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6358430a90164c80ae5e500fbc13f49
+      internalID: -702795929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_23"
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbea628c3c59a4601adee92902a3328f
+      internalID: -1246696265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_24"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7180a507d95eb4a5bb3f121d891af2ed
+      internalID: 1578498137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_25"
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce55f89daa2748a7be43feeed7f4667
+      internalID: -1684930400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_26"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1940ace094a6344f0b96e19dadcda713
+      internalID: 2010633854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_27"
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8c908f2d9424e2d8431efb2a048323
+      internalID: -126002034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_28"
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80bdf700eb0b942c6a7b373877265799
+      internalID: -862432913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_29"
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48549f9bca64d4ec4acbac68047e1760
+      internalID: 1810808492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_30"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da3a13ab3c8fc486b8c3fb4cdb42ef1c
+      internalID: -1396990520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_31"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283d257af29484b9884e79f72746cefc
+      internalID: 892406039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_32"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6d38e2bfb9ce4b03bb435a6916789ae
+      internalID: -801125641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_33"
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc91ef6315fb04d73b9ec2e5d7812e14
+      internalID: 195202616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_34"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 875079794e52b4f6387f6b3ec4042ab4
+      internalID: 985217487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_35"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 947df0602e8c54a48a4af962367be4fe
+      internalID: 2111678468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_36"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1189d4700e03f441bba73f3973f0d14f
+      internalID: 1682969357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_37"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c7fe8b27173240998257131abddf8f6
+      internalID: -509773978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_38"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b9076715dbde42489f37533261589a6
+      internalID: 76175844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_39"
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e5c9123e72f44669383ca5e6a65d39
+      internalID: -903055911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_40"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fab934327c6747fbb3b67e652da4b83
+      internalID: 1406702430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_41"
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49618a26e74a64a57a4a05358759588e
+      internalID: 1804511209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_42"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e64ec99fb9954463ad8d4ef413cd44c
+      internalID: 1373319265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_43"
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfce4fd1fc79143e69bcc80b7a2b9c5b
+      internalID: -1781521713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_44"
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363311f15f9f8416c884720e63edadd3
+      internalID: 1176267704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_45"
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc9320b9d19794214ab9206970c41e4f
+      internalID: 385708498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_46"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46719715055f943bda48b4cee3fb54f4
+      internalID: 650296251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_47"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f3b1208dc274ff48e0977d6300add7
+      internalID: 1611068790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_48"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e00c3a8c2889d4e9382bcb17692eeacd
+      internalID: -907826707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_49"
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f89e1fc5d4d4438e8d7cc8edeb796fd
+      internalID: 1591298531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_50"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cbf73dc790244f10883ecddded52bd4
+      internalID: 1288530973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_51"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8323bb13f62ea4043b1c19d9fce82627
+      internalID: 243306711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_52"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 338cdba7b2ac04d8196c6d7f418f9186
+      internalID: 1169038189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_53"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab31862eb50344e65b55d033f2c0a0bc
+      internalID: -376022897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_54"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c8ec74e8aae4e31bfc0f61603baf96
+      internalID: 424226939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_55"
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a609c717383d46e38e83db7e3f54a69
+      internalID: 1734837485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_56"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b88d974b8164f49a3be21174110cbf
+      internalID: -1573516924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_57"
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f81f64eb6c6814bc5a338e3b786dee25
+      internalID: -1950806637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_58"
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5890c2583dbf94820bbc8480bd4676ee
+      internalID: -175510583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_59"
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df3571f8decc145e1a028bb16ee9d0b4
+      internalID: -1230710105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_60"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c87190d33e1b9410989c0f92d32ef7af
+      internalID: -1311631729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_61"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4ef5dbded84427b87cb94c065e7b2a
+      internalID: -766016110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_62"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b6925aedd7984adcbe2c25bd9b7b826
+      internalID: -507305305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_63"
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 106099fda7d6e494cb6c7d3e40587a91
+      internalID: -438432817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_64"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00465f1cca1c54d92bd842db6cc4e46b
+      internalID: 1330757488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_65"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ba1d36e02694131adcb5c05f5b8f09
+      internalID: -1131733428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_66"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d99606cd56aca49dbbe32393445c0000
+      internalID: 885180719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_67"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0113e8ac96a3a426f8f89626521432c3
+      internalID: -1231512761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_68"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60bb64da4de8347dbae8b73ef9f1c7e8
+      internalID: -1744414150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_69"
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27ca4e04ba71c489da32a83434132319
+      internalID: 1647711875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_70"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49febcf2f72694367b3700d03ba40625
+      internalID: 666803291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_71"
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e6f02a35bf414a899ac7f17df0017fe
+      internalID: 852826072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_72"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c20ef1f26cc034e41ae4f23f2aeb97d8
+      internalID: -2018336555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_73"
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f744e45f0c54f46d78e16786b1cadfdd
+      internalID: -1116327605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_74"
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7715d889c2b04bd38bea7695993306f
+      internalID: 1185175065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_75"
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f576fde133d4b7b80e281d4d0e72ff
+      internalID: -32755527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_76"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab194cb7d7ea44697995554398dfdf4c
+      internalID: -743535027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_77"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42dbacf72d4541ad8590c3a0a507956
+      internalID: 576462364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_78"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45de8fe28d7dc4520ac3deb57cf456ba
+      internalID: 1607200027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_79"
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e8ec9ae8bf8d4bbd8e849c3ff3144e0
+      internalID: -2076927468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_80"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28fd9fd8d6a5548ea8db4cd8ac7e7a41
+      internalID: 744677319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_81"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b6b1823d803a4b6f98d2b2fe9c8728e
+      internalID: 200790979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_82"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a31a6eed31484492bca441512c5554f
+      internalID: -313401958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_83"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ab1c5d1e468411aa0001145bfe284c
+      internalID: 1102540253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_84"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7057934723cd4446199f23b26d758124
+      internalID: 1335164706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_85"
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95757396372b745d29a5a2ffb977c0be
+      internalID: 276939239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_86"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba1c7efaf42e8483fbb9eb18f81ae340
+      internalID: 1469348828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_87"
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5945297739b5b4cb3b04153babba74d0
+      internalID: 1048973103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_88"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6fdfd37daa39410eb5c723e69421f73
+      internalID: 288189583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_89"
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27c15fd30a3994fb782e1857989bdaa0
+      internalID: 121314728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_90"
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 699fd2749922c47d585414e606d6f3f9
+      internalID: 2126869670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_91"
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf8a7766f9fd4ba7b5a079fa38dbaed
+      internalID: 1221225350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_92"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a10f836ada3fd431aae1624a464bf3a2
+      internalID: 876810465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_93"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66748391ac05f4f669ee69e04c8eb27a
+      internalID: 655791070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_94"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb14a34e8363e4419beb2893d1347efa
+      internalID: 1575673255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_95"
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d1304c64f2646b49d79a04ebdbb46e
+      internalID: 1241441423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_96"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a3c2f4a14d7840d99f7b58fbea2d329
+      internalID: 1059168644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_97"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe47abf46de94325b516eb4e5b30568
+      internalID: 402066392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_98"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3799f109ea3364570a83cd4a94a6da08
+      internalID: -1951551992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_99"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc9aeffe6bd849d09cfe75872fc884a
+      internalID: 1525528824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_100"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80821834842914cefb07d4ce72ca39e2
+      internalID: 635068212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_101"
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc1df9f12aff44a3b41f403ec31aaf1
+      internalID: 1634505480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_102"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05866684cfe14795b37489e921fcf96
+      internalID: 712259109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_103"
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d9105d95b8a4e34a8219237017e491
+      internalID: 1330563030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_104"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20bfc4c694e0647298e424dc49d11c90
+      internalID: -143501390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_105"
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 697c3b3f6b181467ab704f882237306e
+      internalID: -535882712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_106"
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54eb7e11d45264bbbaf195e52ac675ea
+      internalID: -1627297239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_107"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d347799745fbe4c758b6d9bdb40683ae
+      internalID: 1794138167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_108"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82935c273e24240af82ef92fe3de8585
+      internalID: -142231714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_109"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6696f5a144f947c5a5f044ba18a43cb
+      internalID: -840641715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_110"
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebde13e8280fc4791b79c619ee0b9d9e
+      internalID: -1859115697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_111"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a48509e75e3cd48d0bdd6726b0c7b9ee
+      internalID: -1147491644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_112"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cda1d396653e421e99c871c2f98f78f
+      internalID: 27512937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_113"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 035c058dc6e1743fcad774f25003372d
+      internalID: -1230600507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_114"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e289dc1537e46e1a24e02f0f17688a
+      internalID: 2057360088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_115"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc02f3770c1184b34ad62d33c72f65d1
+      internalID: -826554156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_116"
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72aafbc45b5e14e1ea19089cadf3e58c
+      internalID: 334958114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_117"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cb708fb307114a66acd65928d6b8979
+      internalID: 720717778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_118"
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cedd54abc85b45438320f612a3ee100
+      internalID: -2114877212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_119"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e88abddbaf9c40bba71e6c00f41c6d0
+      internalID: -1896894063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_120"
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33509fd1859df4ab4a1e73bb6716e24c
+      internalID: -2043751667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_121"
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f45f171874f4bc28208d4a42c3ec79
+      internalID: -384813558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_122"
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52219887dc45448ec8e1a6ed25648d7e
+      internalID: -1519411422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_123"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d6a3bb008b2430187b50ee051c4b61
+      internalID: 1250894863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_124"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9830b7537c60541628a740388f66d440
+      internalID: 284465936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_125"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 494900cc3aef64fec964cac33c849936
+      internalID: -566502408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_126"
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f20c01f7cff0d424eb7d9fcee1c61a25
+      internalID: -241675177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_127"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a07cb6eb9796842df949b2ef45080447
+      internalID: 850169972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_128"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3d300751a54b4f91be5df6a39302d6f
+      internalID: -1190474938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_129"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf9d4449cb5fe474f87552ce8fa3ec61
+      internalID: 1607823179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_130"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 615172c94cbb547ad8cd32706739759d
+      internalID: -1021790235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_131"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e68e16ae1064037b259acfb93a01db
+      internalID: -327351827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_132"
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0014ee573d604ec8b1098ac78c7c8d0
+      internalID: 2071572396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_133"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e3bd6621d504cfbb8dc38055672074
+      internalID: 2115477510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_134"
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d393ba0ce20444a8d82a706e8ffbbb
+      internalID: -1790695614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_135"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e161302c584d462db0fb578bd3d621c
+      internalID: -417194213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_136"
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ca36e55b8244c7ca6fccd24315e51c
+      internalID: -1915722569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_137"
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5cba7c1c36ac44b6a4ff3430f74914a
+      internalID: -181119090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_138"
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e072effee0ce48b2af22e14b8154502
+      internalID: 774721381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_139"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5305b1e1f4ca477ebbfe65b3ac96000
+      internalID: -1845001705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_140"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ed01e4fd27e54230ac943fa221b0f64
+      internalID: 13457786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_141"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f2209c3f011b4ea791ce260d224a6b7
+      internalID: 480421276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_142"
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec6ce3998ffa24c89a413bd258cde6f9
+      internalID: 1180011542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_143"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c301f5a88484bf7b2ea7904497826a
+      internalID: -719521515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_144"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c6551f4d2f543bbbcb71191733a53e
+      internalID: -438518374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_145"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a6f4eb5cb2c1405896a1bf68ff53f9e
+      internalID: -1297335471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_146"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab44426d661840de8a1f2f1ac523420
+      internalID: 1601770656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_147"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eff70ce0485449d8bd2cb11da5127fa
+      internalID: 1082902395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_148"
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bcb214b72b8e4dff875a676de216a7e
+      internalID: -1211926754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_149"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ff284d5d656a491a8e135ccee4ec04a
+      internalID: -708072265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_150"
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d887a328928e4a719c4a596d355227b
+      internalID: 1673741824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_151"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e69a378d46b4e89b249613d17a94d8
+      internalID: 1008542198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_152"
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31561e7dcd639472c96318b9fd81fae8
+      internalID: -172971960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_153"
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4a95736ef0b845dab2c829c589b3fe3
+      internalID: 1257664600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_154"
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a070632de07a486e81c1071775b0e72
+      internalID: -1108406167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_155"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 764975c3b80254c7a8beaf4fdab5c808
+      internalID: 2088734239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_156"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 991c8dc88ddeb47f08ec6616afae6dfb
+      internalID: -1839384353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_157"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 407c97f274b144c648a8c230218af5b8
+      internalID: -938298075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_158"
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ec4a66ef8234871964e980992be05b
+      internalID: -271259584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_159"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59fa36a5426034732a999d8f357aa639
+      internalID: 1648953764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_160"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76376c28a1c394467b5c6156d1860e33
+      internalID: -795908529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_161"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f2455002cc2a46e8bf4c526b2641958
+      internalID: -1790372340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_162"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3394d534db6d4cedaa2bd3d01c22b63
+      internalID: -1612097749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_163"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2909ca39aac2492fb670a47abc60eb7
+      internalID: 916582889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_164"
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b4156315b224563b44321972ee3b24
+      internalID: 1046112132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_165"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97621833dcaf04b6b9dc0218423aff5a
+      internalID: 274922259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_166"
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20547aeba0292447e87084bf12f7665e
+      internalID: 403796455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_167"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e37005dbacb4eb1b1739391ecd9a60
+      internalID: 1150824745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_168"
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27018bafc65764de5b4c2039ae833841
+      internalID: 1280649589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_169"
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b85de1ea7ecb4ae08d17becaff493bc
+      internalID: 1932409741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_170"
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c68abf6539264a7b8f05239ddeabc68
+      internalID: 755211759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_171"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df1aa6ffc15849e4a8f035ceff162dc
+      internalID: 1384979272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_172"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a8dc8a2a1a04e51aeae9d970052a07
+      internalID: -1692514124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_173"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f48a6a03c76e1427590b47d0bb4b4850
+      internalID: -791579883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_174"
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b00d534f15c604e7e8c60f340841384f
+      internalID: 2055248168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_175"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebbd4591193ec47dcb5f89e8633227d2
+      internalID: 1554292285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_176"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de760f7f0a714708897e2069e218dbc
+      internalID: 1207950322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_177"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e994dbe5684e4a499c787e866dcefbd
+      internalID: -839022367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_178"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb2a39f06e6a430b865d1269a4452a8
+      internalID: 1143582086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_179"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6786643c9ed5446f1a2838f9154b2265
+      internalID: 1120658387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_180"
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82bacf9f1f484c92a9236e8c6bc2b4d
+      internalID: 401705818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_181"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7a80dc9c5504061ad831a170ed62c9
+      internalID: -1416731480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_182"
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9145040a179c741d08238ce32150ece4
+      internalID: 1461911366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_183"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95305ee756f9f4b009a48fd028e5824d
+      internalID: 238621490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_184"
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8653c68f3728a4412899d160d1688b05
+      internalID: 704205892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_185"
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a676592cdd2e4fc5989b8469b54f2b7
+      internalID: 1571686752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_186"
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4960df9639c7c4a32948ab7e2f817673
+      internalID: 1511459479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_187"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22e9038caf606409b8072b10ad5739fb
+      internalID: -1847838699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_188"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b8411f9682e4f4cb2d847e7804de2b
+      internalID: -554125002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_189"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 944572eb5b8ec4c5fbe30ab085f9db73
+      internalID: 550056427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_190"
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88827bf9e4698451da53afca008dddb9
+      internalID: 1150299751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_191"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 684af193a204f4956af8c8037af43d72
+      internalID: 2099267373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_192"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae1998c124cd646cd905f45826932839
+      internalID: 1260075387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_193"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b09060f0d76a4f26ab10374167ac906
+      internalID: -1573765445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_194"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6cdf7bea3f3d4d4a8b432c3a9102780
+      internalID: 355686096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_195"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d088b783d26ca4265b02ea1a17952493
+      internalID: -1628464772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_196"
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e2da55e3d1a4666b9575c673eccac9
+      internalID: 1347903379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_197"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34689e9ae89044116a6316f90c88cd8a
+      internalID: 164094615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_198"
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639809baa1b874ef6a84c845750d7cbd
+      internalID: 1867714589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_199"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f3248eb878144cdfac28fe8de42131c
+      internalID: 1879072885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_200"
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b9c31a83322641c2ba099c938da6b7f
+      internalID: -1512526687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_201"
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa5641e79533f468a8df332d3d491cda
+      internalID: 632096715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_202"
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de00136cbcb924630be1521f41798210
+      internalID: 498711030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_203"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cca9257eecc845c482f830e4eb89829
+      internalID: -158205328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_204"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc15efea0a0ed4f04a616d6c79502646
+      internalID: -703874100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_205"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a4fa463c09e4c428267cd8c218bf42
+      internalID: -1050867490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_206"
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6277d2ad35e784ca4a6eee879df9b05d
+      internalID: 1038115008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_207"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c37a9f19073c4a1083d30266889b864
+      internalID: 2104632729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_208"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c65a3662f8a4c57983c504e3f2efd6
+      internalID: -450523957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_209"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc187ab44d874c559b615c72c1e9186
+      internalID: -1164374919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_210"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a192fcf2c7046f2832cab9cafafdd5
+      internalID: 1232905600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_211"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6183a2c84f0e44559aadb39ab1fa4408
+      internalID: 303041876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_212"
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531d3534d51fa4459a18623d5e9e19fd
+      internalID: 18378676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_213"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 612c3ec5a8ecc47b48f2d7b47b676f9a
+      internalID: 10041015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_214"
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ddeb6a28afe4c5fa59324e2324e524
+      internalID: 374119520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_215"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e6b94bea0029498994b594882abf66e
+      internalID: -924952389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_216"
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e40f3adda611f41c7a332525cd28b98f
+      internalID: -1801775213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_217"
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e9453ecaaa704742be128a70300754d
+      internalID: -107104131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_218"
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88386df6760aa4ad7bbef336a3329a0d
+      internalID: 122522590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_219"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afddccca669da4e8ca70fbe1e0ea5088
+      internalID: 1822005574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_220"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa0c4257c08e4f12b9101a5f50e0347
+      internalID: 750417356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_221"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c682d00ad104109875cda46cf94292
+      internalID: -1443941039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_222"
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02be8443b2952493ea94310109eaaa75
+      internalID: 1950698173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_223"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ddda05efc224995aae4d174cd56da9
+      internalID: 120217505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_224"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff1c5e3adf554373a56b05f4175fbb7
+      internalID: -1638785341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_225"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f1db9622cc624616a61455a3464acb8
+      internalID: -899724792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_226"
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cf95d540b3a34cb3b9bdb5b64cd4902
+      internalID: -1452176419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_227"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec31b9667ee40431c987e7ce078e5e21
+      internalID: 787582141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_228"
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f504514e5f628408cbada81a96714865
+      internalID: 1197300419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_229"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 631881ae36701423f895a70350cd1b01
+      internalID: -893245509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_230"
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0166919de6a3847f4a208d7befa319d3
+      internalID: 1805945316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_231"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41e38f660d2524c77b6bee30b626c4ab
+      internalID: -707800772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_232"
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0323d9773f4ff4f509b13185c9111bbd
+      internalID: -949757353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_233"
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae44a8f0fd24744db96240e80ddf93c0
+      internalID: 917603018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_234"
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a573be4ec04d4ac2b7e771ff1a59269
+      internalID: 1459564804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_235"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f0009d487e747698d5391cfb9550a7
+      internalID: -60423395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_236"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c152f1545f535439eb2da78462edd057
+      internalID: 1117412121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_237"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196156b2c19b94059af3ed5a44981130
+      internalID: -483291184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_238"
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ddc189a298c0436aa72448f68aedfdc
+      internalID: 1017384568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_239"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28078a5bc49ea403283e5f6a6c74d1ef
+      internalID: 404939114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_240"
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c44a9ace7dc8040f1b0e0f442755a60e
+      internalID: 1397237204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_241"
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 154fa046f13604ee58eeabc25b093ea7
+      internalID: 1245006246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_242"
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b0b5ee14da974a3cab9d9dbbc1d7f83
+      internalID: -1397081559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_0": 327713582
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_1": -1218569107
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_10": 228048159
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_100": 635068212
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_101": 1634505480
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_102": 712259109
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_103": 1330563030
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_104": -143501390
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_105": -535882712
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_106": -1627297239
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_107": 1794138167
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_108": -142231714
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_109": -840641715
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_11": -1226011080
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_110": -1859115697
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_111": -1147491644
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_112": 27512937
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_113": -1230600507
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_114": 2057360088
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_115": -826554156
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_116": 334958114
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_117": 720717778
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_118": -2114877212
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_119": -1896894063
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_12": -889197535
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_120": -2043751667
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_121": -384813558
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_122": -1519411422
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_123": 1250894863
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_124": 284465936
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_125": -566502408
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_126": -241675177
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_127": 850169972
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_128": -1190474938
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_129": 1607823179
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_13": -463884548
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_130": -1021790235
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_131": -327351827
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_132": 2071572396
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_133": 2115477510
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_134": -1790695614
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_135": -417194213
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_136": -1915722569
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_137": -181119090
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_138": 774721381
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_139": -1845001705
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_14": -280922877
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_140": 13457786
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_141": 480421276
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_142": 1180011542
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_143": -719521515
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_144": -438518374
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_145": -1297335471
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_146": 1601770656
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_147": 1082902395
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_148": -1211926754
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_149": -708072265
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_15": -1635011586
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_150": 1673741824
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_151": 1008542198
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_152": -172971960
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_153": 1257664600
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_154": -1108406167
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_155": 2088734239
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_156": -1839384353
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_157": -938298075
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_158": -271259584
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_159": 1648953764
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_16": 1967460949
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_160": -795908529
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_161": -1790372340
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_162": -1612097749
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_163": 916582889
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_164": 1046112132
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_165": 274922259
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_166": 403796455
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_167": 1150824745
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_168": 1280649589
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_169": 1932409741
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_17": 146302623
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_170": 755211759
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_171": 1384979272
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_172": -1692514124
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_173": -791579883
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_174": 2055248168
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_175": 1554292285
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_176": 1207950322
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_177": -839022367
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_178": 1143582086
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_179": 1120658387
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_18": 2079804563
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_180": 401705818
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_181": -1416731480
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_182": 1461911366
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_183": 238621490
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_184": 704205892
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_185": 1571686752
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_186": 1511459479
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_187": -1847838699
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_188": -554125002
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_189": 550056427
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_19": 2043881807
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_190": 1150299751
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_191": 2099267373
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_192": 1260075387
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_193": -1573765445
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_194": 355686096
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_195": -1628464772
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_196": 1347903379
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_197": 164094615
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_198": 1867714589
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_199": 1879072885
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_2": -1286845252
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_20": 646616165
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_200": -1512526687
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_201": 632096715
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_202": 498711030
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_203": -158205328
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_204": -703874100
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_205": -1050867490
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_206": 1038115008
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_207": 2104632729
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_208": -450523957
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_209": -1164374919
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_21": 1853694987
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_210": 1232905600
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_211": 303041876
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_212": 18378676
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_213": 10041015
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_214": 374119520
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_215": -924952389
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_216": -1801775213
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_217": -107104131
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_218": 122522590
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_219": 1822005574
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_22": -702795929
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_220": 750417356
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_221": -1443941039
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_222": 1950698173
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_223": 120217505
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_224": -1638785341
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_225": -899724792
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_226": -1452176419
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_227": 787582141
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_228": 1197300419
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_229": -893245509
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_23": -1246696265
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_230": 1805945316
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_231": -707800772
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_232": -949757353
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_233": 917603018
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_234": 1459564804
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_235": -60423395
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_236": 1117412121
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_237": -483291184
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_238": 1017384568
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_239": 404939114
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_24": 1578498137
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_240": 1397237204
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_241": 1245006246
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_242": -1397081559
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_25": -1684930400
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_26": 2010633854
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_27": -126002034
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_28": -862432913
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_29": 1810808492
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_3": 1515569716
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_30": -1396990520
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_31": 892406039
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_32": -801125641
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_33": 195202616
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_34": 985217487
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_35": 2111678468
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_36": 1682969357
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_37": -509773978
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_38": 76175844
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_39": -903055911
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_4": 726937543
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_40": 1406702430
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_41": 1804511209
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_42": 1373319265
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_43": -1781521713
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_44": 1176267704
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_45": 385708498
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_46": 650296251
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_47": 1611068790
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_48": -907826707
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_49": 1591298531
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_5": 82368110
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_50": 1288530973
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_51": 243306711
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_52": 1169038189
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_53": -376022897
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_54": 424226939
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_55": 1734837485
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_56": -1573516924
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_57": -1950806637
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_58": -175510583
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_59": -1230710105
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_6": -1930661880
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_60": -1311631729
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_61": -766016110
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_62": -507305305
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_63": -438432817
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_64": 1330757488
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_65": -1131733428
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_66": 885180719
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_67": -1231512761
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_68": -1744414150
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_69": 1647711875
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_7": 1790715539
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_70": 666803291
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_71": 852826072
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_72": -2018336555
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_73": -1116327605
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_74": 1185175065
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_75": -32755527
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_76": -743535027
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_77": 576462364
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_78": 1607200027
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_79": -2076927468
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_8": -388912074
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_80": 744677319
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_81": 200790979
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_82": -313401958
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_83": 1102540253
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_84": 1335164706
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_85": 276939239
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_86": 1469348828
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_87": 1048973103
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_88": 288189583
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_89": 121314728
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_9": -1624962670
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_90": 2126869670
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_91": 1221225350
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_92": 876810465
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_93": 655791070
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_94": 1575673255
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_95": 1241441423
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_96": 1059168644
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_97": 402066392
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_98": -1951551992
+      "\u30C8\u3099\u30C3\u30C8\u7D75\u4E16\u754C_Cave1-EarthB_99": 1525528824
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
