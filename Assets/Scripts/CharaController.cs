@@ -60,6 +60,14 @@ public class CharaController : MonoBehaviour
         transform.position = new Vector2(posX, posY);
     }
 
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.tag == "Enemy")
+        {
+            Destroy(col.gameObject);
+        }
+    }
+
     /// <summary>
     /// アニメーション一時停止
     /// </summary>
