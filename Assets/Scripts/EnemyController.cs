@@ -26,7 +26,7 @@ public class EnemyController : MonoBehaviour
 
     private void ChangeAnimDirection()
     {
-        Vector2 direction = charaController.transform.position.normalized;
+        Vector2 direction = (charaController.transform.position - transform.position).normalized;
 
         anim.SetFloat("X", direction.x);
         anim.SetFloat("Y", direction.y);

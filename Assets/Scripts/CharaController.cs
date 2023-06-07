@@ -52,11 +52,27 @@ public class CharaController : MonoBehaviour
             transform.position += transform.right * speed * Time.deltaTime;
         }
 
-        //TODO 止まっている時はアニメーションを止める
+        //TODO 止まっている時はアニメーションを止める(その時向いている方向のアニメーションで)
 
         float posX = Mathf.Clamp(transform.position.x, -limitPosX, limitPosX);
         float posY = Mathf.Clamp(transform.position.y, -limitPosY, limitPosY);
 
         transform.position = new Vector2(posX, posY);
+    }
+
+    /// <summary>
+    /// アニメーション一時停止
+    /// </summary>
+    private void StopAnim()
+    {
+        
+    }
+
+    /// <summary>
+    /// アニメーション再開
+    /// </summary>
+    private void ResumeAnim()
+    {
+        
     }
 }
