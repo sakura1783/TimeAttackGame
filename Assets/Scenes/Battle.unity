@@ -3695,6 +3695,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 0
+  clearCount: 3
+  killEnemyCount: 0
 --- !u!4 &692431902
 Transform:
   m_ObjectHideFlags: 0
