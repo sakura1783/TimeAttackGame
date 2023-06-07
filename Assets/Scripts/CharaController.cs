@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Linq;
-using DG.Tweening;
 
 public class CharaController : MonoBehaviour
 {
     private Animator anim;
 
     [SerializeField] private float speed = 5f;
+
+    private float limitPosX = 10.45f;
+    private float limitPosY = 4.55f;
 
     void Start()
     {
@@ -17,10 +18,10 @@ public class CharaController : MonoBehaviour
 
     void Update()
     {
-        ChangeAnimation();
+        Move();
     }
 
-    private void ChangeAnimation()
+    private void Move()
     {
         if (Input.GetKey(KeyCode.UpArrow))
         {
@@ -50,5 +51,12 @@ public class CharaController : MonoBehaviour
 
             transform.position += transform.right * speed * Time.deltaTime;
         }
+
+        //TODO 止まっている時はアニメーションを止める
+
+        float posX = Mathf.Clamp(transform.position.x, -limitPosX, limitPosX);
+        float posY = Mathf.Clamp(transform.position.y, -limitPosY, limitPosY);
+
+        transform.position = new Vector2(posX, posY);
     }
 }
