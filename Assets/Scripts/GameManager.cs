@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
 
     private bool isGameClear = false;
 
+    public int maxGenerateEnemyCount;
+
     void Update()
     {
         if (isGameClear == true)

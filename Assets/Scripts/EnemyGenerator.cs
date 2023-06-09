@@ -11,6 +11,10 @@ public class EnemyGenerator : MonoBehaviour
 
     [SerializeField] private int intervalGenerateTime;
 
+    [SerializeField] private GameManager gameManager;
+
+    private int generateEnemyCount = 0;
+
     void Start()
     {
         StartCoroutine(GenerateEnemy());
@@ -18,11 +22,16 @@ public class EnemyGenerator : MonoBehaviour
 
     private IEnumerator GenerateEnemy()
     {
-        //配列の中からエネミーを生成する位置をランダムに一つ選ぶ
-        var generateTran = Random.Range(0, generatePos.Length);
+        while (gameManager.maxGenerateEnemyCount > generateEnemyCount)
+        {
+            //配列の中からエネミーを生成する位置をランダムに一つ選ぶ
+            var generateTran = Random.Range(0, generatePos.Length);
 
-        yield return new WaitForSeconds(intervalGenerateTime);
+            yield return new WaitForSeconds(intervalGenerateTime);
 
-        Instantiate(enemyPrefab, generateTran, Quaternion.identity);
+            Instantiate(enemyPrefab, generatePos[generateTran], Quaternion.identity);    
+
+            generateEnemyCount++;
+        }
     }
 }
