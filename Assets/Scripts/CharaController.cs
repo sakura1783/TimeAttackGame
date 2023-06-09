@@ -64,7 +64,7 @@ public class CharaController : MonoBehaviour
     {
         if (col.tag == "Enemy")
         {
-            Destroy(col.gameObject);
+            //Destroy(col.gameObject);
         }
     }
 

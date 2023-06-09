@@ -20,6 +20,8 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         navMeshAgent2D.destination = charaController.transform.position;  //destination = 目的地
+
+        ChangeAnimDirection();
     }
 
     //TODO エネミーから見たキャラクターの位置によってアニメーション変更

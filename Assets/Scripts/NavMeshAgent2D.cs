@@ -39,6 +39,13 @@ public class NavMeshAgent2D : MonoBehaviour
 
         if (Vector2.Distance(current, corner) <= 0.05f)
         {
+            if (path.corners.Length < 2)
+            {
+                corner = path.corners[0];
+
+                return;
+            }
+
             corner = path.corners[1];
         }
 
