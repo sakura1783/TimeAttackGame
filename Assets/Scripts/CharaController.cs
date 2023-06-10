@@ -13,13 +13,23 @@ public class CharaController : MonoBehaviour
 
     [SerializeField] private GameManager gameManager;
 
-    void Start()
+    public void SetUpCharaController(GameManager gameManager)
     {
+        this.gameManager = gameManager;
+
         TryGetComponent(out anim);
+
+        Debug.Log(anim);
     }
 
     void Update()
     {
+        if (anim == null)
+        {
+            Debug.Log("Updateメソッドがreturnされました");
+            return;
+        }
+
         Move();
     }
 

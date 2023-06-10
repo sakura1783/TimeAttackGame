@@ -31,7 +31,7 @@ public class EnemyController : MonoBehaviour
     {
         if (navMeshAgent2D == null)
         {
-            Debug.Log("Updateメソッドがreturnされました");
+            //Debug.Log("Updateメソッドがreturnされました");
 
             return;
         }
