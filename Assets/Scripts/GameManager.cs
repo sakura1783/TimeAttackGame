@@ -12,6 +12,13 @@ public class GameManager : MonoBehaviour
 
     public int maxGenerateEnemyCount;
 
+    [SerializeField] private CharaGenerator charaGenerator;
+
+    void Start()
+    {
+        charaGenerator.GenerateChara();
+    }
+
     void Update()
     {
         if (isGameClear == true)

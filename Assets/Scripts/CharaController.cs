@@ -12,7 +12,6 @@ public class CharaController : MonoBehaviour
     private float limitPosY = 4.55f;
 
     [SerializeField] private GameManager gameManager;
-    [SerializeField] private EnemyGenerator enemyGenerator;
 
     void Start()
     {
