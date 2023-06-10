@@ -11,17 +11,43 @@ public class EnemyController : MonoBehaviour
 
     [SerializeField] private CharaController charaController;
 
-    void Start()
+    [SerializeField] private EnemyDataSO.EnemyData enemyData;
+
+    public void SetUpEnemyController(CharaController charaController)
     {
+        this.charaController = charaController;
+
         TryGetComponent(out anim);
-        TryGetComponent(out navMeshAgent2D);
+        //TryGetComponent(out this.navMeshAgent2D);
+
+        var navMeshAgent2D = gameObject.AddComponent<NavMeshAgent2D>();
+        Debug.Log("1 : " + this.navMeshAgent2D);
+
+        this.navMeshAgent2D = navMeshAgent2D;
+        Debug.Log("2 : " + this.navMeshAgent2D);
     }
 
     void Update()
     {
+        if (navMeshAgent2D == null)
+        {
+            Debug.Log("Updateメソッドがreturnされました");
+
+            return;
+        }
+
         navMeshAgent2D.destination = charaController.transform.position;  //destination = 目的地
 
         ChangeAnimDirection();
+    }
+
+    /// <summary>
+    /// 設定
+    /// </summary>
+    /// <param name="enemyData"></param>
+    private void SetUpEnemy(EnemyDataSO.EnemyData enemyData)
+    {
+
     }
 
     private void ChangeAnimDirection()

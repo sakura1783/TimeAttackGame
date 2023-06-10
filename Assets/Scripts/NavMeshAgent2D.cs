@@ -9,6 +9,8 @@ public class NavMeshAgent2D : MonoBehaviour
 
     [HideInInspector]//常にUnityエディタから非表示
     private Vector2 trace_area = Vector2.zero;
+    [SerializeField] private EnemyDataSO.EnemyData enemyData;
+
     public Vector2 destination
     {
         get { return trace_area; }
@@ -50,5 +52,10 @@ public class NavMeshAgent2D : MonoBehaviour
         }
 
         transform.position = Vector2.MoveTowards(current, corner, speed * Time.deltaTime);
+    }
+
+    public void SetUpNavMeshAgent2D()
+    {
+        speed = enemyData.moveSpeed;
     }
 }

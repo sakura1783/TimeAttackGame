@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db5d1f1ad7b5b4171abed47868b2a81a, type: 3}
+  m_Name: EnemyDataSO
+  m_EditorClassIdentifier: 
+  enemyDatasList:
+  - enemyNo: 0
+    maxHp: 5
+    attackPower: 1
+    intervalAttackTime: 1.5
+    moveSpeed: 1
+    attackRangeType: 0
+    addSpecialMovePoint: 2
+  - enemyNo: 1
+    maxHp: 0
+    attackPower: 0
+    intervalAttackTime: 0
+    moveSpeed: 0
+    attackRangeType: 0
+    addSpecialMovePoint: 0

@@ -17,6 +17,8 @@ public class EnemyGenerator : MonoBehaviour
 
     public List<EnemyController> enemiesList = new List<EnemyController>();
 
+    [SerializeField] private CharaController charaController;
+
     void Start()
     {
         StartCoroutine(GenerateEnemy());
@@ -36,6 +38,8 @@ public class EnemyGenerator : MonoBehaviour
             generateEnemyCount++;
 
             enemiesList.Add(generatedEnemy);
+
+            enemyPrefab.SetUpEnemyController(charaController);
         }
     }
 }

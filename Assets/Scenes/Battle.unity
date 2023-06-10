@@ -3533,7 +3533,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 0
-  clearCount: 3
   killEnemyCount: 0
   maxGenerateEnemyCount: 5
 --- !u!4 &692431902
@@ -3588,6 +3587,8 @@ MonoBehaviour:
   - {x: -11.5, y: 4}
   intervalGenerateTime: 3
   gameManager: {fileID: 692431901}
+  enemiesList: []
+  charaController: {fileID: 5934362981039619279, guid: 15af0899ff8b64aed8066f6f62085354, type: 3}
 --- !u!4 &830223806
 Transform:
   m_ObjectHideFlags: 0
@@ -7229,5 +7230,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5934362981039619279, guid: 15af0899ff8b64aed8066f6f62085354, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 692431901}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15af0899ff8b64aed8066f6f62085354, type: 3}

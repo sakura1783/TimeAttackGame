@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 515537056343755239}
   - component: {fileID: 515537056343755238}
   - component: {fileID: 515537056343755233}
-  - component: {fileID: 515537056343755234}
   - component: {fileID: 515537056343755235}
   m_Layer: 0
   m_Name: Enemy
@@ -123,19 +122,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   stoppingDistance: 0
---- !u!114 &515537056343755234
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 515537056343755237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19060e6920a4e402b9b5467780a76822, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  charaController: {fileID: 5934362981039619279, guid: 15af0899ff8b64aed8066f6f62085354, type: 3}
 --- !u!61 &515537056343755235
 BoxCollider2D:
   m_ObjectHideFlags: 0
