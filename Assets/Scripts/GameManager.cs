@@ -6,9 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public float timer = 0;
 
-    [SerializeField] private int clearCount;
-
-    [SerializeField] private int killEnemyCount;
+    public int killEnemyCount;
 
     private bool isGameClear = false;
 
@@ -22,23 +20,16 @@ public class GameManager : MonoBehaviour
         }
 
         timer += Time.deltaTime;
-
-        KillEnemyCount();
     }
 
     /// <summary>
-    /// 倒した敵の数
+    /// ゲームクリア判定
     /// </summary>
-    private void KillEnemyCount()
+    public void GameClear()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (killEnemyCount >= maxGenerateEnemyCount)
         {
-            killEnemyCount++;
-
-            if (killEnemyCount >= clearCount)
-            {
-                Debug.Log("ゲームクリア");
-            }
+            Debug.Log("ゲームクリア");
         }
     }
 }

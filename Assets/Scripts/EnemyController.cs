@@ -24,8 +24,6 @@ public class EnemyController : MonoBehaviour
         ChangeAnimDirection();
     }
 
-    //TODO エネミーから見たキャラクターの位置によってアニメーション変更
-
     private void ChangeAnimDirection()
     {
         Vector2 direction = (charaController.transform.position - transform.position).normalized;

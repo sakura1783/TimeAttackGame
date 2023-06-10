@@ -11,6 +11,9 @@ public class CharaController : MonoBehaviour
     private float limitPosX = 10.45f;
     private float limitPosY = 4.55f;
 
+    [SerializeField] private GameManager gameManager;
+    [SerializeField] private EnemyGenerator enemyGenerator;
+
     void Start()
     {
         TryGetComponent(out anim);
@@ -65,6 +68,12 @@ public class CharaController : MonoBehaviour
         if (col.tag == "Enemy")
         {
             Destroy(col.gameObject);
+
+            //enemyGenerator.enemiesList.Remove();
+
+            gameManager.killEnemyCount++;
+
+            gameManager.GameClear();
         }
     }
 }

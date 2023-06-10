@@ -15,7 +15,7 @@ public class EnemyGenerator : MonoBehaviour
 
     private int generateEnemyCount = 0;
 
-    [SerializeField] private List<EnemyController> enemiesList = new List<EnemyController>();
+    public List<EnemyController> enemiesList = new List<EnemyController>();
 
     void Start()
     {
