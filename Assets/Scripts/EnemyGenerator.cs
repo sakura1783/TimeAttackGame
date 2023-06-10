@@ -15,6 +15,8 @@ public class EnemyGenerator : MonoBehaviour
 
     private int generateEnemyCount = 0;
 
+    [SerializeField] private List<EnemyController> enemiesList = new List<EnemyController>();
+
     void Start()
     {
         StartCoroutine(GenerateEnemy());
@@ -29,9 +31,11 @@ public class EnemyGenerator : MonoBehaviour
 
             yield return new WaitForSeconds(intervalGenerateTime);
 
-            Instantiate(enemyPrefab, generatePos[generateTran], Quaternion.identity);    
+            EnemyController generatedEnemy = Instantiate(enemyPrefab, generatePos[generateTran], Quaternion.identity);    
 
             generateEnemyCount++;
+
+            enemiesList.Add(generatedEnemy);
         }
     }
 }
