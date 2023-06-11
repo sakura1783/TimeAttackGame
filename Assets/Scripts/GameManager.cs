@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private CharaGenerator charaGenerator;
     [SerializeField] private CharaController charaController;
 
+    [SerializeField] private GameObject enemy;
+
     void Start()
     {
         charaGenerator.GenerateChara();
@@ -40,6 +42,9 @@ public class GameManager : MonoBehaviour
         if (killEnemyCount >= maxGenerateEnemyCount)
         {
             Debug.Log("ゲームクリア");
+
+            //ゲーム開始時敵のプレハブに追加したNavMeshAgent2Dコンポーネントを削除
+            Destroy(enemy.GetComponent<NavMeshAgent2D>());
         }
     }
 }

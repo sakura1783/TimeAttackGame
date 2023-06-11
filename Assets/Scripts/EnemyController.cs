@@ -20,11 +20,21 @@ public class EnemyController : MonoBehaviour
         TryGetComponent(out anim);
         //TryGetComponent(out this.navMeshAgent2D);
 
-        var navMeshAgent2D = gameObject.AddComponent<NavMeshAgent2D>();
-        Debug.Log("1 : " + this.navMeshAgent2D);
+        if (navMeshAgent2D == null)
+        {
+            //var navMeshAgent2D = gameObject.AddComponent<NavMeshAgent2D>();
+            //Debug.Log("1 : " + this.navMeshAgent2D);
 
-        this.navMeshAgent2D = navMeshAgent2D;
-        Debug.Log("2 : " + this.navMeshAgent2D);
+            //this.navMeshAgent2D = navMeshAgent2D;
+            //Debug.Log("2 : " + this.navMeshAgent2D);
+
+            navMeshAgent2D = gameObject.AddComponent<NavMeshAgent2D>();
+            Debug.Log(navMeshAgent2D);
+
+            Debug.Log("if文が動きました");
+        }
+
+        Debug.Log("SetUpEnemyControllerメソッドが動きました");
     }
 
     void Update()

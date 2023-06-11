@@ -13,24 +13,36 @@ public class CharaController : MonoBehaviour
 
     [SerializeField] private GameManager gameManager;
 
+    [SerializeField] private EnemyController enemy;
+
+    [SerializeField] private float timer = 0;
+
+    [SerializeField] private int attackPoint;
+    [SerializeField] private float intervalAttackTime;
+
     public void SetUpCharaController(GameManager gameManager)
     {
-        this.gameManager = gameManager;
-
         TryGetComponent(out anim);
 
-        Debug.Log(anim);
+        Debug.Log("1 : " + anim);
+
+        this.gameManager = gameManager;
+
+        Debug.Log("SetUpメソッドが動きました");
     }
 
     void Update()
     {
-        if (anim == null)
+        if (gameManager == null)
         {
-            Debug.Log("Updateメソッドがreturnされました");
+            Debug.Log("Updateがreturnされました");
+
             return;
         }
 
         Move();
+
+        PrepareAttack();
     }
 
     private void Move()
@@ -84,5 +96,24 @@ public class CharaController : MonoBehaviour
 
             gameManager.GameClear();
         }
+    }
+
+    private IEnumerator PrepareAttack()
+    {
+        timer += Time.deltaTime;
+
+        if (timer >= intervalAttackTime && Input.GetKey(KeyCode.A))
+        {
+            Attack();
+
+            timer = 0;
+        }
+
+        yield return null;
+    }
+
+    public void Attack()
+    {
+        Debug.Log("攻撃");
     }
 }
