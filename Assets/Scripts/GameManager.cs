@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("ゲームクリア");
 
             //ゲーム開始時敵のプレハブに追加したNavMeshAgent2Dコンポーネントを削除
-            Destroy(enemy.GetComponent<NavMeshAgent2D>());
+            //Destroy(enemy.GetComponent<NavMeshAgent2D>());
         }
     }
 }

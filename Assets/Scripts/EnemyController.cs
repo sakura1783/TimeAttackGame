@@ -90,5 +90,7 @@ public class EnemyController : MonoBehaviour
     public void Damage(int damage)
     {
         hp -= damage;
+
+        Debug.Log("Enemyがダメージを受けました");
     }
 }

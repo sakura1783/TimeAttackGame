@@ -156,6 +156,8 @@ MonoBehaviour:
     moveSpeed: 0
     attackRangeType: 0
     addSpecialMovePoint: 0
+  maxHp: 5
+  hp: 0
 --- !u!58 &4823220794521826655
 CircleCollider2D:
   m_ObjectHideFlags: 0
