@@ -72,7 +72,7 @@ public class CharaController : MonoBehaviour
             transform.position += transform.right * speed * Time.deltaTime;
         }
 
-        //TODO 止まっている時はアニメーションを止める(その時向いている方向のアニメで)
+        //TODO 止まっている時はアニメーションを止める(その時向いている方向で)
 
         float posX = Mathf.Clamp(transform.position.x, -limitPosX, limitPosX);
         float posY = Mathf.Clamp(transform.position.y, -limitPosY, limitPosY);
@@ -108,8 +108,11 @@ public class CharaController : MonoBehaviour
         yield return null;
     }
 
-    public void Attack()
+    private void Attack()
     {
         Debug.Log("攻撃");
+
+        //TODO if (コライダーの範囲内に敵がいたら)
+        //enemy.Damage(attackPoint);
     }
 }

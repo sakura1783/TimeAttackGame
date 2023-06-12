@@ -13,7 +13,8 @@ public class GameManager : MonoBehaviour
     public int maxGenerateEnemyCount;
 
     [SerializeField] private CharaGenerator charaGenerator;
-    [SerializeField] private CharaController charaController;
+
+    public CharaController charaController;
 
     [SerializeField] private GameObject enemy;
 

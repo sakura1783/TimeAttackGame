@@ -39,7 +39,8 @@ public class EnemyGenerator : MonoBehaviour
 
             enemiesList.Add(generatedEnemy);
 
-            enemyPrefab.SetUpEnemyController(charaController);
+            //enemyPrefab.SetUpEnemyController(charaController);  // <= これは間違い。
+            generatedEnemy.SetUpEnemyController(gameManager);  //Enemyのプレハブではなく、生成したEnemyの情報に命令を出す。
         }
     }
 }

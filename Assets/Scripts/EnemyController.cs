@@ -13,9 +13,17 @@ public class EnemyController : MonoBehaviour
 
     [SerializeField] private EnemyDataSO.EnemyData enemyData;
 
-    public void SetUpEnemyController(CharaController charaController)
+    [SerializeField] private int maxHp;
+    [SerializeField] private int hp;
+
+    private GameManager gameManager;
+
+    public void SetUpEnemyController(GameManager gameManager)
     {
-        this.charaController = charaController;
+        this.gameManager = gameManager;
+
+        this.charaController = this.gameManager.charaController;
+        Debug.Log("デバック2 : " + this.charaController);
 
         TryGetComponent(out anim);
         //TryGetComponent(out this.navMeshAgent2D);
@@ -34,6 +42,9 @@ public class EnemyController : MonoBehaviour
             Debug.Log("if文が動きました");
         }
 
+        //各値を設定
+        hp = maxHp;
+
         Debug.Log("SetUpEnemyControllerメソッドが動きました");
     }
 
@@ -47,6 +58,7 @@ public class EnemyController : MonoBehaviour
         }
 
         navMeshAgent2D.destination = charaController.transform.position;  //destination = 目的地
+        //Debug.Log("デバック : " + charaController);
 
         ChangeAnimDirection();
     }
@@ -60,11 +72,23 @@ public class EnemyController : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// アニメーション変更
+    /// </summary>
     private void ChangeAnimDirection()
     {
         Vector2 direction = (charaController.transform.position - transform.position).normalized;
 
         anim.SetFloat("X", direction.x);
         anim.SetFloat("Y", direction.y);
+    }
+
+    /// <summary>
+    /// 攻撃を受けた際のダメージ処理
+    /// </summary>
+    /// <param name="damage"></param>
+    public void Damage(int damage)
+    {
+        hp -= damage;
     }
 }
