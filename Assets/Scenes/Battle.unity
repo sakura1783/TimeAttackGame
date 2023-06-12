@@ -3536,7 +3536,7 @@ MonoBehaviour:
   killEnemyCount: 0
   maxGenerateEnemyCount: 5
   charaGenerator: {fileID: 960542471}
-  charaController: {fileID: 5934362981039619279, guid: 15af0899ff8b64aed8066f6f62085354, type: 3}
+  charaController: {fileID: 0}
   enemy: {fileID: 515537056343755237, guid: 7aaa55d04ecd34551aa65eb646bd40c7, type: 3}
 --- !u!4 &692431902
 Transform:

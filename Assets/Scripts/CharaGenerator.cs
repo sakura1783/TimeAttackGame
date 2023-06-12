@@ -6,11 +6,13 @@ public class CharaGenerator : MonoBehaviour
 {
     [SerializeField] private CharaController charaPrefab;
 
-    public void GenerateChara()
+    public CharaController GenerateChara()
     {
         //キャラの生成位置
         Vector2 generatePos = new Vector2(Camera.main.transform.position.x, Camera.main.transform.position.y);
 
-        Instantiate(charaPrefab, generatePos, Quaternion.identity);
+        CharaController generatedChara = Instantiate(charaPrefab, generatePos, Quaternion.identity);
+
+        return generatedChara;
     }
 }

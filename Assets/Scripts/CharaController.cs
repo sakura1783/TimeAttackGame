@@ -27,22 +27,18 @@ public class CharaController : MonoBehaviour
         Debug.Log("1 : " + anim);
 
         this.gameManager = gameManager;
-
-        Debug.Log("SetUpメソッドが動きました");
     }
 
     void Update()
     {
         if (gameManager == null)
         {
-            Debug.Log("Updateがreturnされました");
-
             return;
         }
 
         Move();
 
-        PrepareAttack();
+        StartCoroutine(PrepareAttack());
     }
 
     private void Move()
