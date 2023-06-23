@@ -15,9 +15,9 @@ public class Bullet : MonoBehaviour
     /// <param name="damage"></param>
     /// <param name="speed"></param>
     /// <param name="direction"></param>
-    public void Shoot(int damage, float speed, Vector2 direction)
+    public void Shoot(float speed, Vector2 direction)
     {
-        this.damage = damage;
+        //this.damage = damage;  //TODO 必要ない場合は消す
 
         if (TryGetComponent(out Rigidbody2D rb))
         {
@@ -32,6 +32,12 @@ public class Bullet : MonoBehaviour
         if (col.gameObject.tag == "Enemy")
         {
             Destroy(gameObject);
+
+            //TODO もしここにDamageメソッドを書く場合
+            //if (TryGetComponent(out EnemyController enemyController))
+            //{
+            //    enemyController.Damage();
+            //}
         }
     }
 }

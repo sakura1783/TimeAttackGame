@@ -6,6 +6,7 @@ using UnityEngine.Tilemaps;
 public class EnemyGenerator : MonoBehaviour
 {
     [SerializeField] private EnemyController enemyPrefab;
+    public EnemyController EnemyPrefab => enemyPrefab;
 
     [SerializeField] private Vector2[] generatePos;
 

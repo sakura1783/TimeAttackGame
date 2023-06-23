@@ -76,7 +76,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1240393111
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -753417935, guid: cd6bb18d916e8465a81bf6860f0af12d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -178,10 +178,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 9055102580245209845, guid: 5e974fce8f69442aea123f0a4c5bca59, type: 3}
   damage: 2
-  speed: 700
+  speed: 500
   interval: 2
   radius: 2
   enemyLayer:
     serializedVersion: 2
     m_Bits: 128
-  isDrawGizmoOn: 1
+  isDrawGizmoOn: 0

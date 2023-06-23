@@ -8,8 +8,8 @@ public class CharaController : MonoBehaviour
 
     [SerializeField] private float speed = 5f;
 
-    private float limitPosX = 10.45f;
-    private float limitPosY = 4.55f;
+    private float limitPosX = 13.65f;
+    private float limitPosY = 7.55f;
 
     [SerializeField] private GameManager gameManager;
 

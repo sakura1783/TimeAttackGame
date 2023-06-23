@@ -8,9 +8,4 @@ public class Item : MonoBehaviour
     {
         Debug.Log(gameObject.name);
     }
-
-    void Update()
-    {
-        
-    }
 }

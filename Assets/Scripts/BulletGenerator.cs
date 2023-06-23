@@ -14,6 +14,7 @@ public class BulletGenerator : MonoBehaviour
     [SerializeField] private int damage = 2;
     [SerializeField] private float speed = 1000.0f;
     [SerializeField] private float interval = 2.0f;
+    public float Interval => interval;
     // <= DataSOから情報をもらう
 
     [SerializeField] private float radius = 2.0f;  // <= AttackRangeSizeSOから情報をもらう
@@ -28,6 +29,8 @@ public class BulletGenerator : MonoBehaviour
 
     void Start()
     {
+        //TODO Startメソッド内に書いてあるものはあとでSetUpBullet内に記述する
+
         TryGetComponent(out anim);
     }
 
@@ -135,7 +138,9 @@ public class BulletGenerator : MonoBehaviour
     {
         Bullet bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
 
-        bullet.Shoot(damage, speed, direction);
+        bullet.Shoot(speed, direction);
+
+        //TODO EnemyControllerのDamageメソッドを記述する。ここかBullet.csのOnTriggerのタイミングで
 
         yield return new WaitForSeconds(interval);
 

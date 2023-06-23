@@ -15,7 +15,7 @@ TagManager:
   - TileMapNavMesh
   - Enemy
   - 
-  - 
+  - Confiner
   - 
   - 
   - 
@@ -44,6 +44,9 @@ TagManager:
     locked: 0
   - name: AttackRange
     uniqueID: 639130345
+    locked: 0
+  - name: Item
+    uniqueID: 1233355329
     locked: 0
   - name: Chara
     uniqueID: 1240393111

@@ -19,12 +19,17 @@ public class EnemyController : MonoBehaviour
 
     private GameManager gameManager;
 
+    [SerializeField] private Transform floatingDamageTran;
+
+    [SerializeField] private FloatingMessage floatingMessagePrefab;
+
+    private ItemGenerator itemGenerator;
+
     public void SetUpEnemyController(GameManager gameManager)
     {
         this.gameManager = gameManager;
 
         this.charaController = this.gameManager.charaController;
-        Debug.Log("デバック2 : " + this.charaController);
 
         TryGetComponent(out anim);
         //TryGetComponent(out this.navMeshAgent2D);
@@ -39,14 +44,12 @@ public class EnemyController : MonoBehaviour
 
             navMeshAgent2D = gameObject.AddComponent<NavMeshAgent2D>();
             Debug.Log(navMeshAgent2D);
-
-            Debug.Log("if文が動きました");
         }
+
+        itemGenerator = gameManager.ItemGenerator;
 
         //各値を設定
         hp = maxHp;
-
-        Debug.Log("SetUpEnemyControllerメソッドが動きました");
     }
 
     void Update()
@@ -91,14 +94,29 @@ public class EnemyController : MonoBehaviour
     public void Damage(int damage)
     {
         hp -= damage;
-
         Debug.Log("Enemyがダメージを受けました");
+
+        //フロート表示生成
+        CreateFloatingMessage(damage);
 
         if (hp <= 0)
         {
             Destroy(gameObject);
+
+            //アイテムドロップ
+            itemGenerator.GenerateItem();
         }
 
         //TODO 破壊する時は乱数でアイテムを落とすか落とさないか確認する　落とす時はGenerateメソッドをよぶ
+    }
+    /// <summary>
+    /// フロート表示の生成
+    /// </summary>
+    public void CreateFloatingMessage(int point)
+    {
+        FloatingMessage floatingMessage = Instantiate(floatingMessagePrefab, floatingDamageTran, false);
+
+        //生成したフロート表示の設定用メソッドを実行。引数として、バレットの攻撃力値とフロート表示の種類を指定して渡す
+        floatingMessage.DisplayFloatingMessage(point, FloatingMessage.FloatingMessageType.Damage);
     }
 }
