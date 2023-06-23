@@ -34,7 +34,7 @@ public class BulletGenerator : MonoBehaviour
         TryGetComponent(out anim);
     }
 
-    //public void SetUpBullet(CharaDataSO.CharaData charaData, AttackRangeSizeSO.AttackRangeSize attackRangeSize)
+    //public void SetUpBulletGenerator(CharaDataSO.CharaData charaData, AttackRangeSizeSO.AttackRangeSize attackRangeSize)
     //{
     //    //各値を設定
     //    damage = charaData.attackPower;
