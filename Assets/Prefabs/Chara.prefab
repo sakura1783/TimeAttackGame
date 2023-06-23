@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5934362981039619279}
   - component: {fileID: 5934362981039619272}
   - component: {fileID: 5934362981039619273}
-  - component: {fileID: 7771346327097919197}
+  - component: {fileID: 8788377420138979845}
   m_Layer: 0
   m_Name: Chara
   m_TagString: Untagged
@@ -164,19 +164,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &7771346327097919197
-CircleCollider2D:
+--- !u!114 &8788377420138979845
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5934362981039619267}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.06}
-  serializedVersion: 2
-  m_Radius: 2
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82787eb507a6e4359a0cb70a5759a208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 9055102580245209845, guid: 5e974fce8f69442aea123f0a4c5bca59, type: 3}
+  damage: 2
+  speed: 700
+  interval: 2
+  radius: 2
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  isDrawGizmoOn: 1

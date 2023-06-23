@@ -15,7 +15,7 @@ public class CharaController : MonoBehaviour
 
     [SerializeField] private EnemyController enemy;
 
-    [SerializeField] private float timer = 0;
+    //[SerializeField] private float timer = 0;
 
     [SerializeField] private int attackPoint;
     [SerializeField] private float intervalAttackTime;
@@ -38,7 +38,7 @@ public class CharaController : MonoBehaviour
 
         Move();
 
-        StartCoroutine(PrepareAttack());
+        //StartCoroutine(PrepareAttack());
     }
 
     private void Move()
@@ -80,71 +80,71 @@ public class CharaController : MonoBehaviour
         transform.position = new Vector2(posX, posY);
     }
 
-    private void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.tag == "Enemy")
-        {
-            //Destroy(col.gameObject);
+    //private void OnTriggerEnter2D(Collider2D col)
+    //{
+    //    if (col.tag == "Enemy")
+    //    {
+    //        //Destroy(col.gameObject);
 
-            //enemyGenerator.enemiesList.Remove();
+    //        //enemyGenerator.enemiesList.Remove();
 
-            //gameManager.killEnemyCount++;
+    //        //gameManager.killEnemyCount++;
 
-            //gameManager.GameClear();
-        }
-    }
+    //        //gameManager.GameClear();
+    //    }
+    //}
 
-    private IEnumerator PrepareAttack()
-    {
-        timer += Time.deltaTime;
+    //private IEnumerator PrepareAttack()
+    //{
+    //    timer += Time.deltaTime;
 
-        if (timer >= intervalAttackTime && Input.GetKey(KeyCode.A))
-        {
-            Attack();
+    //    if (timer >= intervalAttackTime && Input.GetKey(KeyCode.A))
+    //    {
+    //        Attack();
 
-            timer = 0;
-        }
+    //        timer = 0;
+    //    }
 
-        yield return null;
-    }
+    //    yield return null;
+    //}
 
-    private void Attack()
-    {
-        Debug.Log("攻撃");
+    //private void Attack()
+    //{
+    //    //Debug.Log("攻撃");
 
-        //LayerMask.NameToLayerで、指定した名前のレイヤーの番号(整数値)を取得する。
-        int enemyLayer = LayerMask.NameToLayer("Enemy");
-        Debug.Log("レイヤー番号 : " + enemyLayer);
+    //    ////LayerMask.NameToLayerで、指定した名前のレイヤーの番号(整数値)を取得する。
+    //    //int enemyLayer = LayerMask.NameToLayer("Enemy");
+    //    //Debug.Log("レイヤー番号 : " + enemyLayer);
 
-        //OverlapCircleColliderで指定された範囲内の指定されたレイヤーを見つける。今回の場合は、(中心位置、円の半径、レイヤー番号(この場合はEnemy))
-        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, 2, enemyLayer);
-        //Debug.Log("ヒットしたコライダー : " + hitColliders);  // <= 配列は文字列に直接変換できないので、代わりに配列の要素数などを表示するようにするといい。
-        Debug.Log("ヒットしたコライダーの数 : " + hitColliders.Length);
+    //    ////OverlapCircleColliderで指定された範囲内の指定されたレイヤーを見つける。今回の場合は、(中心位置、円の半径、レイヤー番号(この場合はEnemy))
+    //    //Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, 2, enemyLayer);
+    //    ////Debug.Log("ヒットしたコライダー : " + hitColliders);  // <= 配列は文字列に直接変換できないので、代わりに配列の要素数などを表示するようにするといい。
+    //    //Debug.Log("ヒットしたコライダーの数 : " + hitColliders.Length);
 
-        //範囲内のコライダーを順にチェック
-        foreach (Collider2D col in hitColliders)
-        {
-            Debug.Log("ヒットしたコライダー : " + col.gameObject.name);
+    //    ////範囲内のコライダーを順にチェック
+    //    //foreach (Collider2D col in hitColliders)
+    //    //{
+    //    //    Debug.Log("ヒットしたコライダー : " + col.gameObject.name);
 
-            if (TryGetComponent(out enemy))
-            {
-                Debug.Log("ダメージを与えます");
-                enemy.Damage(2);  //TODO 引数にプレイヤーの攻撃力を渡す
-            }
-        }
-    }
+    //    //    if (TryGetComponent(out enemy))
+    //    //    {
+    //    //        Debug.Log("ダメージを与えます");
+    //    //        enemy.Damage(2);  //TODO 引数にプレイヤーの攻撃力を渡す
+    //    //    }
+    //    //}
+    //}
 
     //private void OnTriggerStay2D(Collider2D col)
     //{
-        //タグをEnemyかどうか比較。戻り値はtrue/false
-        //if (col.CompareTag("Enemy"))
-        //{
-            //if (col.TryGetComponent(out enemy))
-            //{
-                //Debug.Log("ヒットした敵 : " + col.gameObject.name);
+    //    タグをEnemyかどうか比較。戻り値はtrue / false
+    //    if (col.CompareTag("Enemy"))
+    //    {
+    //        if (col.TryGetComponent(out enemy))
+    //        {
+    //            Debug.Log("ヒットした敵 : " + col.gameObject.name);
 
-                //enemy.Damage(2);
-            //}
-        //}
+    //            enemy.Damage(2);
+    //        }
+    //    }
     //}
 }

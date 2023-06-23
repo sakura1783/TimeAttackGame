@@ -12,6 +12,6 @@ public class AttackRangeSizeSO : ScriptableObject
     public class AttackRangeSize
     {
         public AttackRangeType attackRangeType;
-        public Vector2 size;
+        public float radius;
     }
 }

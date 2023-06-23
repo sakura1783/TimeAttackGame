@@ -15,6 +15,7 @@ public class EnemyController : MonoBehaviour
 
     [SerializeField] private int maxHp;
     [SerializeField] private int hp;
+    private int itemDropRate;
 
     private GameManager gameManager;
 
@@ -92,5 +93,12 @@ public class EnemyController : MonoBehaviour
         hp -= damage;
 
         Debug.Log("Enemyがダメージを受けました");
+
+        if (hp <= 0)
+        {
+            Destroy(gameObject);
+        }
+
+        //TODO 破壊する時は乱数でアイテムを落とすか落とさないか確認する　落とす時はGenerateメソッドをよぶ
     }
 }

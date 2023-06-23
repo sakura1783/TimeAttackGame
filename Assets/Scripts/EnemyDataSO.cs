@@ -22,6 +22,8 @@ public class EnemyDataSO : ScriptableObject
         public float moveSpeed;
         public AttackRangeType attackRangeType;
 
+        public int itemDropRate;
+
         public int addSpecialMovePoint;
 
         //追加するものがあれば追加する

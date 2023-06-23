@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackRangeSizeList:
   - attackRangeType: 0
-    size: {x: 0, y: 0}
+    radius: 1
   - attackRangeType: 1
-    size: {x: 0, y: 0}
+    radius: 2
   - attackRangeType: 2
-    size: {x: 0, y: 0}
+    radius: 2.5
   - attackRangeType: 3
-    size: {x: 0, y: 0}
+    radius: 0
