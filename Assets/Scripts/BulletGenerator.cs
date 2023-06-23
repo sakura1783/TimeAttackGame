@@ -24,10 +24,20 @@ public class BulletGenerator : MonoBehaviour
 
     private bool isShooting;  //弾の生成制御　撃っているかどうか
 
+    private Animator anim;
+
     void Start()
     {
-        //TODO SetUpメソッドにして、damage, speed, interval, radiusなどの各値を設定する　各Dataスクリプトから情報を持ってくる
+        TryGetComponent(out anim);
     }
+
+    //public void SetUpBullet(CharaDataSO.CharaData charaData, AttackRangeSizeSO.AttackRangeSize attackRangeSize)
+    //{
+    //    //各値を設定
+    //    damage = charaData.attackPower;
+    //    interval = charaData.intervalAttackTime;
+    //    this.radius = attackRangeSize.radius;
+    //}
 
     void Update()
     {
@@ -111,7 +121,9 @@ public class BulletGenerator : MonoBehaviour
 
         StartCoroutine(GenerateBullet(direction));
 
-        //TODO アニメ同期させる場合、directionの値を利用すればプレイヤーからみた敵の方向になる
+        //弾の方向にアニメ同期
+        anim.SetFloat("X", direction.x);
+        anim.SetFloat("Y", direction.y);
     }
 
     /// <summary>
