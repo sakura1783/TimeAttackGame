@@ -16,6 +16,8 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private int maxHp;
     [SerializeField] private int hp;
     private int itemDropRate;
+    [SerializeField] private int attackPower;
+    [SerializeField] private float interval;
 
     private GameManager gameManager;
 
@@ -24,6 +26,8 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private FloatingMessage floatingMessagePrefab;
 
     private ItemGenerator itemGenerator;
+
+    private bool isCountingUp = false;
 
     public void SetUpEnemyController(GameManager gameManager)
     {
@@ -56,13 +60,10 @@ public class EnemyController : MonoBehaviour
     {
         if (navMeshAgent2D == null)
         {
-            //Debug.Log("Updateメソッドがreturnされました");
-
             return;
         }
 
         navMeshAgent2D.destination = charaController.transform.position;  //destination = 目的地
-        //Debug.Log("デバック : " + charaController);
 
         ChangeAnimDirection();
     }
@@ -87,6 +88,52 @@ public class EnemyController : MonoBehaviour
         anim.SetFloat("Y", direction.y);
     }
 
+    private void OnTriggerStay2D(Collider2D col)
+    {
+        if (!isCountingUp)
+        {
+            if (col.gameObject.tag == "Player")
+            {
+                isCountingUp = true;
+
+                StartCoroutine(PrepareAttack());
+            }
+        }
+    }
+
+    /// <summary>
+    /// 攻撃準備
+    /// </summary>
+    /// <returns></returns>
+    private IEnumerator PrepareAttack()
+    {
+        float timer = 0;
+
+        while (isCountingUp)
+        {
+            timer += Time.deltaTime;
+
+            if (timer >= interval)
+            {
+                Attack();
+
+                timer = 0;
+            }
+
+            yield return null;
+        }
+    }
+
+    /// <summary>
+    /// 攻撃
+    /// </summary>
+    private void Attack()
+    {
+        Debug.Log("敵の攻撃");
+
+        //TODO プレイヤーダメージ処理
+    }
+
     /// <summary>
     /// 攻撃を受けた際のダメージ処理
     /// </summary>
@@ -103,7 +150,7 @@ public class EnemyController : MonoBehaviour
         {
             Destroy(gameObject);
 
-            //アイテムドロップ
+            //アイテムドロップ　ItemGeneratorのGenerateItemメソッドを実行
             itemGenerator.GenerateItem();
         }
 
