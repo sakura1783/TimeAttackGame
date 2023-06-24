@@ -34,13 +34,13 @@ public class BulletGenerator : MonoBehaviour
         TryGetComponent(out anim);
     }
 
-    //public void SetUpBulletGenerator(CharaDataSO.CharaData charaData, AttackRangeSizeSO.AttackRangeSize attackRangeSize)
-    //{
-    //    //各値を設定
-    //    damage = charaData.attackPower;
-    //    interval = charaData.intervalAttackTime;
-    //    this.radius = attackRangeSize.radius;
-    //}
+    public void SetUpBulletGenerator(CharaController charaController, AttackRangeSizeSO.AttackRangeSize attackRangeSize)
+    {
+        //各値を設定
+        damage = charaController.attackPoint;
+        interval = charaController.intervalAttackTime;
+        this.radius = attackRangeSize.radius;
+    }
 
     void Update()
     {
@@ -139,8 +139,6 @@ public class BulletGenerator : MonoBehaviour
         Bullet bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
 
         bullet.Shoot(speed, direction);
-
-        //TODO EnemyControllerのDamageメソッドを記述する。ここかBullet.csのOnTriggerのタイミングで
 
         yield return new WaitForSeconds(interval);
 

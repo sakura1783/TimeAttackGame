@@ -5398,6 +5398,8 @@ MonoBehaviour:
   objAttackRange: {fileID: 5801363585109988465, guid: 4e6b5e28935414983ae5f358197fdffe, type: 3}
   cineMachine: {fileID: 602134895}
   itemGenerator: {fileID: 446544009}
+  floatingDamageTran: {fileID: 0}
+  floatingMessagePrefab: {fileID: 0}
 --- !u!4 &692431902
 Transform:
   m_ObjectHideFlags: 0
@@ -10745,9 +10747,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2deb3cfeb9444ac886ccc57cf178bb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charaDataSO: {fileID: 0}
-  enemyDataSO: {fileID: 0}
-  attackRangeSizeSO: {fileID: 0}
+  charaDataSO: {fileID: 11400000, guid: 7a9f92039df2e4be288a13f02ab4b262, type: 2}
+  enemyDataSO: {fileID: 11400000, guid: 17a3470ca987049df968d2fec0db9de6, type: 2}
+  attackRangeSizeSO: {fileID: 11400000, guid: 4a3787446dd0441e1b2aa93d81cd75f4, type: 2}
 --- !u!4 &1853715411
 Transform:
   m_ObjectHideFlags: 0

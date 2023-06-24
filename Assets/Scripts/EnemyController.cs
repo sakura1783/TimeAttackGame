@@ -9,7 +9,7 @@ public class EnemyController : MonoBehaviour
 
     private NavMeshAgent2D navMeshAgent2D;
 
-    [SerializeField] private CharaController charaController;
+    public CharaController charaController;
 
     [SerializeField] private EnemyDataSO.EnemyData enemyData;
 

@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    private int damage;
-    public int Damage => damage;  //プロパティのget省略　ラムダ式
+    //private int damage;
+    //public int Damage => damage;  //プロパティのget省略　ラムダ式
 
     private readonly float destroyTime = 1.5f;  //readonlyにすることで、値を変更できなくなる
+
+    private EnemyController enemyController;
 
     /// <summary>
     /// 弾の制御
@@ -33,11 +35,13 @@ public class Bullet : MonoBehaviour
         {
             Destroy(gameObject);
 
-            //TODO もしここにDamageメソッドを書く場合
-            //if (TryGetComponent(out EnemyController enemyController))
-            //{
-            //    enemyController.Damage();
-            //}
+            if (TryGetComponent(out enemyController))
+            {
+                //敵の被ダメージ処理
+                enemyController.Damage(enemyController.charaController.attackPoint);
+
+                Debug.Log("敵が受けたダメージ：" + enemyController.charaController.attackPoint);
+            }
         }
     }
 }

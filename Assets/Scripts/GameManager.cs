@@ -30,6 +30,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private FloatingMessage floatingMessagePrefab;
 
+    //[SerializeField] private List<Item> items = new List<Item>();  //TODO Item型の変数を記述する(SetUpItemメソッドをStartメソッド内で実行したい)
+
     void Start()
     {
         charaController = charaGenerator.GenerateChara();  //戻り値のあるメソッドの活用。GenerateCharaメソッドの戻り値をcharaController変数に代入。こうすることで、生成されたキャラの情報が提供され、次行の命令がChara(Clone)に対しての命令となる。
@@ -41,6 +43,8 @@ public class GameManager : MonoBehaviour
         objAttackRange.CreateObjAttackRange(this);
 
         itemGenerator.SetUpItemGenerator();
+
+        //TODO SetUpItem()を実行する
     }
 
     void Update()

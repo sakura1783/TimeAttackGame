@@ -16,7 +16,7 @@ public class CharaController : MonoBehaviour
     public int attackPoint;
     public float intervalAttackTime;
     public int hp = 10;  //HPはどのキャラも同じ値
-    [SerializeField] private AttackRangeType attackRangeType;
+    //[SerializeField] private AttackRangeType attackRangeType;
     [SerializeField] private int maxSpecialMoveCount;
     [SerializeField] private int intervalKillCountSpecialMove;
     [SerializeField] private int durationSpecialMove;
@@ -30,7 +30,7 @@ public class CharaController : MonoBehaviour
         //各値の設定  //TODO 他に設定項目があれば追加する
         attackPoint = this.charaData.attackPower;
         intervalAttackTime = this.charaData.intervalAttackTime;
-        attackRangeType = this.charaData.attackRangeType;
+        //attackRangeType = this.charaData.attackRangeType;
         maxSpecialMoveCount = this.charaData.maxSpecialMoveCount;
         intervalKillCountSpecialMove = this.charaData.intervalKillCountSpecialMove;
         durationSpecialMove = this.charaData.durationSpecialMove;
