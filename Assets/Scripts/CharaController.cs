@@ -15,10 +15,9 @@ public class CharaController : MonoBehaviour
 
     [SerializeField] private EnemyController enemy;
 
-    //[SerializeField] private float timer = 0;
-
-    [SerializeField] private int attackPoint;
-    [SerializeField] private float intervalAttackTime;
+    public int attackPoint;
+    public float intervalAttackTime;
+    public int hp;
 
     public void SetUpCharaController(GameManager gameManager)
     {
@@ -37,8 +36,6 @@ public class CharaController : MonoBehaviour
         }
 
         Move();
-
-        //StartCoroutine(PrepareAttack());
     }
 
     private void Move()
