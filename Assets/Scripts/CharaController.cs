@@ -37,11 +37,7 @@ public class CharaController : MonoBehaviour
 
         TryGetComponent(out anim);
 
-        Debug.Log("1 : " + anim);
-
         this.gameManager = gameManager;
-
-        Debug.Log("SetUpが全て完了しました");
     }
 
     void Update()

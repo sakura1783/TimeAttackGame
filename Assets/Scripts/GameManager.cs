@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private FloatingMessage floatingMessagePrefab;
 
-    //[SerializeField] private List<Item> items = new List<Item>();  //TODO Item型の変数を記述する(SetUpItemメソッドをStartメソッド内で実行したい)
+    [SerializeField] private List<Item> items = new List<Item>();  //TODO Item型の変数を記述する(SetUpItemメソッドをStartメソッド内で実行したい)
 
     void Start()
     {
@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
 
         itemGenerator.SetUpItemGenerator();
 
-        //TODO SetUpItem()を実行する
+        items[0].SetUpItem(this);  //TODO []内には変数を入れる　今は仮値
     }
 
     void Update()

@@ -5400,6 +5400,8 @@ MonoBehaviour:
   itemGenerator: {fileID: 446544009}
   floatingDamageTran: {fileID: 0}
   floatingMessagePrefab: {fileID: 0}
+  items:
+  - {fileID: 6754152913199254584, guid: b978f6db154424f6dab6d2bc5fdb82ca, type: 3}
 --- !u!4 &692431902
 Transform:
   m_ObjectHideFlags: 0
