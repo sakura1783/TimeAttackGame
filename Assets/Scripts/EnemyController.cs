@@ -29,7 +29,7 @@ public class EnemyController : MonoBehaviour
     {
         this.gameManager = gameManager;
 
-        this.charaController = this.gameManager.charaController;
+        this.charaController = this.gameManager.CharaController;
 
         TryGetComponent(out anim);
         //TryGetComponent(out this.navMeshAgent2D);

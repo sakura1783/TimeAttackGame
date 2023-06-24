@@ -18,7 +18,7 @@ public class Item : MonoBehaviour
 
     public void SetUpItem(GameManager gameManager)
     {
-        chara = gameManager.charaController;
+        chara = gameManager.CharaController;
     }
 
     private void OnTriggerEnter2D(Collider2D col)

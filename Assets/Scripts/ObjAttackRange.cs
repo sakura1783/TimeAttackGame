@@ -15,7 +15,7 @@ public class ObjAttackRange : MonoBehaviour
     public void CreateObjAttackRange(GameManager gameManager)
     {
         this.gameManager = gameManager;
-        chara = gameManager.charaController;
+        chara = gameManager.CharaController;
 
         ObjAttackRange objAttackRange = Instantiate(this, chara.transform.position, Quaternion.identity);
 

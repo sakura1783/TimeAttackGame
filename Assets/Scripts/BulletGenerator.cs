@@ -27,6 +27,8 @@ public class BulletGenerator : MonoBehaviour
 
     private Animator anim;
 
+    private UIManager uiManager;
+
     void Start()
     {
         //TODO Startメソッド内に書いてあるものはあとでSetUpBullet内に記述する
@@ -34,12 +36,16 @@ public class BulletGenerator : MonoBehaviour
         TryGetComponent(out anim);
     }
 
-    public void SetUpBulletGenerator(CharaController charaController, AttackRangeSizeSO.AttackRangeSize attackRangeSize)
+    public void SetUpBulletGenerator(CharaController charaController, AttackRangeSizeSO.AttackRangeSize attackRangeSize, UIManager uiManager)
     {
+        this.uiManager = uiManager;
+
         //各値を設定
         damage = charaController.attackPoint;
         interval = charaController.intervalAttackTime;
         this.radius = attackRangeSize.radius;
+
+        uiManager.SetIntervalAttackTime(interval);
     }
 
     void Update()
@@ -139,6 +145,8 @@ public class BulletGenerator : MonoBehaviour
         Bullet bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
 
         bullet.Shoot(speed, direction);
+
+        uiManager.SetIntervalAttackTime(interval);
 
         yield return new WaitForSeconds(interval);
 

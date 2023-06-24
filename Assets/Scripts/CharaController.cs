@@ -23,7 +23,10 @@ public class CharaController : MonoBehaviour
 
     private CharaDataSO.CharaData charaData;
 
-    public void SetUpCharaController(GameManager gameManager, CharaDataSO.CharaData charaData)
+    private BulletGenerator bulletGenerator;
+    public BulletGenerator BulletGenerator => bulletGenerator;
+
+    public void SetUpCharaController(GameManager gameManager, CharaDataSO.CharaData charaData, UIManager uiManager)
     {
         this.charaData = charaData;
 
@@ -36,6 +39,14 @@ public class CharaController : MonoBehaviour
         durationSpecialMove = this.charaData.durationSpecialMove;
 
         TryGetComponent(out anim);
+
+        if (TryGetComponent(out bulletGenerator))
+        {
+            AttackRangeSizeSO.AttackRangeSize attackRangeSize = DataBaseManager.instance.GetAttackRangeSize(charaData.attackRangeType);
+
+            bulletGenerator.SetUpBulletGenerator(this, attackRangeSize, uiManager);
+            //bulletGenerator.SetUpBulletGenerator(this, DataBaseManager.instance.GetAttackRangeSize(charaData.attackRangeType));
+        }
 
         this.gameManager = gameManager;
     }

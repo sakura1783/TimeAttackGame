@@ -5393,7 +5393,6 @@ MonoBehaviour:
   killEnemyCount: 0
   maxGenerateEnemyCount: 5
   charaGenerator: {fileID: 960542471}
-  charaController: {fileID: 0}
   enemy: {fileID: 515537056343755237, guid: 7aaa55d04ecd34551aa65eb646bd40c7, type: 3}
   objAttackRange: {fileID: 5801363585109988465, guid: 4e6b5e28935414983ae5f358197fdffe, type: 3}
   cineMachine: {fileID: 602134895}
@@ -5402,6 +5401,7 @@ MonoBehaviour:
   floatingMessagePrefab: {fileID: 0}
   items:
   - {fileID: 6754152913199254584, guid: b978f6db154424f6dab6d2bc5fdb82ca, type: 3}
+  uiManager: {fileID: 2094251404}
 --- !u!4 &692431902
 Transform:
   m_ObjectHideFlags: 0
@@ -10845,7 +10845,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   txtTime: {fileID: 1220168374}
   gameManager: {fileID: 692431901}
-  imgIntervalAttackTime: {fileID: 0}
+  imgIntervalAttackTime: {fileID: 1105080415}
 --- !u!4 &2094251405
 Transform:
   m_ObjectHideFlags: 0

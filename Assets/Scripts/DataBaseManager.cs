@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class DataBaseManager : MonoBehaviour
 {
@@ -21,5 +22,20 @@ public class DataBaseManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    public AttackRangeSizeSO.AttackRangeSize GetAttackRangeSize(AttackRangeType searchAttackRangeType)
+    {
+        foreach (AttackRangeSizeSO.AttackRangeSize attackRangeSize in attackRangeSizeSO.attackRangeSizeList)
+        {
+            if (attackRangeSize.attackRangeType == searchAttackRangeType)
+            {
+                return attackRangeSize;
+            }
+        }
+
+        return null;
+
+        //return attackRangeSizeSO.attackRangeSizeList.Find(attackRangeSize => attackRangeSize.attackRangeType == searchAttackRangeType);
     }
 }

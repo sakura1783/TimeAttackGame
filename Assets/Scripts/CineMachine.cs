@@ -13,6 +13,6 @@ public class CineMachine : MonoBehaviour
     {
         this.gameManager = gameManager;
 
-        cinemachine.Follow = this.gameManager.charaController.transform;
+        cinemachine.Follow = this.gameManager.CharaController.transform;
     }
 }

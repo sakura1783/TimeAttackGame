@@ -15,7 +15,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private CharaGenerator charaGenerator;
 
-    public CharaController charaController;
+    private CharaController charaController;
+    public CharaController CharaController => charaController;
 
     [SerializeField] private GameObject enemy;
 
@@ -32,11 +33,13 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private List<Item> items = new List<Item>();  //TODO Item型の変数を記述する(SetUpItemメソッドをStartメソッド内で実行したい)
 
+    [SerializeField] private UIManager uiManager;
+
     void Start()
     {
         charaController = charaGenerator.GenerateChara();  //戻り値のあるメソッドの活用。GenerateCharaメソッドの戻り値をcharaController変数に代入。こうすることで、生成されたキャラの情報が提供され、次行の命令がChara(Clone)に対しての命令となる。
 
-        charaController.SetUpCharaController(this, DataBaseManager.instance.charaDataSO.charaDatasList[0]);  //TODO []の中にはランダムな変数を入れる
+        charaController.SetUpCharaController(this, DataBaseManager.instance.charaDataSO.charaDatasList[0], uiManager);  //TODO []の中にはランダムな変数を入れる
 
         cineMachine.SetUpCinemachine(this);  //キャラ生成前に書いてしまうと追尾対象のキャラがまだいないのでエラーになってしまう、注意
 
@@ -45,6 +48,8 @@ public class GameManager : MonoBehaviour
         itemGenerator.SetUpItemGenerator();
 
         items[0].SetUpItem(this);  //TODO []内には変数を入れる　今は仮値
+
+        uiManager.SetUpUI();
     }
 
     void Update()
