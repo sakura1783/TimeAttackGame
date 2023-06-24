@@ -5398,7 +5398,7 @@ MonoBehaviour:
   cineMachine: {fileID: 602134895}
   itemGenerator: {fileID: 446544009}
   floatingDamageTran: {fileID: 0}
-  floatingMessagePrefab: {fileID: 0}
+  floatingMessagePrefab: {fileID: 7835068892720044147, guid: 8e9a54d0375eb408ba35810799ebe662, type: 3}
   items:
   - {fileID: 6754152913199254584, guid: b978f6db154424f6dab6d2bc5fdb82ca, type: 3}
   uiManager: {fileID: 2094251404}
