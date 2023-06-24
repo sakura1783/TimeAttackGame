@@ -8,6 +8,10 @@ public class ObjAttackRange : MonoBehaviour
 
     [SerializeField] private CharaController chara;
 
+    /// <summary>
+    /// 攻撃範囲可視化オブジェクト生成
+    /// </summary>
+    /// <param name="gameManager"></param>
     public void CreateObjAttackRange(GameManager gameManager)
     {
         this.gameManager = gameManager;

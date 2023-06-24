@@ -68,7 +68,7 @@ public class EnemyController : MonoBehaviour
     /// 設定
     /// </summary>
     /// <param name="enemyData"></param>
-    private void SetUpEnemy(EnemyDataSO.EnemyData enemyData)
+    private void SetUpEnemyController(EnemyDataSO.EnemyData enemyData)
     {
 
     }

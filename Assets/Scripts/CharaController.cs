@@ -15,15 +15,33 @@ public class CharaController : MonoBehaviour
 
     public int attackPoint;
     public float intervalAttackTime;
-    public int hp;
+    public int hp = 10;  //HPはどのキャラも同じ値
+    [SerializeField] private AttackRangeType attackRangeType;
+    [SerializeField] private int maxSpecialMoveCount;
+    [SerializeField] private int intervalKillCountSpecialMove;
+    [SerializeField] private int durationSpecialMove;
 
-    public void SetUpCharaController(GameManager gameManager)
+    private CharaDataSO.CharaData charaData;
+
+    public void SetUpCharaController(GameManager gameManager, CharaDataSO.CharaData charaData)
     {
+        this.charaData = charaData;
+
+        //各値の設定  //TODO 他に設定項目があれば追加する
+        attackPoint = this.charaData.attackPower;
+        intervalAttackTime = this.charaData.intervalAttackTime;
+        attackRangeType = this.charaData.attackRangeType;
+        maxSpecialMoveCount = this.charaData.maxSpecialMoveCount;
+        intervalKillCountSpecialMove = this.charaData.intervalKillCountSpecialMove;
+        durationSpecialMove = this.charaData.durationSpecialMove;
+
         TryGetComponent(out anim);
 
         Debug.Log("1 : " + anim);
 
         this.gameManager = gameManager;
+
+        Debug.Log("SetUpが全て完了しました");
     }
 
     void Update()

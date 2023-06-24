@@ -34,7 +34,9 @@ public class EnemyGenerator : MonoBehaviour
 
             yield return new WaitForSeconds(intervalGenerateTime);
 
-            EnemyController generatedEnemy = Instantiate(enemyPrefab, generatePos[generateTran], Quaternion.identity);    
+            EnemyController generatedEnemy = Instantiate(enemyPrefab, generatePos[generateTran], Quaternion.identity);
+
+            //TODO ObjAttackRangeゲームオブジェクト生成
 
             generateEnemyCount++;
 
