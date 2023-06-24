@@ -24,7 +24,7 @@ public class CharaController : MonoBehaviour
     private CharaDataSO.CharaData charaData;
 
     private BulletGenerator bulletGenerator;
-    public BulletGenerator BulletGenerator => bulletGenerator;
+    //public BulletGenerator BulletGenerator => bulletGenerator;
 
     public void SetUpCharaController(GameManager gameManager, CharaDataSO.CharaData charaData, UIManager uiManager)
     {

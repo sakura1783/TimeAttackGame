@@ -14,18 +14,14 @@ public class UIManager : MonoBehaviour
 
     private BulletGenerator bulletGenerator;
 
-    public void SetUpUI()
+    public void SetUpUIManager()
     {
-        //TODO imgIntervalAttackTimeのFillの最大値を設定
-
         //bulletGenerator = gameManager.CharaController.BulletGenerator;
     }
 
     void Update()
     {
         txtTime.text = gameManager.timer.ToString("n2");
-
-        //imgIntervalAttackTime.fillAmount = bulletGenerator.Interval;
     }
 
     public void SetIntervalAttackTime(float interval)

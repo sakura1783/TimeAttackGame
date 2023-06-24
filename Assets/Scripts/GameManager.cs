@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
 
         items[0].SetUpItem(this);  //TODO []内には変数を入れる　今は仮値
 
-        uiManager.SetUpUI();
+        uiManager.SetUpUIManager();
     }
 
     void Update()
