@@ -21,10 +21,6 @@ public class EnemyController : MonoBehaviour
 
     private GameManager gameManager;
 
-    [SerializeField] private Transform floatingDamageTran;
-
-    [SerializeField] private FloatingMessage floatingMessagePrefab;
-
     private ItemGenerator itemGenerator;
 
     private bool isCountingUp = false;
@@ -132,6 +128,7 @@ public class EnemyController : MonoBehaviour
         Debug.Log("敵の攻撃");
 
         //TODO プレイヤーダメージ処理
+        charaController.ReceiveDamage(attackPower);
     }
 
     /// <summary>
@@ -144,7 +141,7 @@ public class EnemyController : MonoBehaviour
         Debug.Log("Enemyがダメージを受けました");
 
         //フロート表示生成
-        CreateFloatingMessage(damage);
+        gameManager.CreateFloatingMessage(damage);
 
         if (hp <= 0)
         {
@@ -153,17 +150,6 @@ public class EnemyController : MonoBehaviour
             //アイテムドロップ　ItemGeneratorのGenerateItemメソッドを実行
             itemGenerator.GenerateItem();
         }
-
-        //TODO 破壊する時は乱数でアイテムを落とすか落とさないか確認する　落とす時はGenerateメソッドをよぶ
     }
-    /// <summary>
-    /// フロート表示の生成
-    /// </summary>
-    public void CreateFloatingMessage(int point)
-    {
-        FloatingMessage floatingMessage = Instantiate(floatingMessagePrefab, floatingDamageTran, false);
-
-        //生成したフロート表示の設定用メソッドを実行。引数として、バレットの攻撃力値とフロート表示の種類を指定して渡す
-        floatingMessage.DisplayFloatingMessage(point, FloatingMessage.FloatingMessageType.Damage);
-    }
+    
 }

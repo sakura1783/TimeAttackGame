@@ -13,8 +13,6 @@ public class CharaController : MonoBehaviour
 
     [SerializeField] private GameManager gameManager;
 
-    [SerializeField] private EnemyController enemy;
-
     public int attackPoint;
     public float intervalAttackTime;
     public int hp;
@@ -75,6 +73,19 @@ public class CharaController : MonoBehaviour
         float posY = Mathf.Clamp(transform.position.y, -limitPosY, limitPosY);
 
         transform.position = new Vector2(posX, posY);
+    }
+
+    /// <summary>
+    /// 攻撃(ダメージ)を受けた際の処理
+    /// </summary>
+    /// <param name="damage"></param>
+    public void ReceiveDamage(int damage)
+    {
+        Debug.Log("プレイヤーがダメージを受けました");
+
+        hp -= damage;
+
+        gameManager.CreateFloatingMessage(damage);
     }
 
     //private void OnTriggerEnter2D(Collider2D col)

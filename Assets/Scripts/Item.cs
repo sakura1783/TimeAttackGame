@@ -8,6 +8,9 @@ public class Item : MonoBehaviour
 
     public ItemType itemType;
 
+    //アイテム効果
+    [SerializeField] private int curePoint;
+
     public enum ItemType
     {
         Hurt,
@@ -37,7 +40,7 @@ public class Item : MonoBehaviour
         switch (itemType)
         {
             case ItemType.Hurt:
-                chara.hp += 2;
+                chara.hp += curePoint;
                 break;
         }
     }

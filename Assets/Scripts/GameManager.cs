@@ -26,6 +26,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private ItemGenerator itemGenerator;
     public ItemGenerator ItemGenerator => itemGenerator;
 
+    [SerializeField] private Transform floatingDamageTran;
+
+    [SerializeField] private FloatingMessage floatingMessagePrefab;
+
     void Start()
     {
         charaGenerator.SetUpCharaGenerator();
@@ -63,5 +67,16 @@ public class GameManager : MonoBehaviour
             //ゲーム開始時敵のプレハブに追加したNavMeshAgent2Dコンポーネントを削除
             //Destroy(enemy.GetComponent<NavMeshAgent2D>());
         }
+    }
+
+    /// <summary>
+    /// フロート表示の生成
+    /// </summary>
+    public void CreateFloatingMessage(int point)
+    {
+        FloatingMessage floatingMessage = Instantiate(floatingMessagePrefab, floatingDamageTran, false);
+
+        //生成したフロート表示の設定用メソッドを実行。引数として、バレットの攻撃力値とフロート表示の種類を指定して渡す
+        floatingMessage.DisplayFloatingMessage(point, FloatingMessage.FloatingMessageType.Damage);
     }
 }
