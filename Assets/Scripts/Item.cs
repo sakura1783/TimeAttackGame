@@ -11,6 +11,9 @@ public class Item : MonoBehaviour
     //アイテム効果
     [SerializeField] private int curePoint;
 
+    /// <summary>
+    /// アイテムの種類
+    /// </summary>
     public enum ItemType
     {
         Hurt,
@@ -19,12 +22,16 @@ public class Item : MonoBehaviour
     public void SetUpItem(GameManager gameManager)
     {
         chara = gameManager.CharaController;
+
+        Debug.Log("chara1 : " + chara);
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Player"))
         {
+            Debug.Log("chara2 : " + chara);
+
             ApplyItemEffect(itemType);
 
             Destroy(gameObject);

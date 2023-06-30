@@ -16,7 +16,7 @@ MonoBehaviour:
   - charaName: "\u4E00\u6761 \u30C4\u30D0\u30AD"
     charaNo: 0
     charaSprite: {fileID: 811010701, guid: cd6bb18d916e8465a81bf6860f0af12d, type: 3}
-    attackPower: 2
+    attackPower: 5
     attackRangeType: 2
     intervalAttackTime: 5
     specialMoveName: Rovescio
