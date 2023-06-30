@@ -29,6 +29,9 @@ public class EnemyController : MonoBehaviour
 
     [SerializeField] private Transform enemyFloatingMessageTran;
 
+    private Vector2 enemyPos;
+    public Vector2 EnemyPos => enemyPos;
+
     public void SetUpEnemyController(GameManager gameManager)
     {
         this.gameManager = gameManager;
@@ -162,6 +165,8 @@ public class EnemyController : MonoBehaviour
 
         if (hp <= 0)
         {
+            enemyPos = GetEnemyPos();
+
             Destroy(gameObject);
 
             //アイテムドロップ　ItemGeneratorのGenerateItemメソッドを実行
@@ -178,5 +183,16 @@ public class EnemyController : MonoBehaviour
 
         //生成したフロート表示の設定用メソッドを実行。引数として、バレットの攻撃力値とフロート表示の種類を指定して渡す
         floatingMessage.DisplayFloatingMessage(point, FloatingMessage.FloatingMessageType.Damage);
+    }
+
+    /// <summary>
+    /// 現在のエネミーの位置を返す(アイテム生成時用　アイテム生成位置に使用する)
+    /// </summary>
+    /// <returns></returns>
+    private Vector2 GetEnemyPos()
+    {
+        Debug.Log("transformの値：" + this.transform);
+
+        return this.transform.position;
     }
 }

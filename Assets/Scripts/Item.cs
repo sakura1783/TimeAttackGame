@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    private CharaController chara;
+    //private CharaController chara;
 
     public ItemType itemType;
 
@@ -21,18 +21,16 @@ public class Item : MonoBehaviour
 
     public void SetUpItem(GameManager gameManager)
     {
-        chara = gameManager.CharaController;
+        //chara = gameManager.CharaController;
 
-        Debug.Log("chara1 : " + chara);
+        //Debug.Log("chara1 : " + chara);
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("Player"))
+        if (col.TryGetComponent(out CharaController chara)) // <= col.がないとItemクラスに対してTryGetComponentすることになるので、CharaController型の情報が取得できずchara変数には何も入らないので注意！
         {
-            Debug.Log("chara2 : " + chara);
-
-            ApplyItemEffect(itemType);
+            ApplyItemEffect(itemType, chara);
 
             Destroy(gameObject);
         }
@@ -42,12 +40,12 @@ public class Item : MonoBehaviour
     /// アイテム効果を適用する
     /// </summary>
     /// <param name="itemType"></param>
-    private void ApplyItemEffect(ItemType itemType)
+    private void ApplyItemEffect(ItemType itemType, CharaController charaController)
     {
         switch (itemType)
         {
             case ItemType.Hurt:
-                chara.hp += curePoint;
+                charaController.hp += curePoint;
                 break;
         }
     }

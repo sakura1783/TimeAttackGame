@@ -8,11 +8,13 @@ public class ItemGenerator : MonoBehaviour
 
     [SerializeField] private EnemyGenerator enemyGenerator;
 
-    private EnemyController enemyController;
+    //private EnemyController enemyController;
+
+    private Vector2 enemyPos;
 
     public void SetUpItemGenerator()
     {
-        enemyController = enemyGenerator.EnemyPrefab;
+        //enemyController = enemyGenerator.EnemyPrefab;
     }
 
     /// <summary>
@@ -25,9 +27,13 @@ public class ItemGenerator : MonoBehaviour
 
         if (num <= 29)
         {
+            enemyPos = enemyGenerator.EnemyPrefab.EnemyPos;
+
+            Debug.Log("今調べたいもの：" + enemyGenerator.EnemyPrefab);
+
             int randomIndex = Random.Range(0, itemsPrefab.Length);
 
-            Item item = Instantiate(itemsPrefab[randomIndex], enemyController.transform.position, Quaternion.identity);
+            Item item = Instantiate(itemsPrefab[randomIndex], enemyPos, Quaternion.identity);
         }
     }
 }
