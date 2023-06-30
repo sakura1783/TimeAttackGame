@@ -101,6 +101,11 @@ public class EnemyController : MonoBehaviour
         }
     }
 
+    private void OnTriggerExit2D(Collider2D col)
+    {
+        isCountingUp = false;
+    }
+
     /// <summary>
     /// 攻撃準備
     /// </summary>
@@ -131,7 +136,7 @@ public class EnemyController : MonoBehaviour
     {
         Debug.Log("敵の攻撃");
 
-        //TODO プレイヤーダメージ処理
+        //プレイヤーダメージ処理
         charaController.ReceiveDamage(attackPower);
     }
 

@@ -54,3 +54,6 @@ TagManager:
   - name: Bullet
     uniqueID: 2436831841
     locked: 0
+  - name: FloatingMessage
+    uniqueID: 2696259215
+    locked: 0
