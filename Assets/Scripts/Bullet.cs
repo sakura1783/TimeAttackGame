@@ -35,7 +35,7 @@ public class Bullet : MonoBehaviour
         {
             Destroy(gameObject);
 
-            if (TryGetComponent(out enemyController))
+            if (col.TryGetComponent(out enemyController))
             {
                 //敵の被ダメージ処理
                 enemyController.Damage(enemyController.charaController.attackPoint);

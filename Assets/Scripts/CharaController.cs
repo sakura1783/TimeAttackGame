@@ -123,6 +123,16 @@ public class CharaController : MonoBehaviour
         }
 
         CreateCharaFloatingDamage(damage);
+
+        //TODO HPが0になったらキャラをDestroyする。その際、Missingエラーが出るのでそこも処理する
+        //if (hp <= 0)
+        //{
+        //    Destroy(gameObject);
+
+        //    Debug.Log("Game Over...");
+
+        //    //TODO ゲームオーバー処理　メソッドを作る
+        //}
     }
 
     /// <summary>
