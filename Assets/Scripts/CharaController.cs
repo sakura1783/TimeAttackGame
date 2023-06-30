@@ -26,6 +26,10 @@ public class CharaController : MonoBehaviour
     private BulletGenerator bulletGenerator;
     //public BulletGenerator BulletGenerator => bulletGenerator;
 
+    [SerializeField] private FloatingMessage floatingMessagePrefab;
+
+    [SerializeField] private Transform charaFloatingMessageTran;
+
     public void SetUpCharaController(GameManager gameManager, CharaDataSO.CharaData charaData, UIManager uiManager)
     {
         this.charaData = charaData;
@@ -110,7 +114,27 @@ public class CharaController : MonoBehaviour
 
         hp -= damage;
 
-        gameManager.CreateFloatingMessage(damage);
+        //フロート表示を行うCharaの子のCanvasのTransformを取得
+        Canvas canvas = GetComponentInChildren<Canvas>();
+
+        if (canvas != null)
+        {
+            charaFloatingMessageTran = canvas.transform;
+        }
+
+        CreateCharaFloatingDamage(damage);
+    }
+
+    /// <summary>
+    /// プレイヤーの被ダメージのフロート表示生成
+    /// </summary>
+    /// <param name="point"></param>
+    private void CreateCharaFloatingDamage(int point)
+    {
+        FloatingMessage floatingMessage = Instantiate(floatingMessagePrefab, charaFloatingMessageTran, false);
+
+        //生成したフロート表示の設定用メソッドを実行。引数として、バレットの攻撃力値とフロート表示の種類を設定して渡す
+        floatingMessage.DisplayFloatingMessage(point, FloatingMessage.FloatingMessageType.Damage);
     }
 
     //private void OnTriggerEnter2D(Collider2D col)
