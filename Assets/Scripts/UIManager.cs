@@ -53,6 +53,7 @@ public class UIManager : MonoBehaviour
 
         float setValue = value / maxValue;
 
-        imgSpecialMoveCount.fillAmount = setValue;
+        //imgSpecialMoveCount.fillAmount =  setValue;
+        imgSpecialMoveCount.DOFillAmount(setValue, 0.5f);  // <= DOFillAmount(この値に, 何秒で)
     }
 }
