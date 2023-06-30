@@ -19,7 +19,7 @@ public class Bullet : MonoBehaviour
     /// <param name="direction"></param>
     public void Shoot(float speed, Vector2 direction)
     {
-        //this.damage = damage;  //TODO 必要ない場合は消す
+        //this.damage = damage;
 
         if (TryGetComponent(out Rigidbody2D rb))
         {

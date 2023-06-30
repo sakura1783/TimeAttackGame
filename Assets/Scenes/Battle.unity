@@ -5390,7 +5390,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 0
-  killEnemyCount: 0
   maxGenerateEnemyCount: 5
   charaGenerator: {fileID: 960542471}
   enemy: {fileID: 515537056343755237, guid: 7aaa55d04ecd34551aa65eb646bd40c7, type: 3}
@@ -10888,6 +10887,7 @@ MonoBehaviour:
   txtTime: {fileID: 1220168374}
   gameManager: {fileID: 692431901}
   imgIntervalAttackTime: {fileID: 1105080415}
+  imgSpecialMoveCount: {fileID: 1122554917}
 --- !u!4 &2094251405
 Transform:
   m_ObjectHideFlags: 0

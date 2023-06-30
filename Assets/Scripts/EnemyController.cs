@@ -32,6 +32,8 @@ public class EnemyController : MonoBehaviour
     private Vector2 enemyPos;
     public Vector2 EnemyPos => enemyPos;
 
+    private UIManager uiManager;
+
     public void SetUpEnemyController(GameManager gameManager)
     {
         this.gameManager = gameManager;
@@ -53,6 +55,8 @@ public class EnemyController : MonoBehaviour
             Debug.Log(navMeshAgent2D);
         }
 
+        uiManager = this.gameManager.UiManager;
+
         itemGenerator = gameManager.ItemGenerator;
 
         //各値を設定
@@ -69,15 +73,6 @@ public class EnemyController : MonoBehaviour
         navMeshAgent2D.destination = charaController.transform.position;  //destination = 目的地
 
         ChangeAnimDirection();
-    }
-
-    /// <summary>
-    /// 設定
-    /// </summary>
-    /// <param name="enemyData"></param>
-    private void SetUpEnemyController(EnemyDataSO.EnemyData enemyData)
-    {
-
     }
 
     /// <summary>
@@ -168,6 +163,12 @@ public class EnemyController : MonoBehaviour
             enemyPos = GetEnemyPos();
 
             Destroy(gameObject);
+
+            //倒した敵の数をカウントアップ
+            int killCount = gameManager.AddKillEnemyCount();
+
+            //必殺技ゲージ更新
+            uiManager.SetIntervalSpecialMove(killCount);
 
             //アイテムドロップ　ItemGeneratorのGenerateItemメソッドを実行
             itemGenerator.GenerateItem();

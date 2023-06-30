@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public float timer = 0;
 
-    public int killEnemyCount;
+    private int killEnemyCount = 0;
 
     private bool isGameClear = false;
 
@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<Item> items = new List<Item>();  //TODO Item型の変数を記述する(SetUpItemメソッドをStartメソッド内で実行したい)
 
     [SerializeField] private UIManager uiManager;
+    public UIManager UiManager => uiManager;
 
     void Start()
     {
@@ -50,7 +51,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (isGameClear == true)
+        if (isGameClear)
         {
             return;
         }
@@ -70,5 +71,17 @@ public class GameManager : MonoBehaviour
             //ゲーム開始時敵のプレハブに追加したNavMeshAgent2Dコンポーネントを削除
             //Destroy(enemy.GetComponent<NavMeshAgent2D>());
         }
+    }
+
+    /// <summary>
+    /// 敵キル数をカウントアップ
+    /// </summary>
+    public int AddKillEnemyCount()
+    {
+        killEnemyCount++;
+
+        Debug.Log("敵キル数：" + killEnemyCount + "体");
+
+        return killEnemyCount;
     }
 }

@@ -87,7 +87,6 @@ public class BulletGenerator : MonoBehaviour
             Debug.Log("敵が見つかりません");
             return;
         }
-        Debug.Log("敵を発見 : " + hitColliders.Length + "体");
 
         //最も近い敵とその距離の二乗を保存する変数
         Collider2D nearestEnemy = null;
@@ -120,8 +119,6 @@ public class BulletGenerator : MonoBehaviour
         //    Debug.Log("敵が見つかりません");
         //    return;
         //}
-
-        Debug.Log("最も近い敵が見つかりました : " + nearestEnemy.gameObject.name);
 
         //最も近い敵に対して弾を発射する
         isShooting = true;
