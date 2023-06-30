@@ -10,7 +10,7 @@ public class ItemGenerator : MonoBehaviour
 
     //private EnemyController enemyController;
 
-    private Vector2 enemyPos;
+    //private Vector2 enemyPos;
 
     public void SetUpItemGenerator()
     {
@@ -20,20 +20,20 @@ public class ItemGenerator : MonoBehaviour
     /// <summary>
     /// 一定の確率でアイテム生成
     /// </summary>
-    public void GenerateItem()
+    public void GenerateItem(Transform tran)
     {
         int num = Random.Range(0, 99);
         Debug.Log("ランダムな値：" + num);
 
         if (num <= 29)
         {
-            enemyPos = enemyGenerator.GeneratedEnemy.EnemyPos;
+            //enemyPos = enemyGenerator.GeneratedEnemy.EnemyPos;
 
-            Debug.Log("今調べたいもの：" + enemyGenerator.GeneratedEnemy.EnemyPos);
+            //Debug.Log("今調べたいもの：" + enemyGenerator.GeneratedEnemy.EnemyPos);
 
             int randomIndex = Random.Range(0, itemsPrefab.Length);
 
-            Item item = Instantiate(itemsPrefab[randomIndex], enemyPos, Quaternion.identity);
+            Item item = Instantiate(itemsPrefab[randomIndex], tran.position, Quaternion.identity);
         }
     }
 }

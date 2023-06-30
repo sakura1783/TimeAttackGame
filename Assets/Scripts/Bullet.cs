@@ -31,17 +31,14 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.tag == "Enemy")
+        if (col.TryGetComponent(out enemyController))
         {
             Destroy(gameObject);
 
-            if (col.TryGetComponent(out enemyController))
-            {
-                //敵の被ダメージ処理
-                enemyController.Damage(enemyController.charaController.attackPoint);
+            //敵の被ダメージ処理
+            enemyController.Damage(enemyController.charaController.attackPoint);
 
-                Debug.Log("敵が受けたダメージ：" + enemyController.charaController.attackPoint);
-            }
+            Debug.Log("敵が受けたダメージ：" + enemyController.charaController.attackPoint);
         }
     }
 }

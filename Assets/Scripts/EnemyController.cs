@@ -29,8 +29,8 @@ public class EnemyController : MonoBehaviour
 
     [SerializeField] private Transform enemyFloatingMessageTran;
 
-    private Vector2 enemyPos;
-    public Vector2 EnemyPos => enemyPos;
+    //private Vector2 enemyPos;
+    //public Vector2 EnemyPos => enemyPos;
 
     private UIManager uiManager;
 
@@ -160,7 +160,7 @@ public class EnemyController : MonoBehaviour
 
         if (hp <= 0)
         {
-            enemyPos = GetEnemyPos();
+            //enemyPos = GetEnemyPos();
 
             Destroy(gameObject);
 
@@ -171,7 +171,7 @@ public class EnemyController : MonoBehaviour
             uiManager.SetIntervalSpecialMove(killCount);
 
             //アイテムドロップ　ItemGeneratorのGenerateItemメソッドを実行
-            itemGenerator.GenerateItem();
+            itemGenerator.GenerateItem(gameObject.transform);
         }
     }
 
@@ -190,10 +190,10 @@ public class EnemyController : MonoBehaviour
     /// 現在のエネミーの位置を返す(アイテム生成時用　アイテム生成位置に使用する)
     /// </summary>
     /// <returns></returns>
-    private Vector2 GetEnemyPos()
-    {
-        Debug.Log("transformの値：" + this.transform);
+    //private Vector2 GetEnemyPos()
+    //{
+    //    Debug.Log("transformの値：" + this.transform);
 
-        return this.transform.position;
-    }
+    //    return this.transform.position;
+    //}
 }

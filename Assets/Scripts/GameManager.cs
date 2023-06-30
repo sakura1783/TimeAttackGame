@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
 
         itemGenerator.SetUpItemGenerator();
 
-        items[0].SetUpItem(this);  //TODO []内には変数を入れる　今は仮値
+        //items[0].SetUpItem(this);  //TODO []内には変数を入れる　今は仮値
 
         uiManager.SetUpUIManager();
     }
