@@ -27,9 +27,9 @@ public class ItemGenerator : MonoBehaviour
 
         if (num <= 29)
         {
-            enemyPos = enemyGenerator.EnemyPrefab.EnemyPos;
+            enemyPos = enemyGenerator.GeneratedEnemy.EnemyPos;
 
-            Debug.Log("今調べたいもの：" + enemyGenerator.EnemyPrefab);
+            Debug.Log("今調べたいもの：" + enemyGenerator.GeneratedEnemy.EnemyPos);
 
             int randomIndex = Random.Range(0, itemsPrefab.Length);
 

@@ -6,7 +6,7 @@ using UnityEngine.Tilemaps;
 public class EnemyGenerator : MonoBehaviour
 {
     [SerializeField] private EnemyController enemyPrefab;
-    public EnemyController EnemyPrefab => enemyPrefab;
+    //public EnemyController EnemyPrefab => enemyPrefab;
 
     [SerializeField] private Vector2[] generatePos;
 
@@ -19,6 +19,9 @@ public class EnemyGenerator : MonoBehaviour
     public List<EnemyController> enemiesList = new List<EnemyController>();
 
     [SerializeField] private CharaController charaController;
+
+    private EnemyController generatedEnemy;
+    public EnemyController GeneratedEnemy => generatedEnemy;
 
     void Start()
     {
@@ -34,7 +37,7 @@ public class EnemyGenerator : MonoBehaviour
 
             yield return new WaitForSeconds(intervalGenerateTime);
 
-            EnemyController generatedEnemy = Instantiate(enemyPrefab, generatePos[generateTran], Quaternion.identity);
+            generatedEnemy = Instantiate(enemyPrefab, generatePos[generateTran], Quaternion.identity);
 
             //TODO ObjAttackRangeゲームオブジェクト生成
 
