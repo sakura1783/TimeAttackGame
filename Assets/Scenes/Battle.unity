@@ -10888,6 +10888,8 @@ MonoBehaviour:
   gameManager: {fileID: 692431901}
   imgIntervalAttackTime: {fileID: 1105080415}
   imgSpecialMoveCount: {fileID: 1122554917}
+  particleSpecialMoveGauge: {fileID: 3982007147311268576, guid: b1491052725ad471ca716f812843e8cc, type: 3}
+  particleTran: {fileID: 1122554916}
 --- !u!4 &2094251405
 Transform:
   m_ObjectHideFlags: 0

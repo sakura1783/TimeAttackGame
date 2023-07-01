@@ -18,6 +18,12 @@ public class UIManager : MonoBehaviour
 
     private int maxValue;  //FillAmountの最大値
 
+    [SerializeField] private ParticleSystem particleSpecialMoveGauge;
+
+    private ParticleSystem generatedParticle;
+
+    [SerializeField] private Transform particleTran;
+
     public void SetUpUIManager()
     {
         //bulletGenerator = gameManager.CharaController.BulletGenerator;
@@ -55,5 +61,17 @@ public class UIManager : MonoBehaviour
 
         //imgSpecialMoveCount.fillAmount =  setValue;
         imgSpecialMoveCount.DOFillAmount(setValue, 0.5f);  // <= DOFillAmount(この値に, 何秒で)
+
+        if (value >= maxValue)
+        {
+            //パーティクル生成
+            generatedParticle = Instantiate(particleSpecialMoveGauge, particleTran, false);
+
+            Debug.Log("作られたパーティクル：" + generatedParticle);
+
+            generatedParticle.Play();
+
+            Debug.Log("パーティクル・Play");
+        }
     }
 }
