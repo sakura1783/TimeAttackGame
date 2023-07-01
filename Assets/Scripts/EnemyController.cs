@@ -13,8 +13,8 @@ public class EnemyController : MonoBehaviour
 
     [SerializeField] private EnemyDataSO.EnemyData enemyData;
 
-    [SerializeField] private int maxHp;
-    [SerializeField] private int hp;
+    public int maxHp;
+    public int hp;
     private int itemDropRate;
     [SerializeField] private int attackPower;
     [SerializeField] private float interval;
@@ -58,6 +58,14 @@ public class EnemyController : MonoBehaviour
         uiManager = this.gameManager.UiManager;
 
         itemGenerator = gameManager.ItemGenerator;
+
+        //TODO
+        //if (TryGetComponent(out LifeGauge lifeGauge))
+        //{
+        //    lifeGauge.SetUpLifeGauge(this);
+
+        //    Debug.Log("LifeGauge型を取得し、SetUpLifeGaugeメソッドが完了しました");
+        //}
 
         //各値を設定
         hp = maxHp;

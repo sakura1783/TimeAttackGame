@@ -12,7 +12,7 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private Image imgIntervalAttackTime;
 
-    private BulletGenerator bulletGenerator;
+    //private BulletGenerator bulletGenerator;
 
     [SerializeField] private Image imgSpecialMoveCount;
 
@@ -62,16 +62,16 @@ public class UIManager : MonoBehaviour
         //imgSpecialMoveCount.fillAmount =  setValue;
         imgSpecialMoveCount.DOFillAmount(setValue, 0.5f);  // <= DOFillAmount(この値に, 何秒で)
 
-        if (value >= maxValue)
-        {
-            //パーティクル生成
-            generatedParticle = Instantiate(particleSpecialMoveGauge, particleTran, false);
+        //if (value >= maxValue)
+        //{
+        //    //パーティクル生成
+        //    generatedParticle = Instantiate(particleSpecialMoveGauge, particleTran, false);
 
-            Debug.Log("作られたパーティクル：" + generatedParticle);
+        //    Debug.Log("作られたパーティクル：" + generatedParticle);
 
-            generatedParticle.Play();
+        //    generatedParticle.Play();
 
-            Debug.Log("パーティクル・Play");
-        }
+        //    Debug.Log("パーティクル・Play");
+        //}
     }
 }

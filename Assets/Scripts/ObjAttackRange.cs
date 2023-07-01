@@ -12,15 +12,21 @@ public class ObjAttackRange : MonoBehaviour
     /// 攻撃範囲可視化オブジェクト生成
     /// </summary>
     /// <param name="gameManager"></param>
-    public void CreateObjAttackRange(GameManager gameManager)
+    public void CreateObjAttackRange(GameManager gameManager, CharaType charaType)
     {
         this.gameManager = gameManager;
         chara = gameManager.CharaController;
 
         ObjAttackRange objAttackRange = Instantiate(this, chara.transform.position, Quaternion.identity);
 
-        //TODO サイズ設定
+        //TODO サイズ、色を設定
         //objAttackRange.transform.localScale = new Vector2(DataBaseManager.instance.attackRangeSizeSO.attackRangeSizeList.);
+
+        //switch (charaType)
+        //{
+        //    case CharaType.Yellow:
+        //        objAttackRange.transform.localScale
+        //}
     }
 
     void Update()

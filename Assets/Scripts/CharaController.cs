@@ -13,6 +13,7 @@ public class CharaController : MonoBehaviour
 
     [SerializeField] private GameManager gameManager;
 
+    public CharaType charaType;
     public int attackPoint;
     public float intervalAttackTime;
     public int hp = 10;  //HPはどのキャラも同じ値
@@ -34,7 +35,8 @@ public class CharaController : MonoBehaviour
     {
         this.charaData = charaData;
 
-        //各値の設定  //TODO 他に設定項目があれば追加する
+        //各値の設定
+        charaType = this.charaData.charaType;
         attackPoint = this.charaData.attackPower;
         intervalAttackTime = this.charaData.intervalAttackTime;
         //attackRangeType = this.charaData.attackRangeType;

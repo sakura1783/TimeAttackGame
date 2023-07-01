@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
 
         cineMachine.SetUpCinemachine(this);  //キャラ生成前に書いてしまうと追尾対象のキャラがまだいないのでエラーになってしまう、注意
 
-        objAttackRange.CreateObjAttackRange(this);
+        //objAttackRange.CreateObjAttackRange(this);  //TODO ObjAttackRange生成
 
         itemGenerator.SetUpItemGenerator();
 

@@ -2,6 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum CharaType
+{
+    Yellow,
+    Black,
+    Pink,
+}
+
 [CreateAssetMenu(fileName = "CharaDataSO", menuName = "Create CharaDataSO")]
 public class CharaDataSO : ScriptableObject
 {
@@ -15,6 +22,7 @@ public class CharaDataSO : ScriptableObject
     {
         public string charaName;
         public int charaNo;
+        public CharaType charaType;
         public Sprite charaSprite;
 
         public int attackPower;

@@ -15,8 +15,9 @@ MonoBehaviour:
   charaDatasList:
   - charaName: "\u4E00\u6761 \u30C4\u30D0\u30AD"
     charaNo: 0
+    charaType: 0
     charaSprite: {fileID: 811010701, guid: cd6bb18d916e8465a81bf6860f0af12d, type: 3}
-    attackPower: 5
+    attackPower: 3
     attackRangeType: 2
     intervalAttackTime: 5
     specialMoveName: Rovescio
@@ -27,6 +28,7 @@ MonoBehaviour:
     charaAnim: {fileID: 0}
   - charaName: "\u5DEB \u4E00\u8449"
     charaNo: 1
+    charaType: 1
     charaSprite: {fileID: -1539482772, guid: 69832ac1e7f664e13a3a9c220cb5bf7a, type: 3}
     attackPower: 4
     attackRangeType: 1
@@ -39,6 +41,7 @@ MonoBehaviour:
     charaAnim: {fileID: 0}
   - charaName: "\u6708\u5C45 \u96EB"
     charaNo: 2
+    charaType: 2
     charaSprite: {fileID: -1967598362, guid: cd6bb18d916e8465a81bf6860f0af12d, type: 3}
     attackPower: 3
     attackRangeType: 1
