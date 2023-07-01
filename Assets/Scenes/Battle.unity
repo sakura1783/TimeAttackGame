@@ -5393,7 +5393,7 @@ MonoBehaviour:
   maxGenerateEnemyCount: 5
   charaGenerator: {fileID: 960542471}
   enemy: {fileID: 515537056343755237, guid: 7aaa55d04ecd34551aa65eb646bd40c7, type: 3}
-  objAttackRange: {fileID: 5801363585109988465, guid: 4e6b5e28935414983ae5f358197fdffe, type: 3}
+  objAttackRangePrefab: {fileID: 5801363585109988465, guid: 4e6b5e28935414983ae5f358197fdffe, type: 3}
   cineMachine: {fileID: 602134895}
   itemGenerator: {fileID: 446544009}
   items:
