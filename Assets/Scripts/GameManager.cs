@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using System;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,7 +21,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private GameObject enemy;
 
-    [SerializeField] private ObjAttackRange objAttackRange;
+    [SerializeField] private ObjAttackRange objAttackRangePrefab;
 
     [SerializeField] private CineMachine cineMachine;
 
@@ -40,7 +41,9 @@ public class GameManager : MonoBehaviour
 
         cineMachine.SetUpCinemachine(this);  //キャラ生成前に書いてしまうと追尾対象のキャラがまだいないのでエラーになってしまう、注意
 
-        //objAttackRange.CreateObjAttackRange(this);  //TODO ObjAttackRange生成
+        //ObjAttackRange生成、設定
+        ObjAttackRange objAttackRange = Instantiate(objAttackRangePrefab, charaController.transform.position, Quaternion.identity);
+        objAttackRange.SetUpObjAttackRange(charaController);
 
         itemGenerator.SetUpItemGenerator();
 

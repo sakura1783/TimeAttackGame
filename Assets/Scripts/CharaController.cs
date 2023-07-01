@@ -23,6 +23,7 @@ public class CharaController : MonoBehaviour
     [SerializeField] private int durationSpecialMove;
 
     private CharaDataSO.CharaData charaData;
+    public CharaDataSO.CharaData CharaData => charaData;
 
     private BulletGenerator bulletGenerator;
     //public BulletGenerator BulletGenerator => bulletGenerator;

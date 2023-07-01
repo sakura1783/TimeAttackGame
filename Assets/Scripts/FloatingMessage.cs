@@ -35,7 +35,7 @@ public class FloatingMessage : MonoBehaviour
         txtFloatingMessage.color = GetMessageColor(floatingMessageType);
 
         //フロート表示を上方向へ移動させて、移動し終わったら破棄
-        transform.DOLocalMoveY(transform.localPosition.y + 50, 1.0f).OnComplete(() => { Destroy(gameObject); });
+        transform.DOLocalMoveY(transform.localPosition.y + 50, 1.0f).SetLink(gameObject).OnComplete(() => { Destroy(gameObject); });
     }
 
     /// <summary>
