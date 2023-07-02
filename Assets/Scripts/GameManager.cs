@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
     public float timer = 0;
 
-    private int killEnemyCount = 0;
+    public int killEnemyCount = 0;
 
     private bool isGameClear = false;
 

@@ -34,8 +34,6 @@ public class EnemyController : MonoBehaviour
 
     private UIManager uiManager;
 
-    public int killCount;
-
     public void SetUpEnemyController(GameManager gameManager)
     {
         this.gameManager = gameManager;
@@ -178,7 +176,7 @@ public class EnemyController : MonoBehaviour
             Destroy(gameObject);
 
             //倒した敵の数をカウントアップ
-            killCount = gameManager.AddKillEnemyCount();
+            int killCount = gameManager.AddKillEnemyCount();
 
             //必殺技ゲージ更新
             uiManager.SetIntervalSpecialMove();

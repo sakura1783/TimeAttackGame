@@ -59,7 +59,8 @@ public class UIManager : MonoBehaviour
                 isParticlePlay = false;
 
                 //killCountを0にして、UIのゲージを0にする
-                gameManager.EnemyController.killCount = 0;
+                //gameManager.EnemyController.killCount = 0;  //これはgameManager.killEnemyCountの戻り値を反映したものなので、これに0を代入してしまうと、一生0のままになってしまうので、その後たとえ敵を倒したとしても、ゲージが更新されない。
+                gameManager.killEnemyCount = 0;
 
                 //必殺技発動
                 specialMove.UseSpecialMove(gameManager.CharaController.charaType);
@@ -93,12 +94,15 @@ public class UIManager : MonoBehaviour
     /// <param name="killCount"></param>
     public void SetIntervalSpecialMove()
     {
-        value = Mathf.Clamp(gameManager.EnemyController.killCount, 0f, maxValue);
+        //value = Mathf.Clamp(gameManager.EnemyController.killCount, 0f, maxValue);
+        value = Mathf.Clamp(gameManager.killEnemyCount, 0f, maxValue);
 
         float setValue = value / maxValue;
 
         //imgSpecialMoveCount.fillAmount =  setValue;
         imgSpecialMoveCount.DOFillAmount(setValue, 0.5f);  // <= DOFillAmount(この値に, 何秒で)
+
+        Debug.Log("必殺技ゲージ更新しました" + gameManager.killEnemyCount);
 
         if (value >= maxValue)
         {
