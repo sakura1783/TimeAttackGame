@@ -133,7 +133,7 @@ public class CharaController : MonoBehaviour
 
         if (canvas != null)
         {
-            charaFloatingMessageTran = canvas.transform;
+            charaFloatingMessageTran = canvas.transform;  //これを書かないと生成する位置がまだ指定されていないので、canvasの子として生成されなくなり、見えない
         }
 
         CreateCharaFloatingDamage(damage);
@@ -167,6 +167,15 @@ public class CharaController : MonoBehaviour
     /// <param name="curePoint"></param>
     public void CreateFloatingRecovery(int curePoint)
     {
+        //0番目の子のCanvasゲームオブジェクトを取得
+        GameObject canvas = transform.GetChild(0).gameObject;
+
+        //上で取得したcanvas変数を、TryGetComponentして、それがCanvas型だったらcanvasTran変数に入れ、それのtransformをcharaFloatingMessageTranに代入する
+        if (canvas.TryGetComponent(out Canvas canvasTran))
+        {
+            charaFloatingMessageTran = canvasTran.transform;  //ここでcharaFloatingMessageTranに位置の情報を入れないと、canvasの子としてフロート表示が生成されなくなり、見えないので注意。
+        }
+
         FloatingMessage floatingMessage = Instantiate(floatingMessagePrefab, charaFloatingMessageTran, false);
 
         floatingMessage.DisplayFloatingMessage(curePoint, FloatingMessage.FloatingMessageType.Recovery);
