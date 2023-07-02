@@ -66,8 +66,6 @@ public class EnemyController : MonoBehaviour
         if (sliderLifeGauge.TryGetComponent(out LifeGauge lifeGauge))
         {
             lifeGauge.SetUpLifeGauge(this);
-
-            Debug.Log("LifeGauge型を取得し、SetUpLifeGaugeメソッドが完了しました");
         }
 
         //各値を設定

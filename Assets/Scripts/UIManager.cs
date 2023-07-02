@@ -26,6 +26,8 @@ public class UIManager : MonoBehaviour
 
     private bool isParticlePlay = false;
 
+    [SerializeField] private SpecialMove specialMove;
+
     public void SetUpUIManager()
     {
         //bulletGenerator = gameManager.CharaController.BulletGenerator;
@@ -87,6 +89,23 @@ public class UIManager : MonoBehaviour
                 isParticlePlay = true;
 
                 return;
+            }
+
+            // Sキーを押したら
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                Debug.Log("Sキーが押されました");
+
+                //パーティクル放出を止める
+                generatedParticle.Stop();
+
+                isParticlePlay = false;
+
+                //UIのゲージを0にする
+                killCount = 0;
+
+                //必殺技発動
+                specialMove.UseSpecialMove(gameManager.CharaController.charaType);
             }
         }
 
