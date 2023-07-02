@@ -16,7 +16,8 @@ public class CharaController : MonoBehaviour
     public CharaType charaType;
     public int attackPoint;
     public float intervalAttackTime;
-    public int hp = 10;  //HPはどのキャラも同じ値
+    public int maxHp = 10;
+    public int hp;  //HPはどのキャラも同じ値
     //[SerializeField] private AttackRangeType attackRangeType;
     [SerializeField] private int maxSpecialMoveCount;
     public int intervalKillCountSpecialMove;
@@ -36,6 +37,8 @@ public class CharaController : MonoBehaviour
     {
         this.charaData = charaData;
 
+        hp = maxHp;
+
         //各値の設定
         charaType = this.charaData.charaType;
         attackPoint = this.charaData.attackPower;
@@ -46,6 +49,13 @@ public class CharaController : MonoBehaviour
         durationSpecialMove = this.charaData.durationSpecialMove;
 
         TryGetComponent(out anim);
+
+        //ライフゲージの設定
+        GameObject sliderLifeGauge = transform.GetChild(1).GetChild(0).gameObject;
+        if (sliderLifeGauge.TryGetComponent(out PlayerLifeGauge playerLifeGauge))
+        {
+            playerLifeGauge.SetUpLifeGauge(this);
+        }
 
         if (TryGetComponent(out bulletGenerator))
         {
@@ -116,6 +126,7 @@ public class CharaController : MonoBehaviour
         Debug.Log("プレイヤーがダメージを受けました");
 
         hp -= damage;
+        hp = Mathf.Clamp(hp, 0, maxHp);
 
         //フロート表示を行うCharaの子のCanvasのTransformを取得
         Canvas canvas = GetComponentInChildren<Canvas>();

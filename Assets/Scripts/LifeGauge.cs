@@ -12,7 +12,7 @@ public class LifeGauge : MonoBehaviour
 
     public void SetUpLifeGauge(EnemyController enemyController)
     {
-        this.enemyController = enemyController;  //ある特定のエネミーのhpが全部のHPバーの値に反映されてしまうかも
+        this.enemyController = enemyController;
 
         slider.maxValue = this.enemyController.maxHp; 
     }
