@@ -16,7 +16,8 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private Image imgSpecialMoveCount;
 
-    private int maxValue;  //FillAmountの最大値
+    private int maxValue;  //FillAmountの最大値(必殺技発動のために必要な敵Kill数)
+    private float value;  //FillAmountの現在値(現在の敵Kill数)
 
     [SerializeField] private ParticleSystem particleSpecialMoveGauge;
 
@@ -27,6 +28,8 @@ public class UIManager : MonoBehaviour
     private bool isParticlePlay = false;
 
     [SerializeField] private SpecialMove specialMove;
+
+    private bool isSpecialMoved = false;  //必殺技を発動したか
 
     public void SetUpUIManager()
     {
@@ -40,6 +43,37 @@ public class UIManager : MonoBehaviour
     void Update()
     {
         txtTime.text = gameManager.timer.ToString("n2");
+
+        //もし現在の敵Kill数が必殺技発動に必要な敵Kill数以上になったら
+        if (value >= maxValue)
+        {
+            if (Input.GetKeyDown(KeyCode.S))  // 左のようなコードは、Update内で使用されることが想定されている。よって、下のSetメソッドのif文の条件に書いても思い通りの挙動にならないので注意。
+            {
+                Debug.Log("Sキーが押されました");
+
+                isSpecialMoved = true;
+
+                //パーティクル放出を止める
+                generatedParticle.Stop();
+
+                isParticlePlay = false;
+
+                //killCountを0にして、UIのゲージを0にする
+                gameManager.EnemyController.killCount = 0;
+
+                //必殺技発動
+                specialMove.UseSpecialMove(gameManager.CharaController.charaType);
+            }
+        }
+
+        //必殺技を発動したら
+        if (isSpecialMoved)
+        {
+            isSpecialMoved = false;
+
+            //必殺技ゲージ更新処理　必殺技発動後に更新処理を行うことで、ゲージを0にできる。ここに書かないと、敵がDestroyされた時にのみ、更新処理が動くので、必殺技を発動してもゲージが満タンのままになる
+            SetIntervalSpecialMove();
+        }
     }
 
     /// <summary>
@@ -57,9 +91,9 @@ public class UIManager : MonoBehaviour
     /// 必殺技ゲージ更新処理
     /// </summary>
     /// <param name="killCount"></param>
-    public void SetIntervalSpecialMove(int killCount)
+    public void SetIntervalSpecialMove()
     {
-        float value = Mathf.Clamp(killCount, 0f, maxValue);
+        value = Mathf.Clamp(gameManager.EnemyController.killCount, 0f, maxValue);
 
         float setValue = value / maxValue;
 
@@ -91,22 +125,23 @@ public class UIManager : MonoBehaviour
                 return;
             }
 
-            // Sキーを押したら
-            if (Input.GetKeyDown(KeyCode.S))
-            {
-                Debug.Log("Sキーが押されました");
+            ////この処理は敵がDestroyされる時だけに動くため、ここに書くと処理が動かない。
+            // (Sキーを押して)isSKeyPressedがtrueになったら
+            //if (isSKeyPressed)
+            //{
+            //    Debug.Log("Sキーが押されて、isSKeyPressedがtrueになりました");
 
-                //パーティクル放出を止める
-                generatedParticle.Stop();
+            //    //パーティクル放出を止める
+            //    generatedParticle.Stop();
 
-                isParticlePlay = false;
+            //    isParticlePlay = false;
 
-                //UIのゲージを0にする
-                killCount = 0;
+            //    //UIのゲージを0にする
+            //    killCount = 0;
 
-                //必殺技発動
-                specialMove.UseSpecialMove(gameManager.CharaController.charaType);
-            }
+            //    //必殺技発動
+            //    specialMove.UseSpecialMove(gameManager.CharaController.charaType);
+            //}
         }
 
         isParticlePlay = false;

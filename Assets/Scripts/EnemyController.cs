@@ -34,6 +34,8 @@ public class EnemyController : MonoBehaviour
 
     private UIManager uiManager;
 
+    public int killCount;
+
     public void SetUpEnemyController(GameManager gameManager)
     {
         this.gameManager = gameManager;
@@ -154,7 +156,6 @@ public class EnemyController : MonoBehaviour
     public void Damage(int damage)
     {
         hp -= damage;
-        Debug.Log("Enemyがダメージを受けました");
 
         //フロート表示を行うEnemyの子のCanvasのTransformを取得
         Canvas canvas = GetComponentInChildren<Canvas>();
@@ -177,10 +178,10 @@ public class EnemyController : MonoBehaviour
             Destroy(gameObject);
 
             //倒した敵の数をカウントアップ
-            int killCount = gameManager.AddKillEnemyCount();
+            killCount = gameManager.AddKillEnemyCount();
 
             //必殺技ゲージ更新
-            uiManager.SetIntervalSpecialMove(killCount);
+            uiManager.SetIntervalSpecialMove();
         }
     }
 

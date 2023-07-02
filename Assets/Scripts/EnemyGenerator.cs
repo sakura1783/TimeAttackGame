@@ -39,6 +39,9 @@ public class EnemyGenerator : MonoBehaviour
 
             generatedEnemy = Instantiate(enemyPrefab, generatePos[generateTran], Quaternion.identity);
 
+            //今後のためにGameManagerにEnemyController型の情報を渡す
+            gameManager.EnemyController = generatedEnemy;
+
             //TODO ObjAttackRangeゲームオブジェクト生成
 
             generateEnemyCount++;
