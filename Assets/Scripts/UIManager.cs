@@ -24,6 +24,8 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private Transform particleTran;
 
+    private bool isParticlePlay = false;
+
     public void SetUpUIManager()
     {
         //bulletGenerator = gameManager.CharaController.BulletGenerator;
@@ -62,16 +64,33 @@ public class UIManager : MonoBehaviour
         //imgSpecialMoveCount.fillAmount =  setValue;
         imgSpecialMoveCount.DOFillAmount(setValue, 0.5f);  // <= DOFillAmount(この値に, 何秒で)
 
-        //if (value >= maxValue)
-        //{
-        //    //パーティクル生成
-        //    generatedParticle = Instantiate(particleSpecialMoveGauge, particleTran, false);
+        if (value >= maxValue)
+        {
+            //もしまだパーティクルが1つも生成されていなかったら
+            if (generatedParticle == null)
+            {
+                //パーティクル生成
+                generatedParticle = Instantiate(particleSpecialMoveGauge, particleTran, false);
 
-        //    Debug.Log("作られたパーティクル：" + generatedParticle);
+                Debug.Log("作られたパーティクル：" + generatedParticle);
+            }
 
-        //    generatedParticle.Play();
+            //もしまだパーティクルがPlayされていなかったら
+            if (!isParticlePlay)
+            {
+                //Debug.Log("generatedParticle : " + generatedParticle);
 
-        //    Debug.Log("パーティクル・Play");
-        //}
+                generatedParticle.Play();
+
+                Debug.Log("パーティクル・Play");
+
+                isParticlePlay = true;
+
+                return;
+            }
+        }
+
+        isParticlePlay = false;
+        //Debug.Log("パーティクル・Playに続いて出てきたら想定外の動きになります");
     }
 }

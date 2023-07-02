@@ -52,8 +52,6 @@ public class ObjAttackRange : MonoBehaviour
 
         //    spriteRenderer.color = new Color(1, 1, 1, 0.5f);
 
-            Debug.Log("色：" + charaController.CharaData.charaType);
-
             spriteRenderer.color = charaController.CharaData.charaType switch
             {
                 CharaType.Yellow => Color.yellow,
