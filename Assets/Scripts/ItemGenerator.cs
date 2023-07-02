@@ -6,7 +6,7 @@ public class ItemGenerator : MonoBehaviour
 {
     [SerializeField] private Item[] itemsPrefab;
 
-    [SerializeField] private EnemyGenerator enemyGenerator;
+    //[SerializeField] private EnemyGenerator enemyGenerator;
 
     //private EnemyController enemyController;
 

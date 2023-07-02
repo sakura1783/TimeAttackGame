@@ -16,13 +16,19 @@ public class ObjAttackRange : MonoBehaviour
     {
         chara = charaController;
 
-        //ObjAttackRange objAttackRange = Instantiate(this, chara.transform.position, Quaternion.identity);
+        //ObjAttackRange objAttackRange = Instantiate(this, chara.transform.position, Quaternion.identity);  // <= これだと、ObjAttackRangeを二つ生成してしまうことになる(自身をInstantiateしているため)
 
-        //TODO 親子関係を作る、子供にしたらUpdateコメントアウトする
+        //親子関係を作る。プレイヤーの子に設定する　(子供にしたらUpdateを省ける)
+        this.gameObject.transform.SetParent(chara.transform);
 
-        //サイズ、色を設定
-        transform.localScale = Vector2.one * DataBaseManager.instance.GetAttackRangeSize(charaController.CharaData.attackRangeType).radius;
+        //サイズを設定
+        //transform.localScale = Vector2.one * DataBaseManager.instance.GetAttackRangeSize(charaController.CharaData.attackRangeType).radius;
+        var newScale = Vector2.one * DataBaseManager.instance.GetAttackRangeSize(charaController.CharaData.attackRangeType).radius;
+        var parentLossyScale = chara.transform.lossyScale;
 
+        transform.localScale = new Vector2(newScale.x / parentLossyScale.x, newScale.y / parentLossyScale.y);
+
+        //色を設定
         if (TryGetComponent(out SpriteRenderer spriteRenderer))
         {
         //    Color rangeColor;
@@ -55,16 +61,16 @@ public class ObjAttackRange : MonoBehaviour
                 CharaType.Pink => Color.magenta,
                 _ => Color.white
             };
-            spriteRenderer.color = new Color(1, 1, 1, 0.5f);
+            spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 0.3f);
         }
     }
 
-    void Update()
-    {
-        if (chara == null)
-        {
-            return;
-        }
-        transform.position = chara.transform.position;
-    }
+    //void Update()
+    //{
+    //    if (chara == null)
+    //    {
+    //        return;
+    //    }
+    //    transform.position = chara.transform.position;
+    //}
 }

@@ -170,6 +170,9 @@ public class EnemyController : MonoBehaviour
         {
             //enemyPos = GetEnemyPos();
 
+            //アイテムドロップ
+            itemGenerator.GenerateItem(gameObject.transform);
+
             Destroy(gameObject);
 
             //倒した敵の数をカウントアップ
@@ -177,9 +180,6 @@ public class EnemyController : MonoBehaviour
 
             //必殺技ゲージ更新
             uiManager.SetIntervalSpecialMove(killCount);
-
-            //アイテムドロップ　ItemGeneratorのGenerateItemメソッドを実行
-            itemGenerator.GenerateItem(gameObject.transform);
         }
     }
 
