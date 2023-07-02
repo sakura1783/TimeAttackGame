@@ -19,7 +19,7 @@ public class CharaController : MonoBehaviour
     public int maxHp = 10;
     public int hp;  //HPはどのキャラも同じ値
     //[SerializeField] private AttackRangeType attackRangeType;
-    [SerializeField] private int maxSpecialMoveCount;
+    public int maxSpecialMoveCount;
     public int intervalKillCountSpecialMove;
     [SerializeField] private int durationSpecialMove;
 

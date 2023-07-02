@@ -178,8 +178,12 @@ public class EnemyController : MonoBehaviour
             //倒した敵の数をカウントアップ
             int killCount = gameManager.AddKillEnemyCount();
 
-            //必殺技ゲージ更新
-            uiManager.SetIntervalSpecialMove();
+            //TODO もし必殺技を発動した回数が必殺技発動可能回数を上回ってなかったら
+            if (uiManager.specialMoveCount < charaController.maxSpecialMoveCount)
+            {
+                //必殺技ゲージ更新
+                uiManager.SetIntervalSpecialMove();
+            }
         }
     }
 

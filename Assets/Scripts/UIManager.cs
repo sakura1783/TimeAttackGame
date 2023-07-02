@@ -31,6 +31,8 @@ public class UIManager : MonoBehaviour
 
     private bool isSpecialMoved = false;  //必殺技を発動したか
 
+    public int specialMoveCount;
+
     public void SetUpUIManager()
     {
         //bulletGenerator = gameManager.CharaController.BulletGenerator;
@@ -43,6 +45,12 @@ public class UIManager : MonoBehaviour
     void Update()
     {
         txtTime.text = gameManager.timer.ToString("n2");
+
+        //もし必殺技を発動した回数が必殺技発動可能回数を上回ったら、Updateの以下の処理はしない
+        if (specialMoveCount >= gameManager.CharaController.maxSpecialMoveCount)
+        {
+            return;
+        }
 
         //もし現在の敵Kill数が必殺技発動に必要な敵Kill数以上になったら
         if (value >= maxValue)
@@ -64,6 +72,9 @@ public class UIManager : MonoBehaviour
 
                 //必殺技発動
                 specialMove.UseSpecialMove(gameManager.CharaController.charaType);
+
+                //必殺技発動回数をカウント
+                specialMoveCount++;
             }
         }
 
