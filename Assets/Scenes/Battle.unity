@@ -5390,6 +5390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 0
+  killEnemyCount: 0
   maxGenerateEnemyCount: 5
   charaGenerator: {fileID: 960542471}
   enemy: {fileID: 515537056343755237, guid: 7aaa55d04ecd34551aa65eb646bd40c7, type: 3}
@@ -5399,6 +5400,7 @@ MonoBehaviour:
   items:
   - {fileID: 6754152913199254584, guid: b978f6db154424f6dab6d2bc5fdb82ca, type: 3}
   uiManager: {fileID: 2094251404}
+  enemyGenerator: {fileID: 830223805}
 --- !u!4 &692431902
 Transform:
   m_ObjectHideFlags: 0
@@ -10837,6 +10839,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef1fbe533e06145e4a7d125902dae964, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 692431901}
+  enemyGenerator: {fileID: 830223805}
 --- !u!4 &1858716129
 Transform:
   m_ObjectHideFlags: 0
@@ -10935,6 +10939,7 @@ MonoBehaviour:
   particleSpecialMoveGauge: {fileID: 3982007147311268576, guid: b1491052725ad471ca716f812843e8cc, type: 3}
   particleTran: {fileID: 1122554916}
   specialMove: {fileID: 1858716128}
+  specialMoveCount: 0
 --- !u!4 &2094251405
 Transform:
   m_ObjectHideFlags: 0

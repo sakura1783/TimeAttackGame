@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class SpecialMove : MonoBehaviour
 {
+    [SerializeField] private GameManager gameManager;  //情報をもらうために記述
+
+    [SerializeField] private EnemyGenerator enemyGenerator;
+
     /// <summary>
     /// 必殺技を使用する際の処理
     /// </summary>
@@ -41,6 +45,16 @@ public class SpecialMove : MonoBehaviour
     /// </summary>
     private void Rovescio()
     {
+        //TODO 演出
+
+        //シーン上に生成されている全ての敵を破壊する
+        for (int i = 0; i < enemyGenerator.enemiesList.Count; i++)
+        {
+            EnemyController enemy = enemyGenerator.enemiesList[i];
+
+            Destroy(enemy.gameObject);
+        }
+
         Debug.Log("Rovescioが発動されました");
     }
 
