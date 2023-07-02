@@ -59,13 +59,16 @@ public class EnemyController : MonoBehaviour
 
         itemGenerator = gameManager.ItemGenerator;
 
-        //TODO
-        //if (TryGetComponent(out LifeGauge lifeGauge))
-        //{
-        //    lifeGauge.SetUpLifeGauge(this);
+        //EnemyゲームオブジェクトからSlider_LifeGaugeを探す
+        GameObject sliderLifeGauge = transform.GetChild(2).GetChild(0).gameObject;
 
-        //    Debug.Log("LifeGauge型を取得し、SetUpLifeGaugeメソッドが完了しました");
-        //}
+        //上で取得したGameObject型のsliderLifeGauge変数をTryGetComponentしてLifeGauge型の情報を取得、その後、LifeGaugeのSetUpメソッドを実行
+        if (sliderLifeGauge.TryGetComponent(out LifeGauge lifeGauge))
+        {
+            lifeGauge.SetUpLifeGauge(this);
+
+            Debug.Log("LifeGauge型を取得し、SetUpLifeGaugeメソッドが完了しました");
+        }
 
         //各値を設定
         hp = maxHp;
