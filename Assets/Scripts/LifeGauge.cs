@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class LifeGauge : MonoBehaviour
 {
@@ -31,6 +32,7 @@ public class LifeGauge : MonoBehaviour
     /// </summary>
     private void UpdateLifeGauge()
     {
-        slider.value = enemyController.hp;
+        //slider.value = enemyController.hp;
+        slider.DOValue(enemyController.hp, 0.5f);  //0.5秒かけてhpを減らす
     }
 }
