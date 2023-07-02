@@ -19,17 +19,18 @@ public class Item : MonoBehaviour
         Hurt,
     }
 
-    public void SetUpItem(GameManager gameManager)
-    {
-        //chara = gameManager.CharaController;
+    //public void SetUpItem(GameManager gameManager)
+    //{
+    //    chara = gameManager.CharaController;
 
-        //Debug.Log("chara1 : " + chara);
-    }
+    //    Debug.Log("chara1 : " + chara);
+    //}
 
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.TryGetComponent(out CharaController chara)) // <= col.がないとItemクラスに対してTryGetComponentすることになるので、CharaController型の情報が取得できずchara変数には何も入らないので注意！
         {
+            //アイテム効果適用
             ApplyItemEffect(itemType, chara);
 
             Destroy(gameObject);
@@ -46,6 +47,7 @@ public class Item : MonoBehaviour
         {
             case ItemType.Hurt:
                 charaController.hp += curePoint;
+                charaController.CreateFloatingRecovery(curePoint);
                 break;
         }
     }

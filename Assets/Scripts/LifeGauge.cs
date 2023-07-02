@@ -33,6 +33,6 @@ public class LifeGauge : MonoBehaviour
     private void UpdateLifeGauge()
     {
         //slider.value = enemyController.hp;
-        slider.DOValue(enemyController.hp, 0.5f);  //0.5秒かけてhpを減らす
+        slider.DOValue(enemyController.hp, 0.5f).SetLink(gameObject);  //0.5秒かけてhpを減らす、DOTween中にゲームオブジェクトが破棄される可能性がある場合、SetLink()を記述する
     }
 }

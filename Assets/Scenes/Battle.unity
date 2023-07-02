@@ -5121,7 +5121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemsPrefab:
   - {fileID: 6754152913199254584, guid: b978f6db154424f6dab6d2bc5fdb82ca, type: 3}
-  enemyGenerator: {fileID: 830223805}
+  generateNum: 79
 --- !u!4 &446544010
 Transform:
   m_ObjectHideFlags: 0

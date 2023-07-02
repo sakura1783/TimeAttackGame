@@ -12,6 +12,8 @@ public class ItemGenerator : MonoBehaviour
 
     //private Vector2 enemyPos;
 
+    [SerializeField] private int generateNum;
+
     public void SetUpItemGenerator()
     {
         //enemyController = enemyGenerator.EnemyPrefab;
@@ -25,7 +27,7 @@ public class ItemGenerator : MonoBehaviour
         int num = Random.Range(0, 99);
         Debug.Log("ランダムな値：" + num);
 
-        if (num <= 29)
+        if (num <= generateNum)
         {
             //enemyPos = enemyGenerator.GeneratedEnemy.EnemyPos;
 

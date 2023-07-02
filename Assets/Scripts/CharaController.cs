@@ -150,6 +150,19 @@ public class CharaController : MonoBehaviour
         floatingMessage.DisplayFloatingMessage(point, FloatingMessage.FloatingMessageType.Damage);
     }
 
+    /// <summary>
+    /// アイテム(Hurt)取得時のフロート表示生成
+    /// </summary>
+    /// <param name="curePoint"></param>
+    public void CreateFloatingRecovery(int curePoint)
+    {
+        FloatingMessage floatingMessage = Instantiate(floatingMessagePrefab, charaFloatingMessageTran, false);
+
+        floatingMessage.DisplayFloatingMessage(curePoint, FloatingMessage.FloatingMessageType.Recovery);
+
+        Debug.Log("ハート取得時のフロート表示が生成されました" + floatingMessage);
+    }
+
     //private void OnTriggerEnter2D(Collider2D col)
     //{
     //    if (col.tag == "Enemy")
