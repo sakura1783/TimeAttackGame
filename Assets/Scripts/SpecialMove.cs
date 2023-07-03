@@ -50,9 +50,9 @@ public class SpecialMove : MonoBehaviour
         //シーン上に生成されている全ての敵を破壊する
         for (int i = 0; i < enemyGenerator.enemiesList.Count; i++)
         {
-            EnemyController enemy = enemyGenerator.enemiesList[i];
+            EnemyController enemies = enemyGenerator.enemiesList[i];
 
-            Destroy(enemy.gameObject);
+            Destroy(enemies.gameObject);
         }
 
         Debug.Log("Rovescioが発動されました");
@@ -63,6 +63,17 @@ public class SpecialMove : MonoBehaviour
     /// </summary>
     private void Mezzanotte()
     {
+        //TODO 演出
+
+        //シーン上に生成されている全ての敵の移動とアニメーションを停止する(Pauseメソッドを実行することでisPausedがtrueになるので、自動的に攻撃もしなくなる)
+        for (int i = 0; i < enemyGenerator.enemiesList.Count; i++)
+        {
+            EnemyController enemies = enemyGenerator.enemiesList[i];
+
+            enemies.PauseMove();
+            enemies.PauseAnimation();
+        }
+
         Debug.Log("Mezzanotteが発動されました");
     }
 

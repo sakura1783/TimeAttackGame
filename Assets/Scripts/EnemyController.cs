@@ -34,6 +34,8 @@ public class EnemyController : MonoBehaviour
 
     private UIManager uiManager;
 
+    private bool isPaused = false;  //移動やアニメーションが一時停止中かどうか
+
     public void SetUpEnemyController(GameManager gameManager)
     {
         this.gameManager = gameManager;
@@ -79,6 +81,12 @@ public class EnemyController : MonoBehaviour
             return;
         }
 
+        //もし、移動やアニメーションが一時停止中の場合、以下の移動処理とアニメ遷移処理は行わない
+        if (isPaused)
+        {
+            return;
+        }
+
         navMeshAgent2D.destination = charaController.transform.position;  //destination = 目的地
 
         ChangeAnimDirection();
@@ -119,20 +127,24 @@ public class EnemyController : MonoBehaviour
     /// <returns></returns>
     private IEnumerator PrepareAttack()
     {
-        float timer = 0;
-
-        while (isCountingUp)
+        //時間停止中は以下の攻撃準備処理を行わない
+        if (!isPaused)
         {
-            timer += Time.deltaTime;
+            float timer = 0;
 
-            if (timer >= interval)
+            while (isCountingUp)
             {
-                Attack();
+                timer += Time.deltaTime;
 
-                timer = 0;
+                if (timer >= interval)
+                {
+                    Attack();
+
+                    timer = 0;
+                }
+
+                yield return null;
             }
-
-            yield return null;
         }
     }
 
@@ -199,6 +211,58 @@ public class EnemyController : MonoBehaviour
 
         //生成したフロート表示の設定用メソッドを実行。引数として、バレットの攻撃力値とフロート表示の種類を指定して渡す
         floatingMessage.DisplayFloatingMessage(point, FloatingMessage.FloatingMessageType.Damage);
+    }
+
+    /// <summary>
+    /// 移動の一時停止
+    /// </summary>
+    public void PauseMove()
+    {
+        if (navMeshAgent2D != null)  //これを書くことで、万が一navMeshAgent2Dがnullだった場合に、エラーを防げる
+        {
+            navMeshAgent2D.IsStopped = true;
+
+            isPaused = true;
+        }
+    }
+
+    /// <summary>
+    /// 移動再開
+    /// </summary>
+    public void ResumeMove()
+    {
+        if (navMeshAgent2D != null)
+        {
+            navMeshAgent2D.IsStopped = false;
+
+            isPaused = false;
+        }
+    }
+
+    /// <summary>
+    /// アニメーション一時停止
+    /// </summary>
+    public void PauseAnimation()
+    {
+        if (anim != null)
+        {
+            anim.enabled = false;
+
+            isPaused = true;
+        }
+    }
+
+    /// <summary>
+    /// アニメーション再開
+    /// </summary>
+    public void ResumeAnimation()
+    {
+        if (anim != null)
+        {
+            anim.enabled = true;
+
+            isPaused = false;
+        }
     }
 
     /// <summary>

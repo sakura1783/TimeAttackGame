@@ -11,6 +11,10 @@ public class NavMeshAgent2D : MonoBehaviour
     private Vector2 trace_area = Vector2.zero;
     [SerializeField] private EnemyDataSO.EnemyData enemyData;
 
+    //エネミーを一時停止・再開するための変数
+    private bool isStopped = false;
+    public bool IsStopped { get; set; }
+
     public Vector2 destination
     {
         get { return trace_area; }
@@ -28,6 +32,12 @@ public class NavMeshAgent2D : MonoBehaviour
 
     private void Trace(Vector2 current, Vector2 target)
     {
+        //もし、移動停止中なら以下の移動処理をしない
+        if (isStopped)
+        {
+            return;
+        }
+
         if (Vector2.Distance(current, target) <= stoppingDistance)
         {
             return;
