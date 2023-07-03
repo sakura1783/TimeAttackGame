@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//using UnityEditor.Animations;
 
 public enum CharaType
 {
@@ -23,7 +24,6 @@ public class CharaDataSO : ScriptableObject
         public string charaName;
         public int charaNo;
         public CharaType charaType;
-        public Sprite charaSprite;
 
         public int attackPower;
         public AttackRangeType attackRangeType;
@@ -37,6 +37,6 @@ public class CharaDataSO : ScriptableObject
 
         [Multiline] public string discription;
 
-        public AnimationClip charaAnim;
+        //public AnimatorController charaAnim;
     }
 }

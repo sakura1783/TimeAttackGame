@@ -22,6 +22,7 @@ public class CharaController : MonoBehaviour
     public int maxSpecialMoveCount;
     public int intervalKillCountSpecialMove;
     [SerializeField] private int durationSpecialMove;
+    //[SerializeField] private AnimatorOverrideController charaAnim;  //キャラのAnimatorController
 
     private CharaDataSO.CharaData charaData;
     public CharaDataSO.CharaData CharaData => charaData;
@@ -47,6 +48,7 @@ public class CharaController : MonoBehaviour
         maxSpecialMoveCount = this.charaData.maxSpecialMoveCount;
         intervalKillCountSpecialMove = this.charaData.intervalKillCountSpecialMove;
         durationSpecialMove = this.charaData.durationSpecialMove;
+        //charaAnim = this.charaData.charaAnim;
 
         TryGetComponent(out anim);
 

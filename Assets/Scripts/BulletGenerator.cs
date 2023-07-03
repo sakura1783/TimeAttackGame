@@ -29,15 +29,10 @@ public class BulletGenerator : MonoBehaviour
 
     private UIManager uiManager;
 
-    void Start()
-    {
-        //TODO Startメソッド内に書いてあるものはあとでSetUpBullet内に記述する
-
-        TryGetComponent(out anim);
-    }
-
     public void SetUpBulletGenerator(CharaController charaController, AttackRangeSizeSO.AttackRangeSize attackRangeSize, UIManager uiManager)
     {
+        TryGetComponent(out anim);
+
         this.uiManager = uiManager;
 
         //各値を設定
