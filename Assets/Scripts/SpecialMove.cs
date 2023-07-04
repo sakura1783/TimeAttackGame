@@ -89,6 +89,12 @@ public class SpecialMove : MonoBehaviour
             EnemyController enemies = enemyGenerator.enemiesList[i];
 
             Destroy(enemies.gameObject);
+
+            //Listから必殺技で倒した敵を削除する(この処理を書かないと、倒した敵がListからRemoveされるのは通常攻撃で敵のHPを0にして倒した時のみになるのでRovescioで倒した敵の情報はリストから削除されない。よって、Listに敵の情報がないよ、というMissingエラーが出てしまう)
+            enemyGenerator.enemiesList.Remove(enemies);
+
+            //敵キル数をカウントアップ
+            gameManager.killEnemyCount++;
         }
 
         Debug.Log("Rovescioが発動されました");
