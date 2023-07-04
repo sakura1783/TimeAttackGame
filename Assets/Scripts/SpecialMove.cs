@@ -8,6 +8,8 @@ public class SpecialMove : MonoBehaviour
 
     [SerializeField] private EnemyGenerator enemyGenerator;
 
+    public bool isSpecialMoveActive = false;  //必殺技発動中かどうか
+
     /// <summary>
     /// 必殺技を使用する際の処理
     /// </summary>
@@ -15,6 +17,8 @@ public class SpecialMove : MonoBehaviour
     {
         //どの必殺技を発動するか選んで実行
         SelectSpecialMove(charaType);
+
+        isSpecialMoveActive = true;
 
         //必殺技継続時間分待ってから
         Debug.Log(gameManager.CharaController.durationSpecialMove + "秒待ちます");
@@ -32,6 +36,8 @@ public class SpecialMove : MonoBehaviour
 
         //必殺技終了
         EndSpecialMove(charaType);
+
+        isSpecialMoveActive = false;
     }
 
     /// <summary>
@@ -86,16 +92,21 @@ public class SpecialMove : MonoBehaviour
         //シーン上に生成されている全ての敵を破壊する
         for (int i = 0; i < enemyGenerator.enemiesList.Count; i++)
         {
+            Debug.Log("今調べたいもの：" + enemyGenerator.enemiesList.Count);
+
             EnemyController enemies = enemyGenerator.enemiesList[i];
 
             Destroy(enemies.gameObject);
 
-            //Listから必殺技で倒した敵を削除する(この処理を書かないと、倒した敵がListからRemoveされるのは通常攻撃で敵のHPを0にして倒した時のみになるのでRovescioで倒した敵の情報はリストから削除されない。よって、Listに敵の情報がないよ、というMissingエラーが出てしまう)
-            enemyGenerator.enemiesList.Remove(enemies);
+            //Listから必殺技で倒した敵を削除する(この処理を書かないと、倒した敵がListからRemoveされるのは通常攻撃で倒した時のみになるのでRovescioで倒した敵の情報はリストから削除されない。よって、Listに敵の情報がないよ、というMissingエラーが出てしまう)
+            //enemyGenerator.enemiesList.Remove(enemies);
 
             //敵キル数をカウントアップ
             gameManager.killEnemyCount++;
         }
+
+        //エネミーのListの中身を全て削除する(for文の中ではListの中身をいじらないようにする。for文の中でListをいじると、Listの中身が減る。for文で繰り返しの処理を行っている最中にListの数が変わるということは、想定している回数、for文が回らない)
+        enemyGenerator.enemiesList.Clear();
 
         Debug.Log("Rovescioが発動されました");
     }

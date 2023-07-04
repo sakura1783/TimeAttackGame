@@ -52,6 +52,12 @@ public class UIManager : MonoBehaviour
             return;
         }
 
+        //もし必殺技発動中なら、Updateの以下の処理はしない(UIゲージの更新処理が行われなくなる、Sキーを押しても反応がなくなる)
+        if (specialMove.isSpecialMoveActive)
+        {
+            return;
+        }
+
         //もし現在の敵Kill数が必殺技発動に必要な敵Kill数以上になったら
         if (value >= maxValue)
         {
