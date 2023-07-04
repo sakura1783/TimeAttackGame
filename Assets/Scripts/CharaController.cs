@@ -24,7 +24,7 @@ public class CharaController : MonoBehaviour
     //[SerializeField] private AttackRangeType attackRangeType;
     public int maxSpecialMoveCount;
     public int intervalKillCountSpecialMove;
-    [SerializeField] private int durationSpecialMove;
+    public int durationSpecialMove;
     //[SerializeField] private AnimatorOverrideController charaAnim;  //キャラのAnimatorController
 
     private CharaDataSO.CharaData charaData;
@@ -53,10 +53,10 @@ public class CharaController : MonoBehaviour
         durationSpecialMove = this.charaData.durationSpecialMove;
         //charaAnim = this.charaData.charaAnim;
 
-        //TryGetComponent(out anim);
+        TryGetComponent(out anim);
 
-        //キャラごとのAnimationの設定
-        SetUpAnimation();
+        //TODO キャラごとのAnimationの設定
+        //SetUpAnimation();
 
         //ライフゲージの設定
         GameObject sliderLifeGauge = transform.GetChild(1).GetChild(0).gameObject;

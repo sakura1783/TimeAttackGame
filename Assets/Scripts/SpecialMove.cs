@@ -15,6 +15,20 @@ public class SpecialMove : MonoBehaviour
     {
         //どの必殺技を発動するか選んで実行
         SelectSpecialMove(charaType);
+
+        //必殺技継続時間分待ってから(待つ処理をコルーチンにすると、コルーチンは非同期処理であるため、待つ処理が完了するのを待たず、EndSpecialMoveが動いてしまう。注意)
+        float elapsedTime = 0f;  //経過時間
+        float duration = gameManager.CharaController.durationSpecialMove;  //待つ時間(必殺技継続時間)
+
+        Debug.Log(duration + "秒待ちます");
+
+        while (elapsedTime <= duration)  //経過時間が待つ時間を下回っている間は
+        {
+            elapsedTime += Time.deltaTime;
+        }
+
+        //必殺技終了
+        EndSpecialMove(charaType);
     }
 
     /// <summary>
@@ -41,6 +55,25 @@ public class SpecialMove : MonoBehaviour
     }
 
     /// <summary>
+    /// 必殺技終了
+    /// </summary>
+    private void EndSpecialMove(CharaType charaType)
+    {
+        switch (charaType)
+        {
+            case CharaType.Yellow:
+                EndRovescio();
+                break;
+            case CharaType.Black:
+                EndMezzanotte();
+                break;
+            case CharaType.Pink:
+                EndMagia();
+                break;
+        }
+    }
+
+    /// <summary>
     /// 金髪の女の子の必殺技　敵を一網打尽にする
     /// </summary>
     private void Rovescio()
@@ -56,6 +89,14 @@ public class SpecialMove : MonoBehaviour
         }
 
         Debug.Log("Rovescioが発動されました");
+    }
+
+    /// <summary>
+    /// Rovescio終了
+    /// </summary>
+    private void EndRovescio()
+    {
+        Debug.Log("Rovescioが終了しました");
     }
 
     /// <summary>
@@ -78,10 +119,41 @@ public class SpecialMove : MonoBehaviour
     }
 
     /// <summary>
+    /// Mezzanotte終了
+    /// </summary>
+    private void EndMezzanotte()
+    {
+        Debug.Log("Mezzanotteが終了しました");
+    }
+
+    /// <summary>
     /// ピンク髪の女の子の必殺技　仲間と一緒に戦う
     /// </summary>
     private void Magia()
     {
+        //TODO 演出
+
         Debug.Log("Magiaが発動されました");
     }
+
+    /// <summary>
+    /// Magia終了
+    /// </summary>
+    private void EndMagia()
+    {
+        Debug.Log("Magiaが終了しました");
+    }
+
+    /// <summary>
+    /// 必殺技継続時間分だけ待つ
+    /// </summary>
+    /// <returns></returns>
+    //private IEnumerator WaitDuringSpecialMove()
+    //{
+    //    int waitTime = gameManager.CharaController.durationSpecialMove;
+
+    //    yield return new WaitForSeconds(waitTime);
+
+    //    Debug.Log("WaitDuringSpecialMoveメソッドの処理が動きました");
+    //}
 }

@@ -54,7 +54,7 @@ public class EnemyController : MonoBehaviour
             //Debug.Log("2 : " + this.navMeshAgent2D);
 
             navMeshAgent2D = gameObject.AddComponent<NavMeshAgent2D>();
-            Debug.Log(navMeshAgent2D);
+            //Debug.Log(navMeshAgent2D);
         }
 
         uiManager = this.gameManager.UiManager;
