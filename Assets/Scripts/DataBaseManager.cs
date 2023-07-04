@@ -16,6 +16,7 @@ public class DataBaseManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
+
             DontDestroyOnLoad(gameObject);
         }
         else
@@ -24,6 +25,11 @@ public class DataBaseManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// AttackRangeSize取得用のメソッド
+    /// </summary>
+    /// <param name="searchAttackRangeType"></param>
+    /// <returns></returns>
     public AttackRangeSizeSO.AttackRangeSize GetAttackRangeSize(AttackRangeType searchAttackRangeType)
     {
         foreach (AttackRangeSizeSO.AttackRangeSize attackRangeSize in attackRangeSizeSO.attackRangeSizeList)

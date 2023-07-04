@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using UnityEditor.Animations;
+using UnityEditor.Animations;
 
 public enum CharaType
 {
@@ -37,6 +37,6 @@ public class CharaDataSO : ScriptableObject
 
         [Multiline] public string discription;
 
-        //public AnimatorController charaAnim;
+        public AnimatorController charaAnim;
     }
 }
