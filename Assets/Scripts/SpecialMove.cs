@@ -11,21 +11,24 @@ public class SpecialMove : MonoBehaviour
     /// <summary>
     /// 必殺技を使用する際の処理
     /// </summary>
-    public void UseSpecialMove(CharaType charaType)
+    public IEnumerator UseSpecialMove(CharaType charaType)
     {
         //どの必殺技を発動するか選んで実行
         SelectSpecialMove(charaType);
 
-        //必殺技継続時間分待ってから(待つ処理をコルーチンにすると、コルーチンは非同期処理であるため、待つ処理が完了するのを待たず、EndSpecialMoveが動いてしまう。注意)
-        float elapsedTime = 0f;  //経過時間
-        float duration = gameManager.CharaController.durationSpecialMove;  //待つ時間(必殺技継続時間)
+        //必殺技継続時間分待ってから
+        Debug.Log(gameManager.CharaController.durationSpecialMove + "秒待ちます");
+        yield return new WaitForSeconds(gameManager.CharaController.durationSpecialMove);
 
-        Debug.Log(duration + "秒待ちます");
+        //float elapsedTime = 0f;  //経過時間
+        //float duration = gameManager.CharaController.durationSpecialMove;  //待つ時間(必殺技継続時間)
 
-        while (elapsedTime <= duration)  //経過時間が待つ時間を下回っている間は
-        {
-            elapsedTime += Time.deltaTime;
-        }
+        //Debug.Log(duration + "秒待ちます");
+
+        //while (elapsedTime <= duration)  //経過時間が待つ時間を下回っている間は
+        //{
+        //    elapsedTime += Time.deltaTime;
+        //}
 
         //必殺技終了
         EndSpecialMove(charaType);

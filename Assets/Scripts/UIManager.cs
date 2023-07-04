@@ -71,7 +71,7 @@ public class UIManager : MonoBehaviour
                 gameManager.killEnemyCount = 0;
 
                 //必殺技発動
-                specialMove.UseSpecialMove(gameManager.CharaController.charaType);
+                specialMove.StartCoroutine(specialMove.UseSpecialMove(gameManager.CharaController.charaType));  //コルーチンメソッドを呼び出す場合、このような書式で記述する。
 
                 //必殺技発動回数をカウント
                 specialMoveCount++;
