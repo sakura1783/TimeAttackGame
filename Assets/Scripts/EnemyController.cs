@@ -159,8 +159,6 @@ public class EnemyController : MonoBehaviour
     /// </summary>
     private void Attack()
     {
-        Debug.Log("敵の攻撃");
-
         //プレイヤーダメージ処理
         charaController.ReceiveDamage(attackPower);
     }
