@@ -10,6 +10,10 @@ public class SpecialMove : MonoBehaviour
 
     public bool isSpecialMoveActive = false;  //必殺技発動中かどうか
 
+    public bool isMezzanotte = false;  //Mezzanotte発動中かどうか
+
+    [SerializeField] private ParticleSystem particleRovescio;
+
     /// <summary>
     /// 必殺技を使用する際の処理
     /// </summary>
@@ -79,6 +83,9 @@ public class SpecialMove : MonoBehaviour
             case CharaType.Pink:
                 EndMagia();
                 break;
+            default:
+                Debug.Log("CharaTypeがどれにも一致しないため、必殺技を終了できませんでした");
+                break;
         }
     }
 
@@ -92,9 +99,10 @@ public class SpecialMove : MonoBehaviour
         //シーン上に生成されている全ての敵を破壊する
         for (int i = 0; i < enemyGenerator.enemiesList.Count; i++)
         {
-            Debug.Log("今調べたいもの：" + enemyGenerator.enemiesList.Count);
-
             EnemyController enemies = enemyGenerator.enemiesList[i];
+
+            //演出(パーティクル生成)
+            Instantiate(particleRovescio, enemies.transform.position, Quaternion.identity);
 
             Destroy(enemies.gameObject);
 
@@ -102,7 +110,7 @@ public class SpecialMove : MonoBehaviour
             //enemyGenerator.enemiesList.Remove(enemies);
 
             //敵キル数をカウントアップ
-            gameManager.killEnemyCount++;
+            gameManager.AddKillEnemyCount();
         }
 
         //エネミーのListの中身を全て削除する(for文の中ではListの中身をいじらないようにする。for文の中でListをいじると、Listの中身が減る。for文で繰り返しの処理を行っている最中にListの数が変わるということは、想定している回数、for文が回らない)
@@ -126,9 +134,13 @@ public class SpecialMove : MonoBehaviour
     {
         //TODO 演出
 
+        isMezzanotte = true;
+
         //シーン上に生成されている全ての敵の移動とアニメーションを停止する(Pauseメソッドを実行することでisPausedがtrueになるので、自動的に攻撃もしなくなる)
         for (int i = 0; i < enemyGenerator.enemiesList.Count; i++)
         {
+            //TODO 演出
+
             EnemyController enemies = enemyGenerator.enemiesList[i];
 
             enemies.PauseMove();
@@ -143,6 +155,18 @@ public class SpecialMove : MonoBehaviour
     /// </summary>
     private void EndMezzanotte()
     {
+        for (int i = 0; i < enemyGenerator.enemiesList.Count; i++)
+        {
+            EnemyController enemies = enemyGenerator.enemiesList[i];
+
+            enemies.ResumeMove();
+            enemies.ResumeAnimation();
+
+            //TODO 演出終了
+        }
+
+        isMezzanotte = false;
+
         Debug.Log("Mezzanotteが終了しました");
     }
 

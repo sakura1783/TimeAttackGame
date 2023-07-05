@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
     public float timer = 0;
 
-    public int killEnemyCount = 0;
+    private int dataKillEnemyCount;  //クリア判定に利用する敵キル数
 
     private bool isGameClear = false;
 
@@ -77,7 +77,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void GameClear()
     {
-        if (killEnemyCount >= maxGenerateEnemyCount)
+        if (dataKillEnemyCount >= maxGenerateEnemyCount)
         {
             Debug.Log("ゲームクリア");
 
@@ -89,12 +89,10 @@ public class GameManager : MonoBehaviour
     /// <summary>
     /// 敵キル数をカウントアップ
     /// </summary>
-    public int AddKillEnemyCount()
+    public void AddKillEnemyCount()
     {
-        killEnemyCount++;
+        dataKillEnemyCount++;
 
-        Debug.Log("敵キル数：" + killEnemyCount + "体");
-
-        return killEnemyCount;
+        Debug.Log("敵キル数：" + dataKillEnemyCount + "体");
     }
 }

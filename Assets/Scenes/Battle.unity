@@ -5069,11 +5069,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: b6de5774046c7457b9972c8db398d919, type: 3}
+    m_Font: {fileID: 12800000, guid: 3e92ee7d34cb6403981932417f61ffb8, type: 3}
     m_FontSize: 40
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 4
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 5
     m_AlignByGeometry: 0
@@ -5390,7 +5390,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 0
-  killEnemyCount: 0
   maxGenerateEnemyCount: 5
   charaGenerator: {fileID: 960542471}
   enemy: {fileID: 515537056343755237, guid: 7aaa55d04ecd34551aa65eb646bd40c7, type: 3}
@@ -5731,7 +5730,7 @@ MonoBehaviour:
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 50
+    m_MaxSize: 55
     m_Alignment: 5
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -10841,6 +10840,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 692431901}
   enemyGenerator: {fileID: 830223805}
+  isSpecialMoveActive: 0
+  isMezzanotte: 0
+  particleRovescio: {fileID: 2229766085448553613, guid: c27be7d15330d45fea4f9f3856c381b9, type: 3}
 --- !u!4 &1858716129
 Transform:
   m_ObjectHideFlags: 0
@@ -10940,6 +10942,7 @@ MonoBehaviour:
   particleTran: {fileID: 1122554916}
   specialMove: {fileID: 1858716128}
   specialMoveCount: 0
+  uiKillEnemyCount: 0
 --- !u!4 &2094251405
 Transform:
   m_ObjectHideFlags: 0

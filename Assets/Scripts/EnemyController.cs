@@ -34,7 +34,7 @@ public class EnemyController : MonoBehaviour
 
     private UIManager uiManager;
 
-    private bool isPaused = false;  //移動やアニメーションが一時停止中かどうか
+    //private bool isPaused = false;  //移動やアニメーションが一時停止中かどうか
 
     public void SetUpEnemyController(GameManager gameManager)
     {
@@ -81,8 +81,8 @@ public class EnemyController : MonoBehaviour
             return;
         }
 
-        //もし、移動やアニメーションが一時停止中の場合、以下の移動処理とアニメ遷移処理は行わない
-        if (isPaused)
+        //もし、Mezzanotte発動中の場合、以下の移動処理とアニメ遷移処理は行わない
+        if (gameManager.UiManager.SpecialMove.isMezzanotte)
         {
             return;
         }
@@ -105,6 +105,12 @@ public class EnemyController : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D col)
     {
+        //Mezzanotte発動中は以下の処理を行わない(攻撃準備を行わない)
+        if (gameManager.UiManager.SpecialMove.isMezzanotte)
+        {
+            return;
+        }
+
         if (!isCountingUp)
         {
             if (col.gameObject.tag == "Player")
@@ -127,25 +133,25 @@ public class EnemyController : MonoBehaviour
     /// <returns></returns>
     private IEnumerator PrepareAttack()
     {
-        //時間停止中は以下の攻撃準備処理を行わない
-        if (!isPaused)
+        //Mezzanotte発動中は以下の攻撃準備処理を行わない(isMezzanotte == falseの時だけ攻撃準備を行う)
+        //if (!gameManager.UiManager.SpecialMove.isMezzanotte)
+        //{
+        float timer = 0;
+
+        while (isCountingUp)
         {
-            float timer = 0;
+            timer += Time.deltaTime;
 
-            while (isCountingUp)
+            if (timer >= interval)
             {
-                timer += Time.deltaTime;
+                Attack();
 
-                if (timer >= interval)
-                {
-                    Attack();
-
-                    timer = 0;
-                }
-
-                yield return null;
+                timer = 0;
             }
+
+            yield return null;
         }
+        //}
     }
 
     /// <summary>
@@ -191,7 +197,8 @@ public class EnemyController : MonoBehaviour
             gameManager.EnemyGenerator.enemiesList.Remove(this);
 
             //倒した敵の数をカウントアップ
-            int killCount = gameManager.AddKillEnemyCount();
+            gameManager.AddKillEnemyCount();
+            uiManager.uiKillEnemyCount++;
 
             //もし必殺技を発動した回数が必殺技発動可能回数を上回ってなかったら
             if (uiManager.specialMoveCount < charaController.maxSpecialMoveCount)
@@ -221,8 +228,6 @@ public class EnemyController : MonoBehaviour
         if (navMeshAgent2D != null)  //これを書くことで、万が一navMeshAgent2Dがnullだった場合に、エラーを防げる
         {
             navMeshAgent2D.IsStopped = true;
-
-            isPaused = true;
         }
     }
 
@@ -234,8 +239,6 @@ public class EnemyController : MonoBehaviour
         if (navMeshAgent2D != null)
         {
             navMeshAgent2D.IsStopped = false;
-
-            isPaused = false;
         }
     }
 
@@ -247,8 +250,6 @@ public class EnemyController : MonoBehaviour
         if (anim != null)
         {
             anim.enabled = false;
-
-            isPaused = true;
         }
     }
 
@@ -260,8 +261,6 @@ public class EnemyController : MonoBehaviour
         if (anim != null)
         {
             anim.enabled = true;
-
-            isPaused = false;
         }
     }
 
