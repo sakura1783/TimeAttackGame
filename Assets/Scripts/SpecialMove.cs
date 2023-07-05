@@ -16,7 +16,7 @@ public class SpecialMove : MonoBehaviour
 
     [SerializeField] private ParticleSystem particleMezzanotte;
     private ParticleSystem generatedParticleMezzanotte;
-    [SerializeField] private List<ParticleSystem> particleMezzanotteList = new List<ParticleSystem>();
+    public List<ParticleSystem> particleMezzanotteList = new List<ParticleSystem>();
 
     /// <summary>
     /// 必殺技を使用する際の処理
@@ -141,12 +141,13 @@ public class SpecialMove : MonoBehaviour
         //シーン上に生成されている全ての敵の移動とアニメーションを停止する(Pauseメソッドを実行することでisPausedがtrueになるので、自動的に攻撃もしなくなる)
         for (int i = 0; i < enemyGenerator.enemiesList.Count; i++)
         {
-            //TODO 演出
-
             EnemyController enemies = enemyGenerator.enemiesList[i];
 
             //演出　パーティクル生成
             generatedParticleMezzanotte = Instantiate(particleMezzanotte, enemies.transform.position, Quaternion.identity);
+
+            //パーティクルとエネミーを親子関係にする
+            generatedParticleMezzanotte.transform.SetParent(enemies.transform);
 
             //生成したパーティクルをListに追加
             particleMezzanotteList.Add(generatedParticleMezzanotte);

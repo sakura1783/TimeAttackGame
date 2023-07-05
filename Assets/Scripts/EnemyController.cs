@@ -186,7 +186,31 @@ public class EnemyController : MonoBehaviour
 
         if (hp <= 0)
         {
-            //enemyPos = GetEnemyPos();
+            //もし4個子が存在したら(4個目の子が存在したら、それはMezzanotte時のパーティクル)
+            if (transform.childCount >= 4)
+            {
+                Transform childTransform = transform.GetChild(3);
+
+                ParticleSystem target = null;
+
+                //3個目の子のパーティクルをListから探す
+                foreach (ParticleSystem particle in uiManager.SpecialMove.particleMezzanotteList)
+                {
+                    if (particle.transform == childTransform)
+                    {
+                        target = particle;
+
+                        //必要な要素を見つけたらループを終了する
+                        break;
+                    }
+                }
+
+                //目的のパーティクルが見つかったら、そのパーティクルをListから削除する
+                if (target != null)
+                {
+                    uiManager.SpecialMove.particleMezzanotteList.Remove(target);
+                }
+            }
 
             //アイテムドロップ
             itemGenerator.GenerateItem(gameObject.transform);
@@ -200,7 +224,7 @@ public class EnemyController : MonoBehaviour
             gameManager.AddKillEnemyCount();
 
             //もし必殺技発動中なら、以下の処理はしない(必殺技発動中に敵を倒してもUIゲージが更新されない)
-            if (gameManager.UiManager.SpecialMove.isSpecialMoveActive)
+            if (uiManager.SpecialMove.isSpecialMoveActive)
             {
                 return;
             }
