@@ -16,8 +16,8 @@ MonoBehaviour:
   - attackRangeType: 0
     radius: 1
   - attackRangeType: 1
-    radius: 2
+    radius: 1
   - attackRangeType: 2
-    radius: 2.5
+    radius: 1.25
   - attackRangeType: 3
     radius: 0

@@ -34,11 +34,7 @@ public class GameManager : MonoBehaviour
     public UIManager UiManager => uiManager;
 
     private EnemyController enemyController;
-    public EnemyController EnemyController  //敵生成時にEnemyGeneratorから情報を渡してもらう
-    {
-        get { return enemyController; }
-        set { enemyController = value; }
-    }
+    public EnemyController EnemyController { get; set; }  //敵生成時にEnemyGeneratorから情報を渡してもらう
 
     [SerializeField] private EnemyGenerator enemyGenerator;
     public EnemyGenerator EnemyGenerator => enemyGenerator;

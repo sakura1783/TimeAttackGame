@@ -8,9 +8,9 @@ public class SpecialMove : MonoBehaviour
 
     [SerializeField] private EnemyGenerator enemyGenerator;
 
-    public bool isSpecialMoveActive = false;  //必殺技発動中かどうか
+    public bool isSpecialMoveActive = false;  //必殺技発動中かどうか(必殺技発動中に行わない処理を実装するため、UIManager内で使う)
 
-    public bool isMezzanotte = false;  //Mezzanotte発動中かどうか
+    //public bool isMezzanotte = false;  //Mezzanotte発動中かどうか
 
     [SerializeField] private ParticleSystem particleRovescio;
 
@@ -138,8 +138,6 @@ public class SpecialMove : MonoBehaviour
     {
         //TODO 演出
 
-        isMezzanotte = true;
-
         //シーン上に生成されている全ての敵の移動とアニメーションを停止する(Pauseメソッドを実行することでisPausedがtrueになるので、自動的に攻撃もしなくなる)
         for (int i = 0; i < enemyGenerator.enemiesList.Count; i++)
         {
@@ -173,16 +171,15 @@ public class SpecialMove : MonoBehaviour
             enemies.ResumeAnimation();
         }
 
-        //演出終了　パーティクルをDestroy・Listに追加したパーティクルをListから削除
+        //演出終了　生成されてListに入っている全てのパーティクルをStopする(Stopすることでパーティクルは自動的に削除される)
         for (int i = 0; i < particleMezzanotteList.Count; i++)
         {
             ParticleSystem particle = particleMezzanotteList[i];
 
-            Destroy(particle);
+            particle.Stop();
         }
+        //Listに追加したパーティクルをListから削除
         particleMezzanotteList.Clear();
-
-        isMezzanotte = false;
 
         Debug.Log("Mezzanotteが終了しました");
     }

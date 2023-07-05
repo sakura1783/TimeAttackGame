@@ -30,9 +30,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private SpecialMove specialMove;
     public SpecialMove SpecialMove => specialMove;
 
-    private bool isSpecialMoved = false;  //必殺技を発動したか
-
-    public int specialMoveCount;
+    public int specialMoveCount;  //必殺技を発動した回数
 
     public int uiKillEnemyCount;  //UIゲージ更新に使う敵キル数
 
@@ -55,7 +53,7 @@ public class UIManager : MonoBehaviour
             return;
         }
 
-        //もし必殺技発動中なら、Updateの以下の処理はしない(UIゲージの更新処理が行われなくなる、Sキーを押しても反応がなくなる)
+        //もし必殺技発動中なら、Updateの以下の処理はしない(Sキーを押しても反応がなくなる)
         if (specialMove.isSpecialMoveActive)
         {
             return;
@@ -68,16 +66,17 @@ public class UIManager : MonoBehaviour
             {
                 Debug.Log("Sキーが押されました");
 
-                isSpecialMoved = true;
+                //uiKillCountを0にして、この後にSetIntervalSpecialMoveを行うことでUIのゲージをリセットする
+                //gameManager.EnemyController.killCount = 0;  //これはgameManager.killEnemyCountの戻り値を反映したものなので、これに0を代入してしまうと、一生0のままになってしまうので、その後たとえ敵を倒したとしても、ゲージが更新されない。
+                uiKillEnemyCount = 0;
+
+                //必殺技ゲージ更新処理　必殺技発動後に更新処理を行うことで、ゲージを0にできる。ここに書かないと、敵がDestroyされた時にのみ、更新処理が動くので、必殺技を発動してもゲージが満タンのままになる
+                SetIntervalSpecialMove();
 
                 //パーティクル放出を止める
                 generatedParticle.Stop();
 
                 isParticlePlay = false;
-
-                //killCountを0にして、UIのゲージを0にする
-                //gameManager.EnemyController.killCount = 0;  //これはgameManager.killEnemyCountの戻り値を反映したものなので、これに0を代入してしまうと、一生0のままになってしまうので、その後たとえ敵を倒したとしても、ゲージが更新されない。
-                uiKillEnemyCount = 0;
 
                 //必殺技発動
                 specialMove.StartCoroutine(specialMove.UseSpecialMove(gameManager.CharaController.charaType));  //コルーチンメソッドを呼び出す場合、このような書式で記述する。
@@ -85,15 +84,6 @@ public class UIManager : MonoBehaviour
                 //必殺技発動回数をカウント
                 specialMoveCount++;
             }
-        }
-
-        //必殺技を発動したら
-        if (isSpecialMoved)
-        {
-            isSpecialMoved = false;
-
-            //必殺技ゲージ更新処理　必殺技発動後に更新処理を行うことで、ゲージを0にできる。ここに書かないと、敵がDestroyされた時にのみ、更新処理が動くので、必殺技を発動してもゲージが満タンのままになる
-            SetIntervalSpecialMove();
         }
     }
 
