@@ -36,6 +36,7 @@ public class CharaDataSO : ScriptableObject
 
         [Multiline] public string discription;
 
-        public AnimationClip charaAnim;
+        //public AnimationClip charaAnim;
+        public AnimatorOverrideController charaOverrideController;
     }
 }
