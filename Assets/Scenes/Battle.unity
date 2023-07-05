@@ -10843,6 +10843,7 @@ MonoBehaviour:
   isSpecialMoveActive: 0
   isMezzanotte: 0
   particleRovescio: {fileID: 2229766085448553613, guid: c27be7d15330d45fea4f9f3856c381b9, type: 3}
+  particleMezzanotte: {fileID: 6086894062645215988, guid: 03fbd6e43e7d14413bc0c040b6ba978d, type: 3}
 --- !u!4 &1858716129
 Transform:
   m_ObjectHideFlags: 0
