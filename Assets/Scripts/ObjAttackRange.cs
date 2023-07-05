@@ -23,10 +23,11 @@ public class ObjAttackRange : MonoBehaviour
 
         //サイズを設定
         //transform.localScale = Vector2.one * DataBaseManager.instance.GetAttackRangeSize(charaController.CharaData.attackRangeType).radius;
-        var newScale = Vector2.one * DataBaseManager.instance.GetAttackRangeSize(charaController.CharaData.attackRangeType).radius;
-        var parentLossyScale = chara.transform.lossyScale;
+        var newScale = Vector2.one * DataBaseManager.instance.GetAttackRangeSize(charaController.CharaData.attackRangeType).radius * 2;  //最後に2を掛けて直径にする
+        //var parentLossyScale = chara.transform.lossyScale;
 
-        transform.localScale = new Vector2(newScale.x / parentLossyScale.x, newScale.y / parentLossyScale.y);
+        //transform.localScale = new Vector2(newScale.x / parentLossyScale.x, newScale.y / parentLossyScale.y);
+        transform.localScale *= newScale;  //約1.4のキャラのサイズに対して、newScaleを掛け算する
 
         //色を設定
         if (TryGetComponent(out SpriteRenderer spriteRenderer))
