@@ -8,13 +8,17 @@ public class MagiaBullet : MonoBehaviour
 
     private EnemyController enemyController;
 
+    private int attackPoint;
+
     /// <summary>
     /// 弾の制御
     /// </summary>
     /// <param name="speed"></param>
     /// <param name="direction"></param>
-    public void Shoot(float speed, Vector2 direction)
+    public void Shoot(float speed, Vector2 direction, int attackPoint)
     {
+        this.attackPoint = attackPoint;
+
         if (TryGetComponent(out Rigidbody2D rb))
         {
             rb.AddForce(direction * speed);
@@ -29,8 +33,8 @@ public class MagiaBullet : MonoBehaviour
         {
             Destroy(gameObject);
 
-            //TODO 敵の被ダメージ処理　MagiaCharaの情報を持ってくる
-            //enemyController.Damage();
+            //敵の被ダメージ処理
+            enemyController.Damage(attackPoint);
         }
     }
 }

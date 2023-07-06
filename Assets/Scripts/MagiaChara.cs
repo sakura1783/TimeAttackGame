@@ -21,7 +21,7 @@ public class MagiaChara : MonoBehaviour
 
     //弾の各情報
     private float radius;
-    [SerializeField] private float speed;
+    [SerializeField] private float bulletSpeed;
 
     [SerializeField] private LayerMask enemyLayer;
 
@@ -181,7 +181,7 @@ public class MagiaChara : MonoBehaviour
     {
         MagiaBullet bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
 
-        bullet.Shoot(speed, direction);
+        bullet.Shoot(bulletSpeed, direction, attackPoint);
 
         gameManager.UiManager.SetIntervalAttackTime(interval);
     }
