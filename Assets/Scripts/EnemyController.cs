@@ -78,6 +78,8 @@ public class EnemyController : MonoBehaviour
             //Debug.Log(navMeshAgent2D);
         }
 
+        navMeshAgent2D.speed = moveSpeed;
+
         uiManager = this.gameManager.UiManager;
 
         itemGenerator = gameManager.ItemGenerator;
