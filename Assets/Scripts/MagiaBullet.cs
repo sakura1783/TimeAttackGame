@@ -30,7 +30,7 @@ public class MagiaBullet : MonoBehaviour
             Destroy(gameObject);
 
             //TODO 敵の被ダメージ処理　MagiaCharaの情報を持ってくる
-            //enemyController.Damage(enemyController.);
+            //enemyController.Damage();
         }
     }
 }
