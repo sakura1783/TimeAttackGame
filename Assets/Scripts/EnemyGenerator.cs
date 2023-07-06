@@ -48,8 +48,11 @@ public class EnemyGenerator : MonoBehaviour
 
             enemiesList.Add(generatedEnemy);
 
+            //敵の種類をランダムに決定
+            int enemyNo = Random.Range(0, DataBaseManager.instance.enemyDataSO.enemyDatasList.Count);
+
             //enemyPrefab.SetUpEnemyController(charaController);  // <= これは間違い。
-            generatedEnemy.SetUpEnemyController(gameManager);  //Enemyのプレハブではなく、生成したEnemyの情報に命令を出す。
+            generatedEnemy.SetUpEnemyController(gameManager, DataBaseManager.instance.enemyDataSO.enemyDatasList[enemyNo]);  //Enemyのプレハブではなく、生成したEnemyの情報に命令を出す。
         }
     }
 }

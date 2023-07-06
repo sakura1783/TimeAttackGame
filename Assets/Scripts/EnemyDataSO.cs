@@ -26,6 +26,6 @@ public class EnemyDataSO : ScriptableObject
 
         public int addSpecialMovePoint;
 
-        //追加するものがあれば追加する
+        public AnimatorOverrideController enemyOverrideController;
     }
 }

@@ -14,16 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyDatasList:
   - enemyNo: 0
-    maxHp: 5
+    maxHp: 4
     attackPower: 1
     intervalAttackTime: 1.5
     moveSpeed: 1
     attackRangeType: 0
+    itemDropRate: 30
     addSpecialMovePoint: 2
+    enemyOverrideController: {fileID: 22100000, guid: ca5e5089a6e214be0897f62b8e0b82f7, type: 2}
   - enemyNo: 1
-    maxHp: 0
-    attackPower: 0
-    intervalAttackTime: 0
-    moveSpeed: 0
+    maxHp: 7
+    attackPower: 2
+    intervalAttackTime: 1.5
+    moveSpeed: 1.5
     attackRangeType: 0
-    addSpecialMovePoint: 0
+    itemDropRate: 50
+    addSpecialMovePoint: 3
+    enemyOverrideController: {fileID: 22100000, guid: 4486027252ffc4db78914a5a2ccd26a6, type: 2}

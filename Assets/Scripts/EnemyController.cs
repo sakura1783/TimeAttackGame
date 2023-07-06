@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using static CharaDataSO;
 
 public class EnemyController : MonoBehaviour
 {
@@ -11,13 +12,17 @@ public class EnemyController : MonoBehaviour
 
     public CharaController charaController;
 
-    [SerializeField] private EnemyDataSO.EnemyData enemyData;
+    private EnemyDataSO.EnemyData enemyData;
 
+    //各情報
     public int maxHp;
-    public int hp;
-    private int itemDropRate;
+    [SerializeField] private float moveSpeed;
+    [SerializeField] private int itemDropRate;
     [SerializeField] private int attackPower;
     [SerializeField] private float interval;
+    [SerializeField] private int addSpecialMovePoint;
+
+    public int hp;
 
     private GameManager gameManager;
 
@@ -36,13 +41,29 @@ public class EnemyController : MonoBehaviour
 
     public bool isPaused = false;  //移動やアニメーションが一時停止中かどうか
 
-    public void SetUpEnemyController(GameManager gameManager)
+    public void SetUpEnemyController(GameManager gameManager, EnemyDataSO.EnemyData enemyData)
     {
+        this.enemyData = enemyData;
+
+        //各値の設定
+        maxHp = this.enemyData.maxHp;
+        moveSpeed = this.enemyData.moveSpeed;
+        attackPower = this.enemyData.attackPower;
+        itemDropRate = this.enemyData.itemDropRate;
+        interval = this.enemyData.intervalAttackTime;
+        addSpecialMovePoint = this.enemyData.addSpecialMovePoint;
+
+        hp = maxHp;
+
+        if (TryGetComponent(out anim))
+        {
+            SetUpAnimation();
+        }
+
         this.gameManager = gameManager;
 
         this.charaController = this.gameManager.CharaController;
 
-        TryGetComponent(out anim);
         //TryGetComponent(out this.navMeshAgent2D);
 
         if (navMeshAgent2D == null)
@@ -69,9 +90,6 @@ public class EnemyController : MonoBehaviour
         {
             lifeGauge.SetUpLifeGauge(this);
         }
-
-        //各値を設定
-        hp = maxHp;
     }
 
     void Update()
@@ -101,6 +119,19 @@ public class EnemyController : MonoBehaviour
 
         anim.SetFloat("X", direction.x);
         anim.SetFloat("Y", direction.y);
+    }
+
+    /// <summary>
+    /// AnimatorControllerをAnimatorOverrideControllerを利用して変更
+    /// </summary>
+    private void SetUpAnimation()
+    {
+        //このエネミーのEnemyData内にアニメーション用のデータがあるか確認する
+        if (enemyData.enemyOverrideController != null)
+        {
+            //アニメーションのデータがある場合には、アニメーションを上書きする
+            anim.runtimeAnimatorController = enemyData.enemyOverrideController;
+        }
     }
 
     private void OnTriggerStay2D(Collider2D col)

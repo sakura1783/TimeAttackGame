@@ -160,12 +160,17 @@ MonoBehaviour:
     attackRangeType: 0
     itemDropRate: 0
     addSpecialMovePoint: 0
+    enemyOverrideController: {fileID: 0}
   maxHp: 5
-  hp: 0
+  moveSpeed: 0
+  itemDropRate: 0
   attackPower: 2
   interval: 2
+  addSpecialMovePoint: 0
+  hp: 0
   floatingMessagePrefab: {fileID: 7835068892720044147, guid: 8e9a54d0375eb408ba35810799ebe662, type: 3}
   enemyFloatingMessageTran: {fileID: 0}
+  isPaused: 0
 --- !u!58 &6402039678523374838
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -746,8 +751,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 639130345
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.3773585, g: 0.008899963, b: 0.012437577, a: 0.49019608}
