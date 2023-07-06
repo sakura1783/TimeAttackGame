@@ -18,6 +18,8 @@ public class SpecialMove : MonoBehaviour
     private ParticleSystem generatedParticleMezzanotte;
     public List<ParticleSystem> particleMezzanotteList = new List<ParticleSystem>();
 
+    [SerializeField] private ParticleSystem particleMagia;
+
     [SerializeField] private MagiaCharaGenerator magiaCharaGenerator;  //Magia時にキャラを生成するための変数。gameManagerから情報をもらう。
 
     [SerializeField] private List<MagiaChara> magiaCharasList = new List<MagiaChara>();
@@ -196,14 +198,18 @@ public class SpecialMove : MonoBehaviour
     {
         //TODO 演出
 
-        //Chara[0]の生成とセットアップをして、リストに追加する
+        //Chara[0]の生成とセットアップをして、リストに追加する。パーティクル(演出)も生成する
         MagiaChara charaZero = magiaCharaGenerator.GenerateMagiaCharaZero();
         charaZero.SetUpMagiaChara(gameManager, DataBaseManager.instance.charaDataSO.charaDatasList[0]);
+        ParticleSystem particleZero = Instantiate(particleMagia, charaZero.transform.position, Quaternion.identity);
+        particleZero.transform.SetParent(charaZero.transform);
         magiaCharasList.Add(charaZero);
 
-        //Chara[1]の生成とセットアップをして、リストに追加する
+        //Chara[1]の生成とセットアップをして、リストに追加する。パーティクル(演出)も生成する
         MagiaChara charaOne = magiaCharaGenerator.GenerateMagiaCharaOne();
         charaOne.SetUpMagiaChara(gameManager, DataBaseManager.instance.charaDataSO.charaDatasList[1]);
+        ParticleSystem particleOne = Instantiate(particleMagia, charaOne.transform.position, Quaternion.identity);
+        particleOne.transform.SetParent(charaOne.transform);
         magiaCharasList.Add(charaOne);
 
         Debug.Log("Magiaが発動されました");
