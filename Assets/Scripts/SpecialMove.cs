@@ -18,6 +18,8 @@ public class SpecialMove : MonoBehaviour
     private ParticleSystem generatedParticleMezzanotte;
     public List<ParticleSystem> particleMezzanotteList = new List<ParticleSystem>();
 
+    private MagiaCharaGenerator magiaCharaGenerator;  //Magia時にキャラを生成するための変数。gameManagerから情報をもらう。
+
     /// <summary>
     /// 必殺技を使用する際の処理
     /// </summary>
@@ -191,6 +193,9 @@ public class SpecialMove : MonoBehaviour
     private void Magia()
     {
         //TODO 演出
+
+        //TODO GenerateMagiaChara()
+        //TODO SetUpMagiaChara()
 
         Debug.Log("Magiaが発動されました");
     }
