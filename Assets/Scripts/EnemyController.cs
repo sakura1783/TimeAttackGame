@@ -241,8 +241,13 @@ public class EnemyController : MonoBehaviour
                 }
             }
 
-            //アイテムドロップ
-            itemGenerator.GenerateItem(gameObject.transform);
+            //ランダムな値がitemDropRate以下だった場合、アイテムドロップ
+            int randomNum = Random.Range(0, 99);
+
+            if (randomNum <= itemDropRate)
+            {
+                itemGenerator.GenerateItem(gameObject.transform);
+            }
 
             Destroy(gameObject);
 

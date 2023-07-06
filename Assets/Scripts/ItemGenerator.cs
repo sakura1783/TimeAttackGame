@@ -12,7 +12,7 @@ public class ItemGenerator : MonoBehaviour
 
     //private Vector2 enemyPos;
 
-    [SerializeField] private int generateNum;
+    //[SerializeField] private int generateNum;
 
     public void SetUpItemGenerator()
     {
@@ -24,18 +24,18 @@ public class ItemGenerator : MonoBehaviour
     /// </summary>
     public void GenerateItem(Transform tran)
     {
-        int num = Random.Range(0, 99);
-        Debug.Log("ランダムな値：" + num);
+        //int num = Random.Range(0, 99);
+        //Debug.Log("ランダムな値：" + num);
 
-        if (num <= generateNum)
-        {
-            //enemyPos = enemyGenerator.GeneratedEnemy.EnemyPos;
+        //if (num <= generateNum)
+        //{
+        //enemyPos = enemyGenerator.GeneratedEnemy.EnemyPos;
 
-            //Debug.Log("今調べたいもの：" + enemyGenerator.GeneratedEnemy.EnemyPos);
+        //Debug.Log("今調べたいもの：" + enemyGenerator.GeneratedEnemy.EnemyPos);
 
-            int randomIndex = Random.Range(0, itemsPrefab.Length);
+        int randomIndex = Random.Range(0, itemsPrefab.Length);
 
-            Item item = Instantiate(itemsPrefab[randomIndex], tran.position, Quaternion.identity);
-        }
+        Item item = Instantiate(itemsPrefab[randomIndex], tran.position, Quaternion.identity);
+        //}
     }
 }

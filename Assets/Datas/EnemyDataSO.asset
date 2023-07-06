@@ -19,7 +19,7 @@ MonoBehaviour:
     intervalAttackTime: 1.5
     moveSpeed: 1
     attackRangeType: 0
-    itemDropRate: 30
+    itemDropRate: 50
     addSpecialMovePoint: 2
     enemyOverrideController: {fileID: 22100000, guid: ca5e5089a6e214be0897f62b8e0b82f7, type: 2}
   - enemyNo: 1
@@ -28,6 +28,6 @@ MonoBehaviour:
     intervalAttackTime: 1.5
     moveSpeed: 1.5
     attackRangeType: 0
-    itemDropRate: 50
+    itemDropRate: 70
     addSpecialMovePoint: 3
     enemyOverrideController: {fileID: 22100000, guid: 4486027252ffc4db78914a5a2ccd26a6, type: 2}
