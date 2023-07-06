@@ -131,8 +131,6 @@ public class CharaController : MonoBehaviour
     /// <param name="damage"></param>
     public void ReceiveDamage(int damage)
     {
-        Debug.Log("プレイヤーがダメージを受けました");
-
         hp -= damage;
         hp = Mathf.Clamp(hp, 0, maxHp);
 

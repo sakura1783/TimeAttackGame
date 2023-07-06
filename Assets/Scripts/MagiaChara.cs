@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using static EnemyDataSO;
 
 public class MagiaChara : MonoBehaviour
 {
@@ -16,8 +17,8 @@ public class MagiaChara : MonoBehaviour
     private bool isCountingUp = false;
 
     //キャラの各情報
-    private int attackPoint;
-    private float interval;
+    [SerializeField] private int attackPoint;
+    [SerializeField] private float interval;
 
     //弾の各情報
     private float radius;
@@ -27,15 +28,29 @@ public class MagiaChara : MonoBehaviour
 
     [SerializeField] private MagiaBullet bulletPrefab;
 
+    [SerializeField] private CharaDataSO.CharaData charaData;  //TODO SerializeField消す
+
     public void SetUpMagiaChara(GameManager gameManager, CharaDataSO.CharaData charaData)
     {
+        this.charaData = charaData;
+
+        AttackRangeSizeSO.AttackRangeSize attackRangeSize = DataBaseManager.instance.GetAttackRangeSize(this.charaData.attackRangeType);
+
+        //各値の設定
+        attackPoint = this.charaData.attackPower;
+        interval = this.charaData.intervalAttackTime;
+        radius = attackRangeSize.radius;
+
         this.gameManager = gameManager;
 
-        TryGetComponent(out anim);
+        if (TryGetComponent(out anim))
+        {
+            SetUpAnimation();
+        }
 
         if (navMeshAgent2D == null)
         {
-            gameObject.AddComponent<NavMeshAgent2D>();
+            navMeshAgent2D = gameObject.AddComponent<NavMeshAgent2D>();
         }
     }
 
@@ -46,23 +61,13 @@ public class MagiaChara : MonoBehaviour
             return;
         }
 
-        //エネミーのListの中から一番近い敵を探す
+        FindNearestEnemy();
+
         if (target == null)
         {
-            float nearestDistance = float.MaxValue;
-
-            foreach (EnemyController enemy in gameManager.EnemyGenerator.enemiesList)
-            {
-                float distance = Vector3.Distance(transform.position, enemy.transform.position);
-
-                if (nearestDistance > distance)
-                {
-                    nearestDistance = distance;
-
-                    target = enemy;
-                }
-            }
+            return;
         }
+
         //上で探した一番近い敵の座標に向かって移動する
         navMeshAgent2D.destination = target.transform.position;
 
@@ -70,14 +75,47 @@ public class MagiaChara : MonoBehaviour
     }
 
     /// <summary>
+    /// エネミーのListの中から一番近い敵を探す
+    /// </summary>
+    private void FindNearestEnemy()
+    {
+        float nearestDistance = float.MaxValue;
+
+        foreach (EnemyController enemy in gameManager.EnemyGenerator.enemiesList)
+        {
+            float distance = Vector3.Distance(transform.position, enemy.transform.position);
+
+            if (nearestDistance > distance)
+            {
+                nearestDistance = distance;
+
+                target = enemy;
+            }
+        }
+    }
+
+    /// <summary>
     /// アニメーション変更
     /// </summary>
     private void ChangeAnimDirection()
     {
-        Vector2 direction = (gameManager.EnemyController.transform.position - transform.position).normalized;
+        Vector2 direction = (target.transform.position - transform.position).normalized;
 
         anim.SetFloat("X", direction.x);
         anim.SetFloat("Y", direction.y);
+    }
+
+    /// <summary>
+    /// AnimatorControllerをAnimatorOverrideControllerを利用して変更
+    /// </summary>
+    private void SetUpAnimation()
+    {
+        //このエネミーのEnemyData内にアニメーション用のデータがあるか確認する
+        if (charaData.charaOverrideController != null)
+        {
+            //アニメーションのデータがある場合には、アニメーションを上書きする
+            anim.runtimeAnimatorController = charaData.charaOverrideController;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D col)
@@ -122,11 +160,6 @@ public class MagiaChara : MonoBehaviour
 
             yield return null;
         }
-    }
-
-    private void Attack()
-    {
-        //gameManager.EnemyController.Damage(attackPoint);
     }
 
     /// <summary>

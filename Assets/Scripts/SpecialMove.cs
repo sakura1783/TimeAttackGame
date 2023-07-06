@@ -18,7 +18,9 @@ public class SpecialMove : MonoBehaviour
     private ParticleSystem generatedParticleMezzanotte;
     public List<ParticleSystem> particleMezzanotteList = new List<ParticleSystem>();
 
-    private MagiaCharaGenerator magiaCharaGenerator;  //Magia時にキャラを生成するための変数。gameManagerから情報をもらう。
+    [SerializeField] private MagiaCharaGenerator magiaCharaGenerator;  //Magia時にキャラを生成するための変数。gameManagerから情報をもらう。
+
+    [SerializeField] private List<MagiaChara> magiaCharasList = new List<MagiaChara>();
 
     /// <summary>
     /// 必殺技を使用する際の処理
@@ -194,8 +196,15 @@ public class SpecialMove : MonoBehaviour
     {
         //TODO 演出
 
-        //TODO GenerateMagiaChara()
-        //TODO SetUpMagiaChara()
+        //Chara[0]の生成とセットアップをして、リストに追加する
+        MagiaChara charaZero = magiaCharaGenerator.GenerateMagiaCharaZero();
+        charaZero.SetUpMagiaChara(gameManager, DataBaseManager.instance.charaDataSO.charaDatasList[0]);
+        magiaCharasList.Add(charaZero);
+
+        //Chara[1]の生成とセットアップをして、リストに追加する
+        MagiaChara charaOne = magiaCharaGenerator.GenerateMagiaCharaOne();
+        charaOne.SetUpMagiaChara(gameManager, DataBaseManager.instance.charaDataSO.charaDatasList[1]);
+        magiaCharasList.Add(charaOne);
 
         Debug.Log("Magiaが発動されました");
     }
@@ -205,6 +214,16 @@ public class SpecialMove : MonoBehaviour
     /// </summary>
     private void EndMagia()
     {
+        //リストに入っている全てのキャラ(Magiaで生成された全てのキャラ)をDestroyする
+        for (int i = 0; i < magiaCharasList.Count; i++)
+        {
+            MagiaChara magiaChara = magiaCharasList[i];
+
+            Destroy(magiaChara.gameObject);  //引数がmagiaCharaだと、magiaCharaクラスのコンポーネントが削除されるだけで、ゲームオブジェクト自体は削除されない。注意
+        }
+        //リストの中身を空にする
+        magiaCharasList.Clear();
+
         Debug.Log("Magiaが終了しました");
     }
 

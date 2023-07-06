@@ -5543,7 +5543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e439286db6c484a0b9d6c8223c82f9e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charaPrefab: {fileID: 0}
+  charaPrefab: {fileID: 1888963413457537675, guid: a58091da028064a1585cb1eab898aa0f, type: 3}
 --- !u!4 &973103863
 Transform:
   m_ObjectHideFlags: 0
@@ -10889,6 +10889,8 @@ MonoBehaviour:
   particleRovescio: {fileID: 2229766085448553613, guid: c27be7d15330d45fea4f9f3856c381b9, type: 3}
   particleMezzanotte: {fileID: 7321971343839077532, guid: dd77520f19b0649df8a083828bbbb197, type: 3}
   particleMezzanotteList: []
+  magiaCharaGenerator: {fileID: 973103862}
+  magiaCharasList: []
 --- !u!4 &1858716129
 Transform:
   m_ObjectHideFlags: 0

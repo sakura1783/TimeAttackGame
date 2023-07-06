@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1888963413457537675}
   m_Layer: 0
   m_Name: MagiaChara
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -159,8 +159,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  attackPoint: 0
+  interval: 0
   bulletSpeed: 500
   enemyLayer:
     serializedVersion: 2
     m_Bits: 128
   bulletPrefab: {fileID: 5291085657474284950, guid: ea4543025c7d0438d9a0b60f0cb64b82, type: 3}
+  charaData:
+    charaName: 
+    charaNo: 0
+    charaType: 0
+    attackPower: 0
+    attackRangeType: 0
+    intervalAttackTime: 0
+    specialMoveName: 
+    maxSpecialMoveCount: 0
+    intervalKillCountSpecialMove: 0
+    durationSpecialMove: 0
+    discription: 
+    charaOverrideController: {fileID: 0}
