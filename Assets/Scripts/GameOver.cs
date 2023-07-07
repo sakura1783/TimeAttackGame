@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
@@ -14,9 +15,17 @@ public class GameOver : MonoBehaviour
 
     void Start()
     {
-        //TODO SetUpButton()
+        SwitchActivateButtons(false);
+
+        SetUpButtons();
 
         StartCoroutine(SetUpPanel());
+    }
+
+    private void SetUpButtons()
+    {
+        btnHome.onClick.AddListener(OnClickButtonHome);
+        btnRestart.onClick.AddListener(OnClickButtonRestart);
     }
 
     private IEnumerator SetUpPanel()
@@ -30,6 +39,32 @@ public class GameOver : MonoBehaviour
 
         yield return new WaitForSeconds(2);
 
-        btnCanvasGroup.DOFade(1, 3).SetEase(Ease.InQuad);
+        btnCanvasGroup.DOFade(1, 3).SetEase(Ease.InQuad).OnComplete(() => SwitchActivateButtons(true));
+    }
+
+    /// <summary>
+    /// 「ホーム」ボタンを押した際の処理
+    /// </summary>
+    private void OnClickButtonHome()
+    {
+        SceneManager.LoadScene("Home");
+    }
+
+    /// <summary>
+    /// 「リトライ」ボタンを押した際の処理
+    /// </summary>
+    private void OnClickButtonRestart()
+    {
+        SceneManager.LoadScene("Battle");
+    }
+
+    /// <summary>
+    /// 各ボタンのアクティブ状態の切り替え
+    /// </summary>
+    /// <param name="isSwitch"></param>
+    private void SwitchActivateButtons(bool isSwitch)
+    {
+        btnHome.interactable = isSwitch;
+        btnRestart.interactable = isSwitch;
     }
 }
