@@ -36,6 +36,8 @@ public class Bullet : MonoBehaviour
 
             //敵の被ダメージ処理
             enemyController.Damage(enemyController.charaController.attackPoint);
+
+            Debug.Log("OnTrigger");
         }
     }
 }

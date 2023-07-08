@@ -244,7 +244,7 @@ public class EnemyController : MonoBehaviour
             }
 
             //ランダムな値がitemDropRate以下だった場合、アイテムドロップ
-            int randomNum = Random.Range(0, 99);
+            int randomNum = Random.Range(0, 100);
 
             if (randomNum <= itemDropRate)
             {
@@ -258,6 +258,8 @@ public class EnemyController : MonoBehaviour
 
             //倒した敵の数をカウントアップ
             gameManager.AddKillEnemyCount();
+
+            Debug.Log("敵破壊");
 
             //もし必殺技発動中なら、以下の処理はしない(必殺技発動中に敵を倒してもUIゲージが更新されない)
             if (uiManager.SpecialMove.isSpecialMoveActive)

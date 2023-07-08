@@ -742,16 +742,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 2147483649
-  - first: {x: -10, y: -6, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 2147483649
   - first: {x: -9, y: -6, z: 0}
     second:
       serializedVersion: 2
@@ -4154,13 +4144,13 @@ Tilemap:
       m_AllTileFlags: 2147483649
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 392
+  - m_RefCount: 391
     m_Data: {fileID: 11400000, guid: 931785a5c5f4a48a681c41a5e575b9bf, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 392
+  - m_RefCount: 391
     m_Data: {fileID: 2010633854, guid: 1feb02d4e1d31497295d329434e09603, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 392
+  - m_RefCount: 391
     m_Data:
       e00: 1
       e01: 0
@@ -4179,7 +4169,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 392
+  - m_RefCount: 391
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -5121,7 +5111,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemsPrefab:
   - {fileID: 6754152913199254584, guid: b978f6db154424f6dab6d2bc5fdb82ca, type: 3}
-  generateNum: 79
 --- !u!4 &446544010
 Transform:
   m_ObjectHideFlags: 0

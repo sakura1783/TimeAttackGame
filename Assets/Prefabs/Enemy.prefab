@@ -151,16 +151,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charaController: {fileID: 5934362981039619279, guid: 15af0899ff8b64aed8066f6f62085354, type: 3}
-  enemyData:
-    enemyNo: 0
-    maxHp: 0
-    attackPower: 0
-    intervalAttackTime: 0
-    moveSpeed: 0
-    attackRangeType: 0
-    itemDropRate: 0
-    addSpecialMovePoint: 0
-    enemyOverrideController: {fileID: 0}
   maxHp: 5
   moveSpeed: 0
   itemDropRate: 0
@@ -178,7 +168,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 515537056343755237}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -691,6 +681,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4638802255081006972}
   - component: {fileID: 3048690337205409800}
+  - component: {fileID: 1557923195691224204}
   m_Layer: 7
   m_Name: ObjAttackRange
   m_TagString: Untagged
@@ -765,3 +756,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1557923195691224204
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8903783956836591499}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5

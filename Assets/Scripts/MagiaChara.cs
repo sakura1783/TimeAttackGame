@@ -51,6 +51,8 @@ public class MagiaChara : MonoBehaviour
         if (navMeshAgent2D == null)
         {
             navMeshAgent2D = gameObject.AddComponent<NavMeshAgent2D>();
+
+            navMeshAgent2D.speed = 2.5f;
         }
     }
 
