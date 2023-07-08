@@ -259,8 +259,6 @@ public class EnemyController : MonoBehaviour
             //倒した敵の数をカウントアップ
             gameManager.AddKillEnemyCount();
 
-            Debug.Log("敵破壊");
-
             //もし必殺技発動中なら、以下の処理はしない(必殺技発動中に敵を倒してもUIゲージが更新されない)
             if (uiManager.SpecialMove.isSpecialMoveActive)
             {
@@ -287,6 +285,8 @@ public class EnemyController : MonoBehaviour
 
         //生成したフロート表示の設定用メソッドを実行。引数として、バレットの攻撃力値とフロート表示の種類を指定して渡す
         floatingMessage.DisplayFloatingMessage(point, FloatingMessage.FloatingMessageType.Damage);
+
+        Debug.Log(point);
     }
 
     /// <summary>

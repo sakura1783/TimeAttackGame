@@ -16,7 +16,7 @@ MonoBehaviour:
   - charaName: "\u4E00\u6761 \u30C4\u30D0\u30AD"
     charaNo: 0
     charaType: 2
-    attackPower: 10
+    attackPower: 2
     attackRangeType: 2
     intervalAttackTime: 3
     specialMoveName: Rovescio
@@ -40,12 +40,12 @@ MonoBehaviour:
   - charaName: "\u6708\u5C45 \u30B7\u30BA\u30AF"
     charaNo: 2
     charaType: 2
-    attackPower: 3
+    attackPower: 10
     attackRangeType: 1
     intervalAttackTime: 2
     specialMoveName: Magia
     maxSpecialMoveCount: 2
-    intervalKillCountSpecialMove: 7
-    durationSpecialMove: 5
+    intervalKillCountSpecialMove: 1
+    durationSpecialMove: 15
     discription: "\u5FC5\u6BBA\u6280\u767A\u52D5\u6642\u3001\u4EF2\u9593\u3068\u4E00\u7DD2\u306B\u6226\u3044\u3001\n\u6575\u306B\u7ACB\u3061\u5411\u304B\u3046\u3002"
     charaOverrideController: {fileID: 22100000, guid: e5b07017837964493a3f0ea14ebbd775, type: 2}

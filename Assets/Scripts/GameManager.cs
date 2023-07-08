@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
 
         charaController = charaGenerator.GenerateChara();  //戻り値のあるメソッドの活用。GenerateCharaメソッドの戻り値をcharaController変数に代入。こうすることで、生成されたキャラの情報が提供され、次行の命令がChara(Clone)に対しての命令となる。
 
-        charaController.SetUpCharaController(this, DataBaseManager.instance.charaDataSO.charaDatasList[0], uiManager);  //TODO []の中にはランダムな変数を入れる
+        charaController.SetUpCharaController(this, DataBaseManager.instance.charaDataSO.charaDatasList[2], uiManager);  //TODO []の中にはランダムな変数を入れる
 
         cineMachine.SetUpCinemachine(this);  //キャラ生成前に書いてしまうと追尾対象のキャラがまだいないのでエラーになってしまう、注意
 
