@@ -9,7 +9,6 @@ public class PlacementCharaSelectPopUp : MonoBehaviour
     [SerializeField] private CanvasGroup canvasGroup;
 
     [SerializeField] private Button btnSelect;
-    [SerializeField] private Button btnChara;
 
     [SerializeField] private Image imgSelectChara;
     [SerializeField] private Image imgSelectedChara;
@@ -30,8 +29,6 @@ public class PlacementCharaSelectPopUp : MonoBehaviour
     private List<ButtonChara> btnCharasList = new List<ButtonChara>();  //生成したキャラのボタンを管理する
 
     private CharaDataSO.CharaData selectCharaData;  //現在選択しているキャラの情報を管理する
-
-    [SerializeField] private Home homeManager;
 
 
     public void SetUpPlacementCharaSelectPopUp(List<CharaDataSO.CharaData> charaDatasList)
@@ -59,6 +56,8 @@ public class PlacementCharaSelectPopUp : MonoBehaviour
             }
         }
 
+        SwitchActivateButtonChara(false);
+
         //各ボタンにメソッドを登録
         btnSelect.onClick.AddListener(OnClickButtonSelect);
     }
@@ -70,7 +69,23 @@ public class PlacementCharaSelectPopUp : MonoBehaviour
     private void SwitchActivateButtons(bool isSwitch)
     {
         btnSelect.interactable = isSwitch;
-        btnChara.interactable = isSwitch;
+    }
+
+    /// <summary>
+    /// btnCharaのアクティブ状態の切り替え
+    /// </summary>
+    /// <param name="isSwitch"></param>
+    private void SwitchActivateButtonChara(bool isSwitch)
+    {
+        for (int i = 0; i < btnCharasList.Count; i++)
+        {
+            if (TryGetComponent(out Button btnChara))
+            {
+                btnChara.interactable = isSwitch;
+
+                Debug.Log("btnCharaのinteractableを" + isSwitch + "にしました");
+            }
+        }
     }
 
     /// <summary>
@@ -81,6 +96,7 @@ public class PlacementCharaSelectPopUp : MonoBehaviour
         canvasGroup.DOFade(1, 0.5f).SetEase(Ease.InQuad);
 
         SwitchActivateButtons(true);
+        SwitchActivateButtonChara(true);
     }
 
     /// <summary>
@@ -91,6 +107,7 @@ public class PlacementCharaSelectPopUp : MonoBehaviour
         canvasGroup.DOFade(0, 0.5f).SetEase(Ease.InQuad);
 
         SwitchActivateButtons(false);
+        SwitchActivateButtonChara(false);
     }
 
     /// <summary>
@@ -119,5 +136,6 @@ public class PlacementCharaSelectPopUp : MonoBehaviour
         txtSpecialMoveName.text = charaData.specialMoveName;
         txtMaxSpecialMoveCount.text = charaData.maxSpecialMoveCount.ToString() + "回";
         txtNeedSpecialMovePoint.text = charaData.intervalKillCountSpecialMove.ToString();
+        txtDiscliption.text = charaData.discription;
     }
 }

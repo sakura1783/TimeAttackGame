@@ -6,14 +6,21 @@ using DG.Tweening;
 
 public class Home : MonoBehaviour
 {
+    [Header("タイトル画面の各情報")]
     [SerializeField] private CanvasGroup titleCanvasGroup;
     [SerializeField] private CanvasGroup lblTapToHomeCanvasGroup;
 
     [SerializeField] private Button btnHome;
 
+    [Header("ホーム画面の各情報")]
+    [SerializeField] private Button btnGameStart;
+    [SerializeField] private Button btnOpenCharaSelectPop;
+    [SerializeField] private Button btnOpenGameDiscliptionPop;
+
+
     void Start()
     {
-        btnHome.interactable = false;
+        SwitchActivateTitleButtons(false);
 
         SetUpButtons();
 
@@ -30,7 +37,7 @@ public class Home : MonoBehaviour
 
         yield return new WaitForSeconds(2);
 
-        btnHome.interactable = true;
+        SwitchActivateTitleButtons(true);
     }
 
     private void SetUpButtons()
@@ -39,10 +46,19 @@ public class Home : MonoBehaviour
     }
 
     /// <summary>
-    /// ボタンのアクティブ状態の切り替え
+    /// タイトル画面のボタンのアクティブ状態の切り替え
     /// </summary>
     /// <param name="isSwitch"></param>
-    private void SwitchActivateButtons(bool isSwitch)
+    private void SwitchActivateTitleButtons(bool isSwitch)
+    {
+        btnHome.interactable = isSwitch;
+    }
+
+    /// <summary>
+    /// ホーム画面のボタンのアクティブ状態の切り替え
+    /// </summary>
+    /// <param name="isSwitch"></param>
+    private void SwitchActivateHomeButtons(bool isSwitch)
     {
 
     }
