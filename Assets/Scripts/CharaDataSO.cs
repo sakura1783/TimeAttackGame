@@ -34,6 +34,8 @@ public class CharaDataSO : ScriptableObject
         public int intervalKillCountSpecialMove;  //必殺技発動に必要な敵Kill数
         public int durationSpecialMove;  //継続時間
 
+        public Sprite charaSprite;
+
         [Multiline] public string discription;
 
         //public AnimationClip charaAnim;

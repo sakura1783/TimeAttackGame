@@ -23,6 +23,7 @@ MonoBehaviour:
     maxSpecialMoveCount: 2
     intervalKillCountSpecialMove: 1
     durationSpecialMove: 15
+    charaSprite: {fileID: 811010701, guid: cd6bb18d916e8465a81bf6860f0af12d, type: 3}
     discription: "\u5FC5\u6BBA\u6280\u3067\u9283\u306E\u96E8\u3092\u964D\u3089\u305B\u3001\u6575\u3092\u4E00\n\u7DB2\u6253\u5C3D\u306B\u3059\u308B\u3002"
     charaOverrideController: {fileID: 22100000, guid: 45cb9cf430d71489f91a24a6e14a5aa3, type: 2}
   - charaName: "\u5DEB \u30A4\u30C4\u30CF"
@@ -35,6 +36,7 @@ MonoBehaviour:
     maxSpecialMoveCount: 3
     intervalKillCountSpecialMove: 5
     durationSpecialMove: 7
+    charaSprite: {fileID: -1539482772, guid: 69832ac1e7f664e13a3a9c220cb5bf7a, type: 3}
     discription: "\u6642\u9593\u505C\u6B62\u80FD\u529B\u3067\u3001\u81EA\u5206\u4EE5\u5916\u306E\u7269\u4F53\n\u306E\u6642\u9593\u3092\u6B62\u3081\u308B\u3002"
     charaOverrideController: {fileID: 22100000, guid: df2f1a3b7d197460b8eee377e3264c7f, type: 2}
   - charaName: "\u6708\u5C45 \u30B7\u30BA\u30AF"
@@ -47,5 +49,6 @@ MonoBehaviour:
     maxSpecialMoveCount: 2
     intervalKillCountSpecialMove: 1
     durationSpecialMove: 15
+    charaSprite: {fileID: -1967598362, guid: cd6bb18d916e8465a81bf6860f0af12d, type: 3}
     discription: "\u5FC5\u6BBA\u6280\u767A\u52D5\u6642\u3001\u4EF2\u9593\u3068\u4E00\u7DD2\u306B\u6226\u3044\u3001\n\u6575\u306B\u7ACB\u3061\u5411\u304B\u3046\u3002"
     charaOverrideController: {fileID: 22100000, guid: e5b07017837964493a3f0ea14ebbd775, type: 2}
