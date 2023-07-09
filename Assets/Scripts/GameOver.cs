@@ -15,6 +15,8 @@ public class GameOver : MonoBehaviour
 
     void Start()
     {
+        AudioManager.instance.PreparePlayBGM(2);
+
         SwitchActivateButtons(false);
 
         SetUpButtons();

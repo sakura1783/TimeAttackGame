@@ -27,6 +27,8 @@ public class Home : MonoBehaviour
 
     void Start()
     {
+        AudioManager.instance.PreparePlayBGM(0);
+
         SwitchActivateTitleButtons(false);
         SwitchActivateHomeButtons(false);
 

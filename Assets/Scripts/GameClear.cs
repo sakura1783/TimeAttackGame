@@ -17,6 +17,8 @@ public class GameClear : MonoBehaviour
 
     void Start()
     {
+        AudioManager.instance.PreparePlayBGM(3);
+
         SwitchActivateButtons(false);
 
         SetUpButtons();
