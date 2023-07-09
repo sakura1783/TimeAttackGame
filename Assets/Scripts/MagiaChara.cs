@@ -58,6 +58,11 @@ public class MagiaChara : MonoBehaviour
 
     void Update()
     {
+        if (gameManager.isGameOver)
+        {
+            return;
+        }
+
         if (navMeshAgent2D == null)
         {
             return;
@@ -122,6 +127,11 @@ public class MagiaChara : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
+        if (gameManager.isGameOver)
+        {
+            return;
+        }
+
         if (!isCountingUp)
         {
             if (col.gameObject.CompareTag("Enemy"))
@@ -155,7 +165,9 @@ public class MagiaChara : MonoBehaviour
 
             if (timer > interval)
             {
-                DetectEnemiesInRange();
+                //DetectEnemiesInRange();
+
+                target.Damage(attackPoint);
 
                 timer = 0;
             }
@@ -167,59 +179,59 @@ public class MagiaChara : MonoBehaviour
     /// <summary>
     /// 攻撃範囲内に敵がいるか判定し、存在する場合は最も近い敵を特定
     /// </summary>
-    private void DetectEnemiesInRange()
-    {
-        //範囲内の全ての敵のコライダーを取得
-        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, radius, enemyLayer);
+    //private void DetectEnemiesInRange()
+    //{
+    //    //範囲内の全ての敵のコライダーを取得
+    //    Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, radius, enemyLayer);
 
-        //範囲内に敵が見つからない場合、処理しない
-        if (hitColliders.Length == 0)
-        {
-            return;
-        }
+    //    //範囲内に敵が見つからない場合、処理しない
+    //    if (hitColliders.Length == 0)
+    //    {
+    //        return;
+    //    }
 
-        //最も近い敵とその距離の二乗を保存する変数
-        Collider2D nearestEnemy = null;
-        float nearestDistanceSqr = float.MaxValue;  //Sqrはmagnitudeの略
+    //    //最も近い敵とその距離の二乗を保存する変数
+    //    Collider2D nearestEnemy = null;
+    //    float nearestDistanceSqr = float.MaxValue;  //Sqrはmagnitudeの略
 
-        //配列内の各敵に対して、距離の二乗を計算し、最も近い敵を見つける
-        for (int i = 0; i < hitColliders.Length; i++)
-        {
-            //キャラの位置と配列に入っている敵の位置を計算して、平方根にする
-            //Vector3.Distanceで2点間の距離を算出する場合、ルートの計算に時間がかかるので、単純に距離の遠近を比較したい場合はsqrMagnitudeを利用し、2乗値で比較するようにすると処理が高速に行える。
-            float distanceSqr = (transform.position - hitColliders[i].transform.position).sqrMagnitude;
+    //    //配列内の各敵に対して、距離の二乗を計算し、最も近い敵を見つける
+    //    for (int i = 0; i < hitColliders.Length; i++)
+    //    {
+    //        //キャラの位置と配列に入っている敵の位置を計算して、平方根にする
+    //        //Vector3.Distanceで2点間の距離を算出する場合、ルートの計算に時間がかかるので、単純に距離の遠近を比較したい場合はsqrMagnitudeを利用し、2乗値で比較するようにすると処理が高速に行える。
+    //        float distanceSqr = (transform.position - hitColliders[i].transform.position).sqrMagnitude;
 
-            //今回の距離と、現在までの最も近い距離を比較
-            if (distanceSqr < nearestDistanceSqr)
-            {
-                nearestDistanceSqr = distanceSqr;
-                nearestEnemy = hitColliders[i];
-            }
-        }
+    //        //今回の距離と、現在までの最も近い距離を比較
+    //        if (distanceSqr < nearestDistanceSqr)
+    //        {
+    //            nearestDistanceSqr = distanceSqr;
+    //            nearestEnemy = hitColliders[i];
+    //        }
+    //    }
 
-        //最も近い敵に対して弾を発射する
-        Vector2 direction = (nearestEnemy.transform.position - transform.position).normalized;
+    //    //最も近い敵に対して弾を発射する
+    //    Vector2 direction = (nearestEnemy.transform.position - transform.position).normalized;
 
-        GenerateBullet(direction);
+    //    GenerateBullet(direction);
 
-        //弾の方向にアニメ同期
-        anim.SetFloat("X", direction.x);
-        anim.SetFloat("Y", direction.y);
-    }
+    //    //弾の方向にアニメ同期
+    //    anim.SetFloat("X", direction.x);
+    //    anim.SetFloat("Y", direction.y);
+    //}
 
     /// <summary>
     /// 弾を発射
     /// </summary>
     /// <param name="direction"></param>
     /// <returns></returns>
-    private void GenerateBullet(Vector2 direction)
-    {
-        MagiaBullet bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+    //private void GenerateBullet(Vector2 direction)
+    //{
+    //    MagiaBullet bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
 
-        bullet.Shoot(bulletSpeed, direction, attackPoint);
+    //    bullet.Shoot(bulletSpeed, direction, attackPoint);
 
-        gameManager.UiManager.SetIntervalAttackTime(interval);
-    }
+    //    gameManager.UiManager.SetIntervalAttackTime(interval);
+    //}
 
     //TODO もし実装するなら　必殺技ゲージが溜まったら、自動で必殺技を行う(かつ、敵キャラが一体でも生成されている場合)
 }

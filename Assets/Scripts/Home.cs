@@ -102,7 +102,7 @@ public class Home : MonoBehaviour
     /// </summary>
     private void OnClickButtonGameStart()
     {
-        SceneManager.LoadScene("Battle");
+        SceneStateManager.instance.PrepareLoadNextScene(SceneType.Battle);
     }
 
     /// <summary>

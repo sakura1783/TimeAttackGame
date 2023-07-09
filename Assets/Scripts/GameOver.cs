@@ -47,7 +47,7 @@ public class GameOver : MonoBehaviour
     /// </summary>
     private void OnClickButtonHome()
     {
-        SceneManager.LoadScene("Home");
+        SceneStateManager.instance.PrepareLoadNextScene(SceneType.Home);
     }
 
     /// <summary>
@@ -55,7 +55,7 @@ public class GameOver : MonoBehaviour
     /// </summary>
     private void OnClickButtonRestart()
     {
-        SceneManager.LoadScene("Battle");
+        SceneStateManager.instance.PrepareLoadNextScene(SceneType.Battle);
     }
 
     /// <summary>

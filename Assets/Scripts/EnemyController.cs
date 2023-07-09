@@ -96,6 +96,11 @@ public class EnemyController : MonoBehaviour
 
     void Update()
     {
+        if (gameManager.isGameOver)
+        {
+            return;
+        }
+
         if (navMeshAgent2D == null)
         {
             return;
@@ -138,6 +143,11 @@ public class EnemyController : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D col)
     {
+        if (gameManager.isGameOver)
+        {
+            return;
+        }
+
         //Mezzanotte発動中は以下の処理を行わない(攻撃準備を行わない)
         if (isPaused)
         {
@@ -259,10 +269,10 @@ public class EnemyController : MonoBehaviour
             //倒した敵の数をカウントアップ
             gameManager.AddKillEnemyCount();
 
-            if (gameManager.dataKillEnemyCount >= gameManager.maxGenerateEnemyCount)
-            {
-                gameManager.GameClear();
-            }
+            //if (gameManager.dataKillEnemyCount >= gameManager.maxGenerateEnemyCount)
+            //{
+            //    gameManager.GameClear();
+            //}
 
             //もし必殺技発動中なら、以下の処理はしない(必殺技発動中に敵を倒してもUIゲージが更新されない)
             if (uiManager.SpecialMove.isSpecialMoveActive)

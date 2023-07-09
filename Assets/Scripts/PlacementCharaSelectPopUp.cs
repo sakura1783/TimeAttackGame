@@ -87,8 +87,6 @@ public class PlacementCharaSelectPopUp : MonoBehaviour
             //}
 
             btnCharasList[i].gameObject.SetActive(isSwitch);
-
-            Debug.Log("btnCharaのSetActive : " + isSwitch);
         }
     }
 

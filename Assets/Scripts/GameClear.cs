@@ -21,7 +21,7 @@ public class GameClear : MonoBehaviour
 
         SetUpButtons();
 
-        //TODO txtClearTimeの反映
+        txtClearTime.text = GameData.instance.ClearTime.ToString();
 
         StartCoroutine(SetUpPanel());
     }
@@ -68,6 +68,6 @@ public class GameClear : MonoBehaviour
     /// </summary>
     private void OnClickButtonTapArea()
     {
-        SceneManager.LoadScene("Home");
+        SceneStateManager.instance.PrepareLoadNextScene(SceneType.Home);
     }
 }

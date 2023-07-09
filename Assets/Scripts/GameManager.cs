@@ -10,9 +10,9 @@ public class GameManager : MonoBehaviour
 {
     public float timer = 0;
 
-    public int dataKillEnemyCount;  //クリア判定に利用する敵キル数
+    private int dataKillEnemyCount;  //クリア判定に利用する敵キル数
 
-    private bool isGameClear = false;
+    private bool isGameUp = false;  //ゲームが終了しているか
 
     public int maxGenerateEnemyCount;
 
@@ -41,6 +41,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private EnemyGenerator enemyGenerator;
     public EnemyGenerator EnemyGenerator => enemyGenerator;
 
+    public bool isGameOver = false;
+
+    [SerializeField] private ParticleSystem charaDestroyParticle;
+
     void Start()
     {
         DOTween.SetTweensCapacity(3125, 50);
@@ -64,23 +68,66 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (isGameClear)
+        if (isGameUp)
         {
             return;
         }
 
         timer += Time.deltaTime;
+
+        if (dataKillEnemyCount >= maxGenerateEnemyCount)
+        {
+            GameClear();
+        }
     }
 
     /// <summary>
-    /// ゲームクリア判定
+    /// ゲームクリア時の処理
     /// </summary>
     public void GameClear()
     {
+        isGameUp = true;
+
+        //GameDataのclearTime変数に経過時間を代入
+        GameData.instance.ClearTime = timer;
+
         Debug.Log("ゲームクリア");
 
-        SceneManager.LoadScene("GameClear");
+        SceneStateManager.instance.PrepareLoadNextScene(SceneType.GameClear);
     }
+
+    /// <summary>
+    /// ゲームオーバー時の処理
+    /// </summary>
+    public void GameOver()
+    {
+        isGameOver = true;
+
+        Debug.Log("ゲームオーバー");
+
+        //yield return new WaitForSeconds(2);
+
+        //Instantiate(charaDestroyParticle, charaController.transform.position, Quaternion.identity);
+
+        //Destroy(charaController.gameObject, 0.5f);
+
+        //yield return new WaitForSeconds(1);  //コルーチンは非同期処理だが、DOTweenとは異なりゲームオブジェクトのライフタイムと紐づいているので、Destroyされた後の処理は動かなくなる
+
+        SceneStateManager.instance.PrepareLoadNextScene(SceneType.GameOver);
+    }
+
+    /// <summary>
+    /// GameOverメソッドを実行する
+    /// </summary>
+    //public void PrepareGameOver()
+    //{
+    //    //同じクラス内でコルーチンメソッドを実行しているので、このゲームオブジェクトが存在している場合は、必ず処理が動くし、このゲームオブジェクトがなくなれば処理は止まる
+    //    //外部クラスが直接コルーチンを実行していないので、処理が止まった時に、外部クラスのゲームオブジェクトがあるかどうかのチェックは不要になる
+    //    //また、private扱いできる
+    //    //StartCoroutine(GameOver());
+
+    //    GameOver();
+    //}
 
     /// <summary>
     /// 敵キル数をカウントアップ

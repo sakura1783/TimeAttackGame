@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Text txtTime;
 
     [SerializeField] private GameManager gameManager;
+    public GameManager GameManager => gameManager;
 
     [SerializeField] private Image imgIntervalAttackTime;
 

@@ -78,6 +78,11 @@ public class CharaController : MonoBehaviour
 
     void Update()
     {
+        if (gameManager.isGameOver)
+        {
+            return;
+        }
+
         if (gameManager == null)
         {
             return;
@@ -144,15 +149,10 @@ public class CharaController : MonoBehaviour
 
         CreateCharaFloatingDamage(damage);
 
-        //TODO HPが0になったらキャラをDestroyする。その際、Missingエラーが出るのでそこも処理する
-        //if (hp <= 0)
-        //{
-        //    Destroy(gameObject);
-
-        //    Debug.Log("Game Over...");
-
-        //    //TODO ゲームオーバー処理　メソッドを作る
-        //}
+        if (hp <= 0 && !gameManager.isGameOver)
+        {
+            gameManager.GameOver();
+        }
     }
 
     /// <summary>

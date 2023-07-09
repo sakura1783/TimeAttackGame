@@ -49,11 +49,17 @@ TagManager:
   - name: Item
     uniqueID: 1233355329
     locked: 0
+  - name: Enemy
+    uniqueID: 2830167909
+    locked: 0
   - name: Chara
     uniqueID: 1240393111
     locked: 0
   - name: Particle
     uniqueID: 3377184411
+    locked: 0
+  - name: EnemyUI
+    uniqueID: 3058494523
     locked: 0
   - name: UI
     uniqueID: 4213625123

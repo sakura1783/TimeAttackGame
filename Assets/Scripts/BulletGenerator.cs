@@ -45,6 +45,11 @@ public class BulletGenerator : MonoBehaviour
 
     void Update()
     {
+        if (uiManager.GameManager.isGameOver)
+        {
+            return;
+        }
+
         if (isShooting)
         {
             return;

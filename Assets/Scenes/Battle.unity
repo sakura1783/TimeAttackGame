@@ -5379,6 +5379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 0
+  dataKillEnemyCount: 0
   maxGenerateEnemyCount: 5
   charaGenerator: {fileID: 960542471}
   enemy: {fileID: 515537056343755237, guid: 7aaa55d04ecd34551aa65eb646bd40c7, type: 3}
@@ -5389,6 +5390,8 @@ MonoBehaviour:
   - {fileID: 6754152913199254584, guid: b978f6db154424f6dab6d2bc5fdb82ca, type: 3}
   uiManager: {fileID: 2094251404}
   enemyGenerator: {fileID: 830223805}
+  isGameOver: 0
+  charaDestroyParticle: {fileID: 2286135270820131778, guid: 6b1cbe1a2491944e6916b914dce0c21c, type: 3}
 --- !u!4 &692431902
 Transform:
   m_ObjectHideFlags: 0
