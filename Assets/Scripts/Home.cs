@@ -69,8 +69,8 @@ public class Home : MonoBehaviour
     /// <param name="isSwitch"></param>
     private void SwitchActivateTitleButtons(bool isSwitch)
     {
-        //btnHome.interactable = isSwitch;
-        btnHome.gameObject.SetActive(isSwitch);
+        btnHome.interactable = isSwitch;
+        //btnHome.gameObject.SetActive(isSwitch);
     }
 
     /// <summary>
@@ -82,8 +82,6 @@ public class Home : MonoBehaviour
         btnGameStart.interactable = isSwitch;
         btnOpenCharaSelectPop.interactable = isSwitch;
         btnOpenGameDiscliptionPop.interactable = isSwitch;
-
-        Debug.Log("HomeButtonsのinteractableは" + isSwitch + "です");
     }
 
     /// <summary>
@@ -91,13 +89,12 @@ public class Home : MonoBehaviour
     /// </summary>
     private void OnClickButtonHome()
     {
+        //btnHomeとimgBackGroundのタップ判定を無くす(CanvasGroupで両方とも一緒に制御する)　これで、btnOpenCharaSelectPopUpが押せる状態になる
+        titleCanvasGroup.blocksRaycasts = false;
+
         titleCanvasGroup.DOFade(0, 1).SetEase(Ease.InQuad);
 
-        SwitchActivateTitleButtons(false);
-
         SwitchActivateHomeButtons(true);
-
-        Debug.Log("btnHomeが押されました");
     }
 
     /// <summary>
@@ -116,8 +113,6 @@ public class Home : MonoBehaviour
         SwitchActivateHomeButtons(false);
 
         placementCharaSelectPop.ShowPopUp();
-
-        Debug.Log("OnClickButtonOpenCharaSelectPopメソッドが動きました");
     }
 
     /// <summary>

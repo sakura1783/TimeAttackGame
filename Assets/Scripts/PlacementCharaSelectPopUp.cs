@@ -133,6 +133,8 @@ public class PlacementCharaSelectPopUp : MonoBehaviour
     {
         selectCharaData = charaData;
 
+        GameData.instance.GenerateCharaNo = charaData.charaNo;
+
         //各値の設定
         imgSelectChara.sprite = charaData.charaSprite;
         txtCharaName.text = charaData.charaName;

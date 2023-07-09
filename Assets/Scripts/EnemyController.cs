@@ -259,6 +259,11 @@ public class EnemyController : MonoBehaviour
             //倒した敵の数をカウントアップ
             gameManager.AddKillEnemyCount();
 
+            if (gameManager.dataKillEnemyCount >= gameManager.maxGenerateEnemyCount)
+            {
+                gameManager.GameClear();
+            }
+
             //もし必殺技発動中なら、以下の処理はしない(必殺技発動中に敵を倒してもUIゲージが更新されない)
             if (uiManager.SpecialMove.isSpecialMoveActive)
             {

@@ -4,12 +4,13 @@ using UnityEngine;
 using Cinemachine;
 using System;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public float timer = 0;
 
-    private int dataKillEnemyCount;  //クリア判定に利用する敵キル数
+    public int dataKillEnemyCount;  //クリア判定に利用する敵キル数
 
     private bool isGameClear = false;
 
@@ -46,7 +47,7 @@ public class GameManager : MonoBehaviour
 
         charaController = charaGenerator.GenerateChara();  //戻り値のあるメソッドの活用。GenerateCharaメソッドの戻り値をcharaController変数に代入。こうすることで、生成されたキャラの情報が提供され、次行の命令がChara(Clone)に対しての命令となる。
 
-        charaController.SetUpCharaController(this, DataBaseManager.instance.charaDataSO.charaDatasList[2], uiManager);  //TODO []の中にはランダムな変数を入れる
+        charaController.SetUpCharaController(this, DataBaseManager.instance.charaDataSO.charaDatasList[GameData.instance.GenerateCharaNo], uiManager);
 
         cineMachine.SetUpCinemachine(this);  //キャラ生成前に書いてしまうと追尾対象のキャラがまだいないのでエラーになってしまう、注意
 
@@ -76,13 +77,9 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void GameClear()
     {
-        if (dataKillEnemyCount >= maxGenerateEnemyCount)
-        {
-            Debug.Log("ゲームクリア");
+        Debug.Log("ゲームクリア");
 
-            //ゲーム開始時敵のプレハブに追加したNavMeshAgent2Dコンポーネントを削除
-            //Destroy(enemy.GetComponent<NavMeshAgent2D>());
-        }
+        SceneManager.LoadScene("GameClear");
     }
 
     /// <summary>
