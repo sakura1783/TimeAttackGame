@@ -3,9 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class Home : MonoBehaviour
 {
+    [SerializeField] private PlacementCharaSelectPopUp placementCharaSelectPop;
+
+    [SerializeField] private PlacementGameDiscliptionPopUp placementGameDiscliptionPop;
+
+    private List<CharaDataSO.CharaData> charaDatasList = new List<CharaDataSO.CharaData>();
+
     [Header("タイトル画面の各情報")]
     [SerializeField] private CanvasGroup titleCanvasGroup;
     [SerializeField] private CanvasGroup lblTapToHomeCanvasGroup;
@@ -21,6 +28,13 @@ public class Home : MonoBehaviour
     void Start()
     {
         SwitchActivateTitleButtons(false);
+        SwitchActivateHomeButtons(false);
+
+        CreateCharaDatasList();
+
+        placementCharaSelectPop.SetUpPlacementCharaSelectPopUp(charaDatasList);
+
+        placementGameDiscliptionPop.SetUpPlacementGameDiscliptionPopUp();
 
         SetUpButtons();
 
@@ -43,6 +57,10 @@ public class Home : MonoBehaviour
     private void SetUpButtons()
     {
         btnHome.onClick.AddListener(OnClickButtonHome);
+
+        btnGameStart.onClick.AddListener(OnClickButtonGameStart);
+        btnOpenCharaSelectPop.onClick.AddListener(OnClickButtonOpenCharaSelectPop);
+        btnOpenGameDiscliptionPop.onClick.AddListener(OnClickButtonOpenGameDiscliptionPop);
     }
 
     /// <summary>
@@ -51,16 +69,21 @@ public class Home : MonoBehaviour
     /// <param name="isSwitch"></param>
     private void SwitchActivateTitleButtons(bool isSwitch)
     {
-        btnHome.interactable = isSwitch;
+        //btnHome.interactable = isSwitch;
+        btnHome.gameObject.SetActive(isSwitch);
     }
 
     /// <summary>
     /// ホーム画面のボタンのアクティブ状態の切り替え
     /// </summary>
     /// <param name="isSwitch"></param>
-    private void SwitchActivateHomeButtons(bool isSwitch)
+    public void SwitchActivateHomeButtons(bool isSwitch)
     {
+        btnGameStart.interactable = isSwitch;
+        btnOpenCharaSelectPop.interactable = isSwitch;
+        btnOpenGameDiscliptionPop.interactable = isSwitch;
 
+        Debug.Log("HomeButtonsのinteractableは" + isSwitch + "です");
     }
 
     /// <summary>
@@ -70,6 +93,51 @@ public class Home : MonoBehaviour
     {
         titleCanvasGroup.DOFade(0, 1).SetEase(Ease.InQuad);
 
-        btnHome.interactable = false;
+        SwitchActivateTitleButtons(false);
+
+        SwitchActivateHomeButtons(true);
+
+        Debug.Log("btnHomeが押されました");
+    }
+
+    /// <summary>
+    /// btnStartを押した際の処理
+    /// </summary>
+    private void OnClickButtonGameStart()
+    {
+        SceneManager.LoadScene("Battle");
+    }
+
+    /// <summary>
+    /// btnOpenCharaSelectPopUpを押した際の処理
+    /// </summary>
+    private void OnClickButtonOpenCharaSelectPop()
+    {
+        SwitchActivateHomeButtons(false);
+
+        placementCharaSelectPop.ShowPopUp();
+
+        Debug.Log("OnClickButtonOpenCharaSelectPopメソッドが動きました");
+    }
+
+    /// <summary>
+    /// btnOpenGameDiscliptionPopUpを押した際の処理
+    /// </summary>
+    private void OnClickButtonOpenGameDiscliptionPop()
+    {
+        SwitchActivateHomeButtons(false);
+
+        placementGameDiscliptionPop.ShowPopUp();
+    }
+
+    /// <summary>
+    /// キャラのデータをリスト化
+    /// </summary>
+    private void CreateCharaDatasList()
+    {
+        for (int i = 0; i < DataBaseManager.instance.charaDataSO.charaDatasList.Count; i++)
+        {
+            charaDatasList.Add(DataBaseManager.instance.charaDataSO.charaDatasList[i]);
+        }
     }
 }

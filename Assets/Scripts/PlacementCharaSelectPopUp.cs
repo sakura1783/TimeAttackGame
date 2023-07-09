@@ -30,6 +30,8 @@ public class PlacementCharaSelectPopUp : MonoBehaviour
 
     private CharaDataSO.CharaData selectCharaData;  //現在選択しているキャラの情報を管理する
 
+    [SerializeField] private Home homeManager;
+
 
     public void SetUpPlacementCharaSelectPopUp(List<CharaDataSO.CharaData> charaDatasList)
     {
@@ -79,12 +81,14 @@ public class PlacementCharaSelectPopUp : MonoBehaviour
     {
         for (int i = 0; i < btnCharasList.Count; i++)
         {
-            if (TryGetComponent(out Button btnChara))
-            {
-                btnChara.interactable = isSwitch;
+            //if (btnCharasList[i].TryGetComponent(out Button btnChara))
+            //{
+            //    btnChara.interactable = isSwitch;
+            //}
 
-                Debug.Log("btnCharaのinteractableを" + isSwitch + "にしました");
-            }
+            btnCharasList[i].gameObject.SetActive(isSwitch);
+
+            Debug.Log("btnCharaのSetActive : " + isSwitch);
         }
     }
 
@@ -102,7 +106,7 @@ public class PlacementCharaSelectPopUp : MonoBehaviour
     /// <summary>
     /// ポップアップの非表示
     /// </summary>
-    public void HidePopUp()
+    private void HidePopUp()
     {
         canvasGroup.DOFade(0, 0.5f).SetEase(Ease.InQuad);
 
@@ -118,6 +122,8 @@ public class PlacementCharaSelectPopUp : MonoBehaviour
         imgSelectedChara.sprite = selectCharaData.charaSprite;
 
         HidePopUp();
+
+        homeManager.SwitchActivateHomeButtons(true);
     }
 
     /// <summary>

@@ -1398,12 +1398,61 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a194d67ba084483fac0aa88dc7fb490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  placementCharaSelectPop: {fileID: 1322984951}
+  placementGameDiscliptionPop: {fileID: 1035711585}
   titleCanvasGroup: {fileID: 1212523552}
   lblTapToHomeCanvasGroup: {fileID: 2024184714}
   btnHome: {fileID: 1914994728}
-  btnGameStart: {fileID: 0}
-  btnOpenCharaSelectPop: {fileID: 0}
-  btnOpenGameDiscliptionPop: {fileID: 0}
+  btnGameStart: {fileID: 1689231416}
+  btnOpenCharaSelectPop: {fileID: 1850633692}
+  btnOpenGameDiscliptionPop: {fileID: 1358433494}
+--- !u!1 &696460648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 696460650}
+  - component: {fileID: 696460649}
+  m_Layer: 0
+  m_Name: DataBaseManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &696460649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696460648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2deb3cfeb9444ac886ccc57cf178bb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charaDataSO: {fileID: 11400000, guid: 7a9f92039df2e4be288a13f02ab4b262, type: 2}
+  enemyDataSO: {fileID: 11400000, guid: 17a3470ca987049df968d2fec0db9de6, type: 2}
+  attackRangeSizeSO: {fileID: 11400000, guid: 4a3787446dd0441e1b2aa93d81cd75f4, type: 2}
+--- !u!4 &696460650
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696460648}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &837343784
 GameObject:
   m_ObjectHideFlags: 0
@@ -1555,7 +1604,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u30A8\u30CD\u30DF\u30FC\uFF1A\u6575\u3082\u4E00\u5B9A\u6642\u9593\u304C\u7D4C\u904E\u3057\u305F\u3089\u30D7\u30EC\u30A4\u30E4\u30FC\u306B\u653B\u6483\u3092\u3057\u3066\u304D\u307E\u3059\u3002\u653B\u6483\u304C\u5F53\u305F\u3089\u306A\u3044\u3088\u3046\u306B\u3001\u3046\u307E\u304F\u6575\u3000\u3000\u3000\u3000\u3000\u306E\u653B\u6483\u7BC4\u56F2\u3092\u63BB\u3044\u6F5C\u308A\u306A\u304C\u3089\u30D7\u30EC\u30A4\u3057\u307E\u3057\u3087\u3046\u3002"
+  m_Text: "\u3000\u30A8\u30CD\u30DF\u30FC\uFF1A\u6575\u3082\u4E00\u5B9A\u6642\u9593\u304C\u7D4C\u904E\u3057\u305F\u3089\u30D7\u30EC\u30A4\u30E4\u30FC\u306B\u653B\u6483\u3092\u3057\u3066\u304D\u307E\u3059\u3002\u653B\u6483\u304C\u5F53\u305F\u3089\u306A\u3044\u3088\u3046\u306B\u3001\u3046\u307E\u304F\u3000\u3000\u3000\u3000\u3000\u3000\u6575\u306E\u653B\u6483\u7BC4\u56F2\u3092\u63BB\u3044\u6F5C\u308A\u306A\u304C\u3089\u30D7\u30EC\u30A4\u3057\u307E\u3057\u3087\u3046\u3002"
 --- !u!222 &897527347
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1732,6 +1781,7 @@ GameObject:
   - component: {fileID: 1035711583}
   - component: {fileID: 1035711582}
   - component: {fileID: 1035711584}
+  - component: {fileID: 1035711585}
   m_Layer: 5
   m_Name: PlacementGameDiscliptionPopUp
   m_TagString: Untagged
@@ -1748,7 +1798,7 @@ RectTransform:
   m_GameObject: {fileID: 1035711579}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.69999987, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.65, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 367966234}
@@ -1810,10 +1860,25 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1035711579}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &1035711585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035711579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21bd776d5f0154dd9b6337d1ea6c954a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 1035711584}
+  btnClose: {fileID: 1381141971}
+  homeManager: {fileID: 680159099}
 --- !u!1 &1078674370
 GameObject:
   m_ObjectHideFlags: 0
@@ -2176,7 +2241,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212523550}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -2806,6 +2871,7 @@ MonoBehaviour:
   txtDiscliption: {fileID: 1129734703}
   btnCharaPrefab: {fileID: 1647017031198539841, guid: f37662132d3db4d2caa5579ad067dc85, type: 3}
   btnCharaTran: {fileID: 1921662902}
+  homeManager: {fileID: 680159099}
 --- !u!225 &1322984952
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2814,7 +2880,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1322984947}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -3832,7 +3898,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u305D\u306E\u4ED6\uFF1A\u6575\u3092\u5168\u3066\u5012\u3057\u305F\u3089\u30B2\u30FC\u30E0\u30AF\u30EA\u30A2\u3001\u30D7\u30EC\u30A4\u30E4\u30FC\u306EHP\u304C\uFF10\u306B\u306A\u308A\u6B7B\u3093\u3067\u3057\u307E\u3063\u305F\u3089\u30B2\u30FC\u30E0\u30AA\u30FC\u30D0\u30FC\u3068\u306A\u3000\u3000\u3000\u3000\u308A\u307E\u3059\u3002"
+  m_Text: "\u3000\u3000\u305D\u306E\u4ED6\uFF1A\u6575\u3092\u5168\u3066\u5012\u3057\u305F\u3089\u30B2\u30FC\u30E0\u30AF\u30EA\u30A2\u3001\u30D7\u30EC\u30A4\u30E4\u30FC\u306EHP\u304C\uFF10\u306B\u306A\u308A\u6B7B\u3093\u3067\u3057\u307E\u3063\u305F\u3089\u30B2\u30FC\u30E0\u30AA\u30FC\u30D0\u30FC\u3000\u3000\u3000\u3000\u3000\u3000\u3068\u306A\u308A\u307E\u3059\u3002"
 --- !u!222 &1807490516
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5092,7 +5158,7 @@ GameObject:
   - component: {fileID: 2146725447}
   - component: {fileID: 2146725446}
   m_Layer: 5
-  m_Name: lblCharaSelect
+  m_Name: lblOpenCharaSelectPopUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
