@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public float timer = 0;
 
     private int dataKillEnemyCount;  //クリア判定に利用する敵キル数
+    public int DataKillEnemyCount => dataKillEnemyCount;
 
     private bool isGameUp = false;  //ゲームが終了しているか
 

@@ -7,6 +7,7 @@ using DG.Tweening;
 public class UIManager : MonoBehaviour
 {
     [SerializeField] private Text txtTime;
+    [SerializeField] private Text txtKillEnemyCount;
 
     [SerializeField] private GameManager gameManager;
     public GameManager GameManager => gameManager;
@@ -33,7 +34,9 @@ public class UIManager : MonoBehaviour
 
     public int specialMoveCount;  //必殺技を発動した回数
 
-    public int uiKillEnemyCount;  //UIゲージ更新に使う敵キル数
+    //public int uiKillEnemyCount;  //UIゲージ更新に使う敵キル数
+
+    private int specialMovePoint = 0;  //今までに獲得したspecialMovePoint
 
     public void SetUpUIManager()
     {
@@ -47,6 +50,8 @@ public class UIManager : MonoBehaviour
     void Update()
     {
         txtTime.text = gameManager.timer.ToString("n2");
+
+        txtKillEnemyCount.text = gameManager.DataKillEnemyCount.ToString();
 
         //もし必殺技を発動した回数が必殺技発動可能回数を上回ったら、Updateの以下の処理はしない
         if (specialMoveCount >= gameManager.CharaController.maxSpecialMoveCount)
@@ -69,10 +74,11 @@ public class UIManager : MonoBehaviour
 
                 //uiKillCountを0にして、この後にSetIntervalSpecialMoveを行うことでUIのゲージをリセットする
                 //gameManager.EnemyController.killCount = 0;  //これはgameManager.killEnemyCountの戻り値を反映したものなので、これに0を代入してしまうと、一生0のままになってしまうので、その後たとえ敵を倒したとしても、ゲージが更新されない。
-                uiKillEnemyCount = 0;
+                //uiKillEnemyCount = 0;
+                specialMovePoint = 0;
 
                 //必殺技ゲージ更新処理　必殺技発動後に更新処理を行うことで、ゲージを0にできる。ここに書かないと、敵がDestroyされた時にのみ、更新処理が動くので、必殺技を発動してもゲージが満タンのままになる
-                SetIntervalSpecialMove();
+                SetIntervalSpecialMove(0);
 
                 //パーティクル放出を止める
                 generatedParticle.Stop();
@@ -103,17 +109,20 @@ public class UIManager : MonoBehaviour
     /// 必殺技ゲージ更新処理
     /// </summary>
     /// <param name="killCount"></param>
-    public void SetIntervalSpecialMove()
+    public void SetIntervalSpecialMove(int addSpecialMovePoint)
     {
         //value = Mathf.Clamp(gameManager.EnemyController.killCount, 0f, maxValue);
-        value = Mathf.Clamp(uiKillEnemyCount, 0f, maxValue);
+        //value = Mathf.Clamp(uiKillEnemyCount, 0f, maxValue);
+        specialMovePoint += addSpecialMovePoint;
+        value = Mathf.Clamp(specialMovePoint, 0f, maxValue);
+        Debug.Log("addSpecialMovePoint : " + addSpecialMovePoint);
 
         float setValue = value / maxValue;
 
         //imgSpecialMoveCount.fillAmount =  setValue;
         imgSpecialMoveCount.DOFillAmount(setValue, 0.5f);  // <= DOFillAmount(この値に, 何秒で)
 
-        Debug.Log("必殺技ゲージ更新しました" + uiKillEnemyCount);
+        Debug.Log("必殺技ゲージ更新しました" + setValue);
 
         if (value >= maxValue)
         {
@@ -122,18 +131,12 @@ public class UIManager : MonoBehaviour
             {
                 //パーティクル生成
                 generatedParticle = Instantiate(particleSpecialMoveGauge, particleTran, false);
-
-                Debug.Log("作られたパーティクル：" + generatedParticle);
             }
 
             //もしまだパーティクルがPlayされていなかったら
             if (!isParticlePlay)
             {
-                //Debug.Log("generatedParticle : " + generatedParticle);
-
                 generatedParticle.Play();
-
-                Debug.Log("パーティクル・Play");
 
                 isParticlePlay = true;
 

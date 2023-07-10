@@ -201,7 +201,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1240393111
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -537279941, guid: cd6bb18d916e8465a81bf6860f0af12d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -475,7 +475,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 150, y: 108}
+  m_AnchoredPosition: {x: 150, y: 115}
   m_SizeDelta: {x: 300, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &863016958
@@ -499,8 +499,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: b848527b30acb43f58c319f81aaa9040, type: 3}
-    m_FontSize: 50
+    m_Font: {fileID: 12800000, guid: d0e5c3f62c5b54ddeb13041be3bce8e4, type: 3}
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -598,7 +598,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1240393111
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 707896643, guid: 69832ac1e7f664e13a3a9c220cb5bf7a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1162,7 +1162,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1240393111
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -753417935, guid: cd6bb18d916e8465a81bf6860f0af12d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

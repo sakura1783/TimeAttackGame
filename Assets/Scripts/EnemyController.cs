@@ -20,7 +20,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private int itemDropRate;
     [SerializeField] private int attackPower;
     [SerializeField] private float interval;
-    [SerializeField] private int addSpecialMovePoint;
+    public int addSpecialMovePoint;
 
     public int hp;
 
@@ -280,13 +280,13 @@ public class EnemyController : MonoBehaviour
                 return;
             }
 
-            uiManager.uiKillEnemyCount++;
+            //uiManager.specialMovePoint++;
 
             //もし必殺技を発動した回数が必殺技発動可能回数を上回ってなかったら
             if (uiManager.specialMoveCount < charaController.maxSpecialMoveCount)
             {
                 //必殺技ゲージ更新
-                uiManager.SetIntervalSpecialMove();
+                uiManager.SetIntervalSpecialMove(addSpecialMovePoint);
             }
         }
     }
@@ -303,8 +303,6 @@ public class EnemyController : MonoBehaviour
 
         //生成したフロート表示の設定用メソッドを実行。引数として、バレットの攻撃力値とフロート表示の種類を指定して渡す
         floatingMessage.DisplayFloatingMessage(point, FloatingMessage.FloatingMessageType.Damage);
-
-        Debug.Log(point);
     }
 
     /// <summary>
