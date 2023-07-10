@@ -14,8 +14,6 @@ public class GameManager : MonoBehaviour
 
     private bool isGameUp = false;  //ゲームが終了しているか
 
-    public int maxGenerateEnemyCount;
-
     [SerializeField] private CharaGenerator charaGenerator;
 
     private CharaController charaController;
@@ -79,7 +77,7 @@ public class GameManager : MonoBehaviour
 
         timer += Time.deltaTime;
 
-        if (dataKillEnemyCount >= maxGenerateEnemyCount)
+        if (dataKillEnemyCount >= enemyGenerator.maxGenerateEnemyCount)
         {
             GameClear();
         }

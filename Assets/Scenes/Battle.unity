@@ -5379,7 +5379,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 0
-  maxGenerateEnemyCount: 5
   charaGenerator: {fileID: 960542471}
   enemy: {fileID: 515537056343755237, guid: 7aaa55d04ecd34551aa65eb646bd40c7, type: 3}
   objAttackRangePrefab: {fileID: 5801363585109988465, guid: 4e6b5e28935414983ae5f358197fdffe, type: 3}
@@ -5446,6 +5445,11 @@ MonoBehaviour:
   gameManager: {fileID: 692431901}
   enemiesList: []
   charaController: {fileID: 5934362981039619279, guid: 15af0899ff8b64aed8066f6f62085354, type: 3}
+  maxGenerateEnemyCount: 5
+  maxGenerateCountEnemy0: 3
+  maxGenerateCountEnemy1: 2
+  generateCountEnemy0: 0
+  generateCountEnemy1: 0
 --- !u!4 &830223806
 Transform:
   m_ObjectHideFlags: 0
