@@ -298,6 +298,9 @@ public class EnemyController : MonoBehaviour
     {
         FloatingMessage floatingMessage = Instantiate(floatingMessagePrefab, enemyFloatingMessageTran, false);
 
+        //敵のHPが0になって破壊された場合にも、見えなくならないようにヒエラルキーにあるキャンバスにフロート表示を移す
+        floatingMessage.transform.SetParent(gameManager.canvasFloatingTran.transform);
+
         //生成したフロート表示の設定用メソッドを実行。引数として、バレットの攻撃力値とフロート表示の種類を指定して渡す
         floatingMessage.DisplayFloatingMessage(point, FloatingMessage.FloatingMessageType.Damage);
 

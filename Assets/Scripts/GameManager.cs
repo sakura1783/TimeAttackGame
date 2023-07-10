@@ -45,6 +45,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private ParticleSystem charaDestroyParticle;
 
+    public Canvas canvasFloatingTran;
+
     void Start()
     {
         DOTween.SetTweensCapacity(3125, 50);
