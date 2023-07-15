@@ -34,21 +34,37 @@ public class GameClear : MonoBehaviour
         lblTapCanvasGroup.alpha = 0;
         clearTimeCanvasGroup.alpha = 0;
 
-        yield return new WaitForSeconds(1);
+        //yield return new WaitForSeconds(1);
 
-        lblGameClearCanvasGroup.DOFade(1, 3).SetEase(Ease.InQuad);
+        //lblGameClearCanvasGroup.DOFade(1, 3).SetEase(Ease.InQuad);
 
-        yield return new WaitForSeconds(1);
+        //yield return new WaitForSeconds(1);
 
-        clearTimeCanvasGroup.DOFade(1, 3).SetEase(Ease.InQuad);
+        //clearTimeCanvasGroup.DOFade(1, 3).SetEase(Ease.InQuad);
 
-        yield return new WaitForSeconds(2);
+        //yield return new WaitForSeconds(2);
 
-        lblTapCanvasGroup.DOFade(1, 1.5f).SetEase(Ease.InQuad).SetLoops(-1, LoopType.Yoyo);
+        //lblTapCanvasGroup.DOFade(1, 1.5f).SetEase(Ease.InQuad).SetLoops(-1, LoopType.Yoyo);
 
-        yield return new WaitForSeconds(2);
+        //yield return new WaitForSeconds(2);
 
-        SwitchActivateButtons(true);
+        //SwitchActivateButtons(true);
+
+        //上記の処理をシーケンスを利用して記述する
+        Sequence seqence = DOTween.Sequence();
+
+        seqence.AppendInterval(1);
+        seqence.Append(lblGameClearCanvasGroup.DOFade(1, 3).SetEase(Ease.InQuad));
+        seqence.AppendInterval(1);
+        seqence.Append(clearTimeCanvasGroup.DOFade(1, 3).SetEase(Ease.InQuad));
+        seqence.AppendInterval(2);
+
+        Tween loopTween = lblTapCanvasGroup.DOFade(1, 1.5f).SetEase(Ease.InQuad);
+        loopTween.SetLoops(-1, LoopType.Yoyo).SetLink(gameObject).OnStepComplete(() => SwitchActivateButtons(true));
+
+        seqence.Append(loopTween);
+
+        yield return null;
     }
 
     private void SetUpButtons()

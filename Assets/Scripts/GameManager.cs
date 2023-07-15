@@ -56,6 +56,8 @@ public class GameManager : MonoBehaviour
 
         charaController.SetUpCharaController(this, DataBaseManager.instance.charaDataSO.charaDatasList[GameData.instance.GenerateCharaNo], uiManager);
 
+        enemyGenerator.SetUpEnemyGenerator();
+
         cineMachine.SetUpCinemachine(this);  //キャラ生成前に書いてしまうと追尾対象のキャラがまだいないのでエラーになってしまう、注意
 
         //ObjAttackRange生成、設定
@@ -78,7 +80,7 @@ public class GameManager : MonoBehaviour
 
         timer += Time.deltaTime;
 
-        if (dataKillEnemyCount >= enemyGenerator.maxGenerateEnemyCount)
+        if (dataKillEnemyCount >= enemyGenerator.MaxGenerateEnemyCount)
         {
             GameClear();
         }

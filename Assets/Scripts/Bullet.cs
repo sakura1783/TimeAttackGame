@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
@@ -9,7 +7,7 @@ public class Bullet : MonoBehaviour
 
     private readonly float destroyTime = 1.5f;  //readonlyにすることで、値を変更できなくなる
 
-    private EnemyController enemyController;
+    //private EnemyController enemyController;
 
     /// <summary>
     /// 弾の制御
@@ -30,7 +28,7 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.TryGetComponent(out enemyController))
+        if (col.TryGetComponent(out EnemyController enemyController))
         {
             Destroy(gameObject);
 

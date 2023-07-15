@@ -5603,12 +5603,13 @@ MonoBehaviour:
   intervalGenerateTime: 7
   gameManager: {fileID: 692431901}
   enemiesList: []
-  charaController: {fileID: 5934362981039619279, guid: 15af0899ff8b64aed8066f6f62085354, type: 3}
-  maxGenerateEnemyCount: 20
-  maxGenerateCountEnemy0: 12
-  maxGenerateCountEnemy1: 8
-  generateCountEnemy0: 0
-  generateCountEnemy1: 0
+  generateDataList:
+  - enemyNo: 0
+    maxGenerateCount: 12
+    generateRate: 50
+  - enemyNo: 1
+    maxGenerateCount: 8
+    generateRate: 30
 --- !u!4 &830223806
 Transform:
   m_ObjectHideFlags: 0
