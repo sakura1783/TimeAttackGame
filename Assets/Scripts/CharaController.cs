@@ -24,7 +24,7 @@ public class CharaController : MonoBehaviour
     //[SerializeField] private AttackRangeType attackRangeType;
     public int maxSpecialMoveCount;
     public int intervalKillCountSpecialMove;
-    public int durationSpecialMove;
+    public float durationSpecialMove;
     //[SerializeField] private AnimatorOverrideController charaAnim;  //キャラのAnimatorController
 
     private CharaDataSO.CharaData charaData;
@@ -37,7 +37,7 @@ public class CharaController : MonoBehaviour
 
     [SerializeField] private Transform charaFloatingMessageTran;
 
-    public void SetUpCharaController(GameManager gameManager, CharaDataSO.CharaData charaData, UIManager uiManager)
+    public void SetUpCharaController(GameManager gameManager, CharaDataSO.CharaData charaData, UIManager uiManager, SpecialMoveData specialMoveData)
     {
         hp = maxHp;
 
@@ -48,9 +48,12 @@ public class CharaController : MonoBehaviour
         attackPoint = this.charaData.attackPower;
         intervalAttackTime = this.charaData.intervalAttackTime;
         //attackRangeType = this.charaData.attackRangeType;
-        maxSpecialMoveCount = this.charaData.maxSpecialMoveCount;
-        intervalKillCountSpecialMove = this.charaData.intervalKillCountSpecialMove;
-        durationSpecialMove = this.charaData.durationSpecialMove;
+        //maxSpecialMoveCount = this.charaData.maxSpecialMoveCount;
+        maxSpecialMoveCount = specialMoveData.maxSpecialMoveCount;
+        //intervalKillCountSpecialMove = this.charaData.intervalKillCountSpecialMove;
+        intervalKillCountSpecialMove = specialMoveData.interval;
+        //durationSpecialMove = this.charaData.durationSpecialMove;
+        durationSpecialMove = specialMoveData.duration;
         //charaAnim = this.charaData.charaAnim;
 
         if (TryGetComponent(out anim))

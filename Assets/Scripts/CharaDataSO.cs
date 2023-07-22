@@ -30,9 +30,10 @@ public class CharaDataSO : ScriptableObject
 
         //必殺技
         public string specialMoveName;
-        public int maxSpecialMoveCount;
-        public int intervalKillCountSpecialMove;  //必殺技発動に必要な敵Kill数
-        public int durationSpecialMove;  //継続時間
+        //public int maxSpecialMoveCount;
+        //public int intervalKillCountSpecialMove;  //必殺技発動に必要な敵Kill数
+        //public int durationSpecialMove;  //継続時間
+        public SpecialMoveData specialMoveData;
 
         public Sprite charaSprite;
 

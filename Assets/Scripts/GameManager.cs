@@ -46,6 +46,8 @@ public class GameManager : MonoBehaviour
 
     public Canvas canvasFloatingTran;
 
+    [SerializeField] private SpecialMoveManager specialMoveManager;
+
     void Start()
     {
         DOTween.SetTweensCapacity(3125, 50);
@@ -54,7 +56,7 @@ public class GameManager : MonoBehaviour
 
         charaController = charaGenerator.GenerateChara();  //戻り値のあるメソッドの活用。GenerateCharaメソッドの戻り値をcharaController変数に代入。こうすることで、生成されたキャラの情報が提供され、次行の命令がChara(Clone)に対しての命令となる。
 
-        charaController.SetUpCharaController(this, DataBaseManager.instance.charaDataSO.charaDatasList[GameData.instance.GenerateCharaNo], uiManager);
+        charaController.SetUpCharaController(this, DataBaseManager.instance.charaDataSO.charaDatasList[GameData.instance.GenerateCharaNo], uiManager, charaController.CharaData.specialMoveData);
 
         enemyGenerator.SetUpEnemyGenerator();
 
@@ -69,6 +71,12 @@ public class GameManager : MonoBehaviour
         //items[0].SetUpItem(this);  //TODO []内には変数を入れる　今は仮値
 
         uiManager.SetUpUIManager();
+
+        //必殺技の準備
+        if (specialMoveManager)
+        {
+            specialMoveManager.SetUpSpecialMoveManager(charaController.CharaData.specialMoveData, this, enemyGenerator);
+        }
     }
 
     void Update()

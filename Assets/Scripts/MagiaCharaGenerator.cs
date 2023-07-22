@@ -6,29 +6,47 @@ public class MagiaCharaGenerator : MonoBehaviour
 {
     [SerializeField] private MagiaChara charaPrefab;
 
+    private Vector2[] generatePos =
+    {
+        new (4, 2),
+        new (-4, -2),
+    };
+
     /// <summary>
     /// CharaData[0]のキャラを生成する
     /// </summary>
     /// <returns></returns>
-    public MagiaChara GenerateMagiaCharaZero()
-    {
-        Vector2 generatePos = new Vector2(4, 2);
+    //public MagiaChara GenerateMagiaCharaZero()
+    //{
+    //    Vector2 generatePos = new Vector2(4, 2);
 
-        MagiaChara generatedChara = Instantiate(charaPrefab, generatePos, Quaternion.identity);
+    //    MagiaChara generatedChara = Instantiate(charaPrefab, generatePos, Quaternion.identity);
 
-        return generatedChara;
-    }
+    //    return generatedChara;
+    //}
 
     /// <summary>
-    /// CharaData[1]のキャラを生成する
+    /// CharaData[1] のキャラを生成する
     /// </summary>
     /// <returns></returns>
-    public MagiaChara GenerateMagiaCharaOne()
+    //public MagiaChara GenerateMagiaCharaOne()
+    //{
+    //    Vector2 generatePos = new Vector2(-4, -2);
+
+    //    MagiaChara generatedChara = Instantiate(charaPrefab, generatePos, Quaternion.identity);
+
+    //    return generatedChara;
+    //}
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="posIndex"></param>
+    /// <returns></returns>
+    public MagiaChara GenerateMagiaChara(int posIndex)
     {
-        Vector2 generatePos = new Vector2(-4, -2);
+        MagiaChara generateChara = Instantiate(charaPrefab, generatePos[posIndex], Quaternion.identity);
 
-        MagiaChara generatedChara = Instantiate(charaPrefab, generatePos, Quaternion.identity);
-
-        return generatedChara;
+        return generateChara;
     }
 }
