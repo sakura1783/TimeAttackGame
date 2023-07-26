@@ -14,25 +14,6 @@ public enum ParticleName
 }
 
 /// <summary>
-/// パーティクル用のデータ
-/// </summary>
-[System.Serializable]
-public class ParticleData
-{
-    public ParticleName particleName;
-    public ParticleSystem particlePrefab;
-}
-
-/// <summary>
-/// ParticleDataをまとめた、スクリプタブル・オブジェクト
-/// </summary>
-[CreateAssetMenu(fileName = "ParticleDataSO", menuName = "Create ParticleDataSO")]
-public class ParticleDataSO : ScriptableObject
-{
-    public List<ParticleData> particleDataList = new();
-}
-
-/// <summary>
 /// ParticleDataSOを管理するマネージャー
 /// </summary>
 public class ParticleManager : MonoBehaviour

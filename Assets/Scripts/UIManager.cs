@@ -16,10 +16,10 @@ public class UIManager : MonoBehaviour
 
     //private BulletGenerator bulletGenerator;
 
-    [SerializeField] private Image imgSpecialMoveCount;
+    //[SerializeField] private Image imgSpecialMoveCount;
 
-    private int maxValue;  //FillAmountの最大値(必殺技発動のために必要な敵Kill数)
-    private float value;  //FillAmountの現在値(現在の敵Kill数)
+    //private int maxValue;  //FillAmountの最大値(必殺技発動のために必要な敵Kill数)
+    //private float value;  //FillAmountの現在値(現在の敵Kill数)
 
     //[SerializeField] private ParticleSystem particleSpecialMoveGauge;
 
@@ -32,19 +32,20 @@ public class UIManager : MonoBehaviour
     //[SerializeField] private SpecialMove specialMove;
     //public SpecialMove SpecialMove => specialMove;
 
-    public int specialMoveCount;  //必殺技を発動した回数
+    //public int specialMoveCount;  //必殺技を発動した回数
 
     //public int uiKillEnemyCount;  //UIゲージ更新に使う敵キル数
 
-    private int specialMovePoint = 0;  //今までに獲得したspecialMovePoint
+    //private int specialMovePoint = 0;  //今までに獲得したspecialMovePoint
+
 
     public void SetUpUIManager()
     {
         //bulletGenerator = gameManager.CharaController.BulletGenerator;
 
-        maxValue = gameManager.CharaController.intervalKillCountSpecialMove;
+        //maxValue = gameManager.CharaController.intervalKillCountSpecialMove;
 
-        imgSpecialMoveCount.fillAmount = 0;
+        //imgSpecialMoveCount.fillAmount = 0;
     }
 
     void Update()

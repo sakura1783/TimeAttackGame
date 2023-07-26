@@ -10,7 +10,7 @@ public class UIManager_Special : MonoBehaviour
 
     [SerializeField] private Image imgSpecialMoveGauge;
 
-    private readonly float maxFillAmount = 1;
+    //private readonly float maxFillAmount = 1;
 
 
     void Update()

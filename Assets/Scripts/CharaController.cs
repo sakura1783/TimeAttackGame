@@ -37,7 +37,7 @@ public class CharaController : MonoBehaviour
 
     [SerializeField] private Transform charaFloatingMessageTran;
 
-    public void SetUpCharaController(GameManager gameManager, CharaDataSO.CharaData charaData, UIManager uiManager, SpecialMoveData specialMoveData)
+    public void SetUpCharaController(GameManager gameManager, CharaDataSO.CharaData charaData, UIManager uiManager)
     {
         hp = maxHp;
 
@@ -48,12 +48,9 @@ public class CharaController : MonoBehaviour
         attackPoint = this.charaData.attackPower;
         intervalAttackTime = this.charaData.intervalAttackTime;
         //attackRangeType = this.charaData.attackRangeType;
-        //maxSpecialMoveCount = this.charaData.maxSpecialMoveCount;
-        maxSpecialMoveCount = specialMoveData.maxSpecialMoveCount;
-        //intervalKillCountSpecialMove = this.charaData.intervalKillCountSpecialMove;
-        intervalKillCountSpecialMove = specialMoveData.interval;
-        //durationSpecialMove = this.charaData.durationSpecialMove;
-        durationSpecialMove = specialMoveData.duration;
+        maxSpecialMoveCount = this.charaData.specialMoveData.maxSpecialMoveCount;
+        intervalKillCountSpecialMove = this.charaData.specialMoveData.interval;
+        durationSpecialMove = this.charaData.specialMoveData.duration;
         //charaAnim = this.charaData.charaAnim;
 
         if (TryGetComponent(out anim))
@@ -81,6 +78,11 @@ public class CharaController : MonoBehaviour
 
     void Update()
     {
+        if (!gameManager)
+        {
+            return;
+        }
+
         if (gameManager.isGameOver)
         {
             return;

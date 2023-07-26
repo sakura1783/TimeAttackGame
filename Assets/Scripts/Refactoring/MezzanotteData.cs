@@ -23,6 +23,8 @@ public class MezzanotteData : SpecialMoveData
             //パーティクルとエネミーを親子関係にする
             generatedParticleMezzanotte.transform.SetParent(enemies.transform);
 
+            enemies.MezzanotteParticle = generatedParticleMezzanotte;
+
             //生成したパーティクルをListに追加
             particleMezzanotteList.Add(generatedParticleMezzanotte);
 
@@ -61,7 +63,12 @@ public class MezzanotteData : SpecialMoveData
         //上の処理をforeachで書く。これも上の理由と同じ
         foreach (ParticleSystem particle in particleMezzanotteList)
         {
-            particle.Stop();
+            //if (particle == null) continue;  //nullならこの処理は中断して、次のパーティクルを止める処理へ
+
+            if (particle != null)
+            {
+                particle.Stop();
+            }
         }
         //Listに追加したパーティクルをListから削除
         particleMezzanotteList.Clear();

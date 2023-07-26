@@ -140,8 +140,8 @@ public class PlacementCharaSelectPopUp : MonoBehaviour
         txtIntervalAttackTime.text = charaData.intervalAttackTime.ToString() + "秒";
         txtAttackRange.text = charaData.attackRangeType.ToString();
         txtSpecialMoveName.text = charaData.specialMoveName;
-        txtMaxSpecialMoveCount.text = charaData.maxSpecialMoveCount.ToString() + "回";
-        txtNeedSpecialMovePoint.text = charaData.intervalKillCountSpecialMove.ToString();
+        txtMaxSpecialMoveCount.text = charaData.specialMoveData.maxSpecialMoveCount.ToString() + "回";
+        txtNeedSpecialMovePoint.text = charaData.specialMoveData.interval.ToString();
         txtDiscliption.text = charaData.discription;
     }
 }

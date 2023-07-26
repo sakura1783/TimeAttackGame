@@ -5550,6 +5550,8 @@ MonoBehaviour:
   isGameOver: 0
   charaDestroyParticle: {fileID: 2286135270820131778, guid: 6b1cbe1a2491944e6916b914dce0c21c, type: 3}
   canvasFloatingTran: {fileID: 1920583763}
+  specialMoveManager: {fileID: 1311349986}
+  specialMoveHandler: {fileID: 1311349984}
 --- !u!4 &692431902
 Transform:
   m_ObjectHideFlags: 0
@@ -5867,6 +5869,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122554915}
   m_CullTransparentMesh: 1
+--- !u!1 &1154648705
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1154648707}
+  - component: {fileID: 1154648706}
+  m_Layer: 0
+  m_Name: ParticleManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1154648706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154648705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eee88cd5695d48b299b5cec86790b0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleDataSO: {fileID: 11400000, guid: aa3b02e996571432bb2b6038a6d001bb, type: 2}
+--- !u!4 &1154648707
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154648705}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1220168372
 GameObject:
   m_ObjectHideFlags: 0
@@ -6034,6 +6081,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1311349983}
+  - component: {fileID: 1311349986}
+  - component: {fileID: 1311349985}
+  - component: {fileID: 1311349984}
   m_Layer: 0
   m_Name: SpecialMoveManager
   m_TagString: Untagged
@@ -6056,6 +6106,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1311349984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311349982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2922d9172edcf41d58a372248f32d07a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSpecialMoveActive: 0
+--- !u!114 &1311349985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311349982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3704e45f6a98f4af7aeb16841db0a96e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imgSpecialMoveGauge: {fileID: 1122554917}
+--- !u!114 &1311349986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311349982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc24e1674e8b347d3949fd84cb151586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  availablePoints: 0
+  debugPoint: 5
+  maxSpecialMoveCount: 0
+  useSpecialMoveCount: 0
+  particleSpecialMoveGauge: {fileID: 3982007147311268576, guid: b1491052725ad471ca716f812843e8cc, type: 3}
+  particleTran: {fileID: 1122554916}
 --- !u!1 &1400072328
 GameObject:
   m_ObjectHideFlags: 3
@@ -11156,6 +11250,7 @@ MonoBehaviour:
   isSpecialMoveActive: 0
   particleRovescio: {fileID: 2229766085448553613, guid: c27be7d15330d45fea4f9f3856c381b9, type: 3}
   particleMezzanotte: {fileID: 7321971343839077532, guid: dd77520f19b0649df8a083828bbbb197, type: 3}
+  generatedParticleMezzanotte: {fileID: 0}
   particleMezzanotteList: []
   particleMagia: {fileID: 4012485297502331830, guid: 1ffbb716ed51f4412862c0282e4c97bb, type: 3}
   magiaCharaGenerator: {fileID: 973103862}
@@ -11399,11 +11494,6 @@ MonoBehaviour:
   txtKillEnemyCount: {fileID: 2097818010}
   gameManager: {fileID: 692431901}
   imgIntervalAttackTime: {fileID: 1105080415}
-  imgSpecialMoveCount: {fileID: 1122554917}
-  particleSpecialMoveGauge: {fileID: 3982007147311268576, guid: b1491052725ad471ca716f812843e8cc, type: 3}
-  particleTran: {fileID: 1122554916}
-  specialMove: {fileID: 1858716128}
-  specialMoveCount: 0
 --- !u!4 &2094251405
 Transform:
   m_ObjectHideFlags: 0

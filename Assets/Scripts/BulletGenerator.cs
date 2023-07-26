@@ -29,6 +29,8 @@ public class BulletGenerator : MonoBehaviour
 
     private UIManager uiManager;
 
+    private bool isSetUpFinished = false;
+
     public void SetUpBulletGenerator(CharaController charaController, AttackRangeSizeSO.AttackRangeSize attackRangeSize, UIManager uiManager)
     {
         TryGetComponent(out anim);
@@ -41,10 +43,17 @@ public class BulletGenerator : MonoBehaviour
         this.radius = attackRangeSize.radius;
 
         uiManager.SetIntervalAttackTime(interval);
+
+        isSetUpFinished = true;
     }
 
     void Update()
     {
+        if (!isSetUpFinished)
+        {
+            return;
+        }
+
         if (uiManager.GameManager.isGameOver)
         {
             return;

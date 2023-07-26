@@ -46,7 +46,10 @@ public class GameManager : MonoBehaviour
 
     public Canvas canvasFloatingTran;
 
-    [SerializeField] private SpecialMoveManager specialMoveManager;
+    public SpecialMoveManager specialMoveManager;
+
+    public SpecialMoveHandler specialMoveHandler;
+
 
     void Start()
     {
@@ -56,7 +59,7 @@ public class GameManager : MonoBehaviour
 
         charaController = charaGenerator.GenerateChara();  //戻り値のあるメソッドの活用。GenerateCharaメソッドの戻り値をcharaController変数に代入。こうすることで、生成されたキャラの情報が提供され、次行の命令がChara(Clone)に対しての命令となる。
 
-        charaController.SetUpCharaController(this, DataBaseManager.instance.charaDataSO.charaDatasList[GameData.instance.GenerateCharaNo], uiManager, charaController.CharaData.specialMoveData);
+        charaController.SetUpCharaController(this, DataBaseManager.instance.charaDataSO.charaDatasList[GameData.instance.GenerateCharaNo], uiManager);
 
         enemyGenerator.SetUpEnemyGenerator();
 

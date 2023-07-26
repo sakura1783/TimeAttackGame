@@ -41,6 +41,10 @@ public class EnemyController : MonoBehaviour
 
     public bool isPaused = false;  //移動やアニメーションが一時停止中かどうか
 
+    private ParticleSystem mezzanotteParticle;  //MezzanotteData内の処理で、ここに生成されたパーティクルの情報が入る
+    public ParticleSystem MezzanotteParticle { get; set; }
+
+
     public void SetUpEnemyController(GameManager gameManager, EnemyDataSO.EnemyData enemyData)
     {
         this.enemyData = enemyData;
@@ -227,30 +231,37 @@ public class EnemyController : MonoBehaviour
 
         if (hp <= 0)
         {
-            //もし4個子が存在したら(4個目の子が存在したら、それはMezzanotte時のパーティクル)
-            if (transform.childCount >= 4)
+            ////もし4個子が存在したら(4個目の子が存在したら、それはMezzanotte時のパーティクル)
+            //if (transform.childCount >= 4)
+            //{
+            //    Transform childTransform = transform.GetChild(3);
+
+            //    ParticleSystem target = null;
+
+            //    //3個目の子のパーティクルをListから探す
+            //    foreach (ParticleSystem particle in uiManager.SpecialMove.particleMezzanotteList)
+            //    {
+            //        if (particle.transform == childTransform)
+            //        {
+            //            target = particle;
+
+            //            //必要な要素を見つけたらループを終了する
+            //            break;
+            //        }
+            //    }
+
+            //    //目的のパーティクルが見つかったら、そのパーティクルをListから削除する
+            //    if (target != null)
+            //    {
+            //        uiManager.SpecialMove.particleMezzanotteList.Remove(target);
+            //    }
+            //}
+
+            //パーティクルの情報はメンバ変数(mezzanotteParticle)で制御されているため上の処理は削除
+            if (mezzanotteParticle != null)
             {
-                Transform childTransform = transform.GetChild(3);
-
-                ParticleSystem target = null;
-
-                //3個目の子のパーティクルをListから探す
-                foreach (ParticleSystem particle in uiManager.SpecialMove.particleMezzanotteList)
-                {
-                    if (particle.transform == childTransform)
-                    {
-                        target = particle;
-
-                        //必要な要素を見つけたらループを終了する
-                        break;
-                    }
-                }
-
-                //目的のパーティクルが見つかったら、そのパーティクルをListから削除する
-                if (target != null)
-                {
-                    uiManager.SpecialMove.particleMezzanotteList.Remove(target);
-                }
+                //パーティクルを非表示にする
+                mezzanotteParticle.gameObject.SetActive(false);
             }
 
             //ランダムな値がitemDropRate以下だった場合、アイテムドロップ
@@ -275,7 +286,7 @@ public class EnemyController : MonoBehaviour
             //}
 
             //もし必殺技発動中なら、以下の処理はしない(必殺技発動中に敵を倒してもUIゲージが更新されない)
-            if (uiManager.SpecialMove.isSpecialMoveActive)
+            if (gameManager.specialMoveHandler.isSpecialMoveActive)
             {
                 return;
             }
@@ -283,11 +294,13 @@ public class EnemyController : MonoBehaviour
             //uiManager.specialMovePoint++;
 
             //もし必殺技を発動した回数が必殺技発動可能回数を上回ってなかったら
-            if (uiManager.specialMoveCount < charaController.maxSpecialMoveCount)
-            {
-                //必殺技ゲージ更新
-                uiManager.SetIntervalSpecialMove(addSpecialMovePoint);
-            }
+            //if (uiManager.specialMoveCount < charaController.maxSpecialMoveCount)
+            //{
+            //    //必殺技ゲージ更新
+            //    uiManager.SetIntervalSpecialMove(addSpecialMovePoint);
+            //}
+
+            gameManager.specialMoveManager.AddPoint(addSpecialMovePoint);
         }
     }
 
