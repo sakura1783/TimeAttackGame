@@ -45,7 +45,10 @@ public class NavMeshAgent2D : MonoBehaviour
 
         // NavMesh に応じて経路を求める
         NavMeshPath path = new NavMeshPath();
-        NavMesh.CalculatePath(current, target, NavMesh.AllAreas, path);
+        if (!NavMesh.CalculatePath(current, target, NavMesh.AllAreas, path))
+        {
+            return;
+        }
 
         Vector2 corner = path.corners[0];
 
