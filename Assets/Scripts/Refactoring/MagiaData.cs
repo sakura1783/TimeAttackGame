@@ -30,14 +30,24 @@ public class MagiaData : SpecialMoveData
         //particleOne.transform.SetParent(charaOne.transform);
         //magiaCharasList.Add(charaOne);
 
-        //上の処理を効率よく
-        for (int i = 0; i < cloneCount; i++)
+        // magiaCharaGenerator変数に中身がないので入れる
+        if (GameObject.Find("MagiaCharaGenerator").TryGetComponent(out magiaCharaGenerator))
         {
-            MagiaChara chara = magiaCharaGenerator.GenerateMagiaChara(i);
-            chara.SetUpMagiaChara(gameManager, DataBaseManager.instance.charaDataSO.charaDatasList[i]);
-            ParticleSystem particle = Instantiate(ParticleManager.instance.GetParticleFromName(ParticleName.Magia), chara.transform.position, Quaternion.identity);
-            particle.transform.SetParent(chara.transform);
-            magiaCharaList.Add(chara);
+            //上の処理を効率よく
+            for (int i = 0; i < cloneCount; i++)
+            {
+                MagiaChara chara = magiaCharaGenerator.GenerateMagiaChara(i);
+
+                chara.SetUpMagiaChara(gameManager, DataBaseManager.instance.charaDataSO.charaDatasList[i]);
+                ParticleSystem particle = Instantiate(ParticleManager.instance.GetParticleFromName(ParticleName.Magia), chara.transform.position, Quaternion.identity);
+                particle.transform.SetParent(chara.transform);
+                magiaCharaList.Add(chara);
+            }
+        }
+        else
+        {
+            Debug.Log("MagiaCharaGeneratorクラスの取得を失敗しました");
+            return;
         }
 
         Debug.Log("Magiaが発動されました");

@@ -4,9 +4,9 @@ using UnityEngine;
 //HandlerとUIManager_Specialの制御を行う、必殺技の管理者
 public class SpecialMoveManager : MonoBehaviour
 {
-    [SerializeField] private int availablePoints;  //デバッグ用。使用可能なポイント(キル数)
+    private int availablePoints;  // 使用可能なポイント(キル数)
 
-    [SerializeField] private int debugPoint = 5;  //デバッグ用。スペースキーを押すと、この数だけ増える
+    //[SerializeField] private int debugPoint = 5;  // TODO デバッグ用。スペースキーを押すと、この数だけ増える
 
     private SpecialMoveHandler specialMoveHandler;
 
@@ -45,11 +45,11 @@ public class SpecialMoveManager : MonoBehaviour
             return;
         }
 
-        //デバッグ用
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            AddPoint(debugPoint);
-        }
+        // TODO デバッグ用
+        // if (Input.GetKeyDown(KeyCode.Space))
+        // {
+        //     AddPoint(debugPoint);
+        // }
 
         //もし必殺技発動に必要なポイントを上回ったら
         if (availablePoints >= interval)
@@ -82,6 +82,8 @@ public class SpecialMoveManager : MonoBehaviour
         if (TryGetComponent(out specialMoveHandler))
         {
             specialMoveHandler.SetUpHandler(specialMoveData , gameManger, enemyGenerator);
+
+            Debug.Log("①完了");
         }
 
         if (TryGetComponent(out uiManagerSpecial))
